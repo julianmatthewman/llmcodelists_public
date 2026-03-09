@@ -1,0 +1,3 @@
+medcodeid,term,snomedctconceptid,snomedctdescriptionid,originalreadcode,cleansedreadcode,observations,emiscodecategoryid
+353159016,Eosinophilic oesophagitis,235599003,353159016,J1017,J101700,21867,32
+3517781018,Food-induced eosinophilic oesophagitis,735455001,3517781018,^ESCT1165474,,1,15

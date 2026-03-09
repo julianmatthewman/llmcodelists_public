@@ -1,0 +1,212 @@
+OriginalReadCode,Term,required
+M113,Flexural eczema,1
+M112,Infantile eczema,1
+M11,Atopic dermatitis,1
+M115,Besnier's prurigo,1
+M11z,Atopic dermatitis NOS,1
+M114,Allergic (intrinsic) eczema,1
+M111,Atopic dermatitis/eczema,1
+M117,Atopic neurodermatitis,1
+M111-98,Atopic eczema/dermatitis,1
+M11z-99,Atopic eczema/dermatitis NOS,1
+^ESCTAC267510,Acute infantile eczema,0
+^ESCTAT288430,Atopic eczema,1
+^ESCTAD288434,AD - Atopic dermatitis,1
+^ESCTCO512283,Constitutional eczema,0
+^ESCTAT512285,Atopic dermatitis of hands,1
+^ESCTAT512286,Atopic eczema of hands,1
+^ESCTIN512287,Inverse pattern atopic dermatitis,1
+^ESCTDI512288,Discoid atopic dermatitis,1
+^ESCTDI512289,Discoid pattern atopic dermatitis,1
+^ESCTDI512290,Discoid pattern atopic eczema,1
+^ESCTER512291,Erythrodermic atopic dermatitis,1
+^ESCTER512292,Erythrodermic atopic eczema,1
+^ESCTFO512293,Follicular atopic dermatitis,1
+^ESCTFO512294,Follicular atopic eczema,1
+^ESCTPR512295,Pruriginous atopic dermatitis,1
+^ESCTPR512296,Pruriginous atopic eczema,1
+^ESCTPH512297,Photosensitive atopic dermatitis,1
+^ESCTPH512299,Photosensitive atopic eczema,1
+^ESCTPH512300,Photoaggravated atopic dermatitis,1
+^ESCTPH512301,Photoaggravated atopic eczema,1
+^ESCTCO512302,Constitutional eczema of hands and feet,0
+^ESCTCO512309,Constitutional eczema of hands,0
+^ESCTCO512317,Constitutional fingertip eczema,0
+^ESCTCO512318,Constitutional eczema of feet,0
+^ESCTCH598917,Chronic lichenified atopic dermatitis,1
+^ESCTCH598918,Chronic lichenified atopic eczema,1
+^ESCTFL666116,Flexural atopic dermatitis,1
+^ESCTFL666117,Flexural atopic eczema,1
+^ESCTGE666120,Generalised atopic dermatitis,1
+^ESCTGE666122,Generalised atopic eczema,1
+^ESCTPR666124,Prurigo pattern atopic dermatitis,1
+^ESCTXE666127,Xerosis due to atopic dermatitis,1
+^ESCTAT666130,Atopic dermatitis of scalp,1
+^ESCTAT666131,Atopic eczema of scalp,1
+^ESCTAT666132,Atopic dermatitis of face,1
+^ESCTAT666133,Atopic eczema of face,1
+^ESCTAT666134,Atopic dermatitis of eyelid,1
+^ESCTAT666136,Atopic dermatitis of eyelids,1
+^ESCTCH666138,Cheilitis due to atopic eczema,1
+^ESCTIN666139,Infantile atopic dermatitis,1
+^ESCTIN666140,Infantile atopic eczema,1
+^ESCTCH666141,Childhood atopic dermatitis,1
+^ESCTCH666142,Childhood atopic eczema,1
+^ESCTAD666143,Adult atopic dermatitis,1
+^ESCTAD666144,Adult atopic eczema,1
+^ESCTAD666146,Adult atopic eczema persistent from childhood,1
+^ESCTAD666148,Adult atopic eczema recurrent in adult life,1
+^ESCTIM666151,Impetiginized atopic dermatitis,1
+^ESCTIN666152,Infected atopic dermatitis,1
+^ESCT1379223,Constitutional eczema of hand,0
+^ESCT1379225,Constitutional eczema of foot,0
+^ESCT1450246,Atopic dermatitis of bilateral hands,1
+^ESCT1450704,Acute atopic dermatitis of hand,1
+^ESCT1500750,Childhood generalised erythematous atopic dermatitis,1
+M1831,Neurodermatitis,0
+M102-1,Pustular eczema,0
+14F1,H/O: eczema,0
+A540,Eczema herpeticum - Kaposi's varicelliform eruption,0
+Myu2,[X]Dermatitis and eczema,0
+M12z3,Hand eczema,0
+M116,Neurodermatitis - diffuse,0
+M116-1,Brocq's neurodermatitis,0
+M12z1,Eczema,0
+M102,Infectious eczematoid dermatitis,0
+F5024-1,Eczema of external ear,0
+M11A,Asteatotic eczema,0
+M12z4,Erythrodermic eczema,0
+M12z2,Infected eczema,0
+F5024,Acute eczematoid otitis extern,0
+^ESCT1167456,Eczema of male genitalia,0
+^ESCT1169098,Eczema of lower leg,0
+C3912-1,Thrombocytopenic eczema with immunodeficiency,0
+M07y-1,Pustular eczema,0
+M2522,Vesicular hand eczema,0
+M119,Discoid eczema,0
+M12z1-1,Discoid eczema,0
+M252,Vesicular eczema of hands and/or feet,0
+26C4,Eczema of nipple,0
+M111-97,Dermatitis/eczemas NOS,0
+M111-99,Dermatitis/eczemas,0
+M116-99,Neurodermatitis,0
+M12z1-99,Chronic Eczema,0
+HNG0040,[RFC] Reason for care : Eczema,0
+HNGNQRF135,[RFC] Reason for care : Eczema,0
+TRISDE9,Dermatitis/eczema,0
+Myu22,Exacerbation of eczema,0
+ASDFGEC1,Eczema/Dermatitis,0
+ALLERGY16088NEMIS,Adverse reaction to Eumovate Eczema And Dermatitis,0
+8HTu,Referral to eczema clinic,0
+TRISDE8,Eczema/Dermatitis,0
+^ESCTAU254726,Autoeczematisation,0
+38Vp,Patient-Oriented Eczema Measure score,0
+^ESCTAC270287,Acute photoallergic dermatitis,0
+^ESCTAL288431,Allergic eczema,0
+^ESCTAL288432,Allergic dermatitis,0
+^ESCTEC308125,"Eczema, thrombocytopenia, immunodeficiency syndrome",0
+^ESCTEC308441,Eczematous dermatitis of eyelid,0
+^ESCTEC308442,Eczema of eyelid,0
+^ESCTEY308443,Eyelid eczema,0
+^ESCTFA320111,Facial eczema,0
+^ESCTCH321296,Chronic eczema,0
+^ESCTPH336906,Phototoxic eczema,0
+^ESCTCI337404,Circumscribed neurodermatitis,0
+^ESCTAC338060,Acute eczematoid otitis externa,0
+^ESCTEC345459,Eczema intertrigo,0
+^ESCTEC364484,Eczematous conjunctivitis,0
+^ESCTNU382395,Nummular eczema,0
+^ESCTNU382397,Nummular eczematous dermatitis,0
+^ESCTPO386714,"Polymorphous light eruption, eczematous type",0
+^ESCTEC406256,Eczema of ear lobe,0
+^ESCTEC406259,Eczema of external auditory canal,0
+^ESCTEC406261,Eczematous otitis externa,0
+^ESCTPH419259,Photoallergic dermatitis,0
+^ESCTPH419261,Photoallergic eczema,0
+^ESCTVE435481,Vesicular eczema,0
+^ESCTEX435483,Exudative eczema,0
+^ESCTPU435486,Pustular eczematous dermatitis,0
+^ESCTCR435487,Crusted eczema,0
+^ESCTCR435488,Crusted eczematous dermatitis,0
+^ESCTEX435489,Excoriated eczema,0
+^ESCTEX435490,Excoriated eczematous dermatitis,0
+^ESCTLI435491,Lichenified eczema,0
+^ESCTLI435492,Lichenified eczematous dermatitis,0
+^ESCTDR451085,Dry eczema,0
+^ESCTHI454127,History of eczema,0
+^ESCTEC474227,Eczema herpeticum,0
+^ESCTEC480679,Eczema craquele,0
+^ESCTEC480680,Eczema craquelé,0
+^ESCTVE480740,Vesicular eczema of feet,0
+^ESCTOC493575,Occupational eczema,0
+^ESCTNE503371,Neurodermatitis of external ear,0
+^ESCTPE509017,Peristomal eczema,0
+^ESCTEN512284,Endogenous eczema,0
+^ESCTHY512305,Hyperkeratotic eczema of hands and feet,0
+^ESCTHY512306,Hyperkeratotic eczema of palms and soles,0
+^ESCTDI512308,Discoid eczema of hands and feet,0
+^ESCTAP512311,Apron pattern of vesicular eczema of hands,0
+^ESCTHY512312,Hyperkeratotic fissured hand eczema,0
+^ESCTHY512313,Hyperkeratotic eczema of palms,0
+^ESCTHY512322,Hyperkeratotic eczema of soles,0
+^ESCTEC512335,Eczematous intertrigo,0
+^ESCTDI512366,Disseminated secondary eczema,0
+^ESCTPA512372,Papular eczema with elimination of papillary oedema,0
+^ESCTPA512373,Papular eczema,0
+^ESCTDE512379,Desiccation eczema,0
+^ESCTSI512383,Site-specific eczema,0
+^ESCTEC535999,Eczematised,0
+^ESCTEC536000,Eczematized,0
+^ESCTUN564745,Unclassifiable eczema,0
+^ESCTEC588680,Eczema of face,0
+^ESCTEC588682,Eczema of wrist,0
+^ESCTEC598664,Eczema of leg,0
+^ESCTAC656823,Acute eczema,0
+^ESCTSE663390,Senile asteatotic eczema,0
+^ESCTIN663425,Infective eczema,0
+^ESCTIN666192,Infected discoid eczema,0
+^ESCTAC666201,Acute-on-chronic vesicular eczema of feet,0
+^ESCTAC666202,Acute-on-chronic dyshidrotic eczema of feet,0
+^ESCTAC666208,Acute-on-chronic vesicular eczema of hands,0
+^ESCTDY666213,Dyshidrotic eczema of hands,0
+^ESCTEC666216,Eczema of finger,0
+^ESCTEC666217,Eczema of fingers,0
+^ESCTFI666218,Fingertip eczema,0
+^ESCTAC666230,Acute hand eczema,0
+^ESCTCH666232,Chronic hand eczema,0
+^ESCTFO666234,Foot eczema,0
+^ESCTEC666235,Eczema of foot,0
+^ESCTEC666236,Eczematous cheilitis,0
+^ESCTLI666237,Lip eczema,0
+^ESCTVU666238,Vulval eczema,0
+^ESCTLI666317,Lip-licking eczema,0
+^ESCTGE666346,Generalised eczema,0
+^ESCTHA666718,Hand and/or foot eczema,0
+^ESCTPO666722,Pompholyx eczema,0
+^ESCTVE666723,Vesicular eczema of hands and feet,0
+^ESCTDY666725,Dyshidrotic eczema,0
+^ESCTHY666733,Hyperkeratotic eczema of hands and/or feet,0
+^ESCTDI666734,Discoid eczema of hand,0
+^ESCTSE666753,Secondary eczematous condition,0
+^ESCTIN685923,Infective eczematoid dermatitis,0
+^ESCTSC694211,Scaling eczematous dermatitis,0
+^ESCTCH707261,Chronic eczema of external auditory canal,0
+^ESCTPA778209,Patient-Oriented Eczema Measure,0
+^ESCTAS778210,Assessment using POEM (Patient-Oriented Eczema Measure),0
+^ESCTPO778212,POEM (Patient-Oriented Eczema Measure) score,0
+^ESCTEC799783,Eczema of scalp,0
+^ESCTEC930890,Eczematous dermatitis of bilateral eyelids,0
+ALLERGY126278NEMIS,Adverse reaction to E45 Eczema Repair,0
+^ESCT1193176,POEM - Patient-Oriented Eczema Measure,0
+^ESCT1246681,[X]Dermatitis and eczema,0
+^ESCT1272763,Eczema NOS,0
+^ESCT1363683,Acute vesicular eczema of foot,0
+^ESCT1368210,Eczema of right upper eyelid,0
+^ESCT1368214,Eczema of left upper eyelid,0
+^ESCT1368215,Eczematous dermatitis of left eyelid,0
+^ESCT1379224,Hyperkeratotic fissured eczema of palms,0
+^ESCT1394084,Eczema coxsackium,0
+^ESCT1407694,Facial eczema,0
+ALLERGY141525NEMIS,Adverse reaction to Diprobase Advanced Eczema,0
+^ESCT1570107,Vesicular eczema of foot,0
+^ESCT1570640,Vesicular eczema of hand,0

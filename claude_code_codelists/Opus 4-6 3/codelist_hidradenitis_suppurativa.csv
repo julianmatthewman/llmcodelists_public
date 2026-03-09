@@ -1,0 +1,10 @@
+"condition","medcodeid","term","snomedctconceptid","snomedctdescriptionid","originalreadcode","cleansedreadcode","emiscodecategoryid","observations"
+"Hidradenitis suppurativa","98642019","Hidradenitis suppurativa","59393003","98642019","M25y1-1","M25y111",32,295899
+"Hidradenitis suppurativa","115847018","Hidradenitis","69741000","115847018","M25y1","M25y100",32,62664
+"Hidradenitis suppurativa","855271000006114","Hydradenitis suppurativa","855271000006105","855271000006114","EGTON66","",32,90906
+"Hidradenitis suppurativa","3464511000006112","Hidradenitis axillaris","59393003","98643012","^ESCTHI346451","",32,9
+"Hidradenitis suppurativa","3464541000006111","Suppurative hidradenitis","59393003","1231953010","^ESCTSU346454","",32,59
+"Hidradenitis suppurativa","6670471000006113","Axillary hidradenitis suppurativa","402826001","1781918014","^ESCTAX667047","",31,28
+"Hidradenitis suppurativa","6670481000006111","Anogenital hidradenitis suppurativa","402827005","1781919018","^ESCTAN667048","",31,2
+"Hidradenitis suppurativa","6670491000006114","Vulval hidradenitis suppurativa","402828000","1781920012","^ESCTVU667049","",31,3
+"Hidradenitis suppurativa","15017081000006116","Hidradenitis suppurativa of multiple sites","1254915007","5143849018","^ESCT1501708","",31,1

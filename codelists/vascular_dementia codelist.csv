@@ -1,0 +1,105 @@
+OriginalReadCode,Term,required
+F21y2,Binswanger's disease,1
+E0040,Uncomplicated arteriosclerotic dementia,1
+E0041,Arteriosclerotic dementia with delirium,1
+E0042,Arteriosclerotic dementia with paranoia,1
+E0043,Arteriosclerotic dementia with depression,1
+E004z,Arteriosclerotic dementia NOS,1
+Eu01y,[X]Other vascular dementia,1
+Eu01z,"[X]Vascular dementia, unspecified",1
+E004,Arteriosclerotic dementia,1
+F21y2-1,Binswanger's encephalopathy,1
+^ESCT1169441,Subcortical dementia,0
+Eu01-1,[X]Arteriosclerotic dementia,1
+Eu013,Mixed cortical and subcortical vascular dementia,0
+Eu011,[X]Multi-infarct dementia,1
+Eu011-1,[X]Predominantly cortical dementia,0
+Eu012,Subcortical vascular dementia,1
+Eu01,Vascular dementia,1
+Eu010,Vascular dementia of acute onset,1
+E004-1,Multi-infarct dementia,1
+EMISNQDV1,[D] Vascular dementia,1
+EMISICD10|F03X4,"Unspecified dementia, other mixed symptoms",0
+EMISICD10|F0100,"Vascular dementia of acute onset, without additional symptoms",1
+EMISICD10|F0101,"Vascular dementia of acute onset, other symptoms, predominantly delusional",1
+EMISICD10|F0104,"Vascular dementia of acute onset, other mixed symptoms",1
+EMISICD10|F0111,"Multi-infarct dementia, other symptoms, predominantly delusional",1
+EMISICD10|F0113,"Multi-infarct dementia, other symptoms, predominantly depressive",1
+EMISICD10|F0114,"Multi-infarct dementia, other mixed symptoms",1
+EMISICD10|F0120,"Subcortical vascular dementia, without additional symptoms",1
+EMISICD10|F0121,"Subcortical vascular dementia, other symptoms, predominantly delusional",1
+EMISICD10|F0122,"Subcortical vascular dementia, other symptoms, predominantly hallucinatory",1
+EMISICD10|F0123,"Subcortical vascular dementia, other symptoms, predominantly depressive",1
+EMISICD10|F0124,"Subcortical vascular dementia, other mixed symptoms",1
+EMISICD10|F0130,"Mixed cortical and subcortical vascular dementia, without additional symptoms",1
+EMISICD10|F0131,"Mixed cortical and subcortical vascular dementia, other symptoms, predominantly delusional",1
+EMISICD10|F0132,"Mixed cortical and subcortical vascular dementia, other symptoms, predominantly hallucinatory",1
+EMISICD10|F0133,"Mixed cortical and subcortical vascular dementia, other symptoms, predominantly depressive",1
+EMISICD10|F0134,"Mixed cortical and subcortical vascular dementia, other mixed symptoms",1
+EMISICD10|F0180,"Other vascular dementia, without additional symptoms",1
+EMISICD10|F0181,"Other vascular dementia, other symptoms, predominantly delusional",1
+EMISICD10|F0182,"Other vascular dementia, other symptoms, predominantly hallucinatory",1
+EMISICD10|F0183,"Other vascular dementia, other symptoms, predominantly depressive",1
+EMISICD10|F0184,"Other vascular dementia, other mixed symptoms",1
+EMISICD10|F0190,"Vascular dementia, unspecified, without additional symptoms",1
+EMISICD10|F0191,"Vascular dementia, unspecified, other symptoms, predominantly delusional",1
+EMISICD10|F0192,"Vascular dementia, unspecified, other symptoms, predominantly hallucinatory",1
+EMISICD10|F0193,"Vascular dementia, unspecified, other symptoms, predominantly depressive",1
+EMISICD10|F0194,"Vascular dementia, unspecified, other mixed symptoms",1
+^ESCTMU266460,Multi-infarct dementia with delirium,1
+^ESCTVA266461,"Vascular dementia, with delirium",1
+^ESCTMU272293,Multi-infarct dementia with depression,1
+^ESCT1171773,Predominantly cortical dementia,0
+^ESCT1171774,Predominantly cortical vascular dementia,1
+^ESCTMU291232,Multi-infarct dementia with delusions,1
+^ESCTVA291233,"Vascular dementia, with delusions",1
+^ESCTMI341423,MID - Multi-infarct dementia,1
+^ESCTVA341425,VAD - Vascular dementia,1
+^ESCTMU341426,Multi infarct dementia,1
+^ESCTMU365367,"Multi-infarct dementia, uncomplicated",1
+^ESCTSU396466,Subcortical atherosclerotic dementia,1
+^ESCTVA751506,Vascular dementia in remission,0
+^ESCTIS784063,Ischaemic vascular dementia,1
+^ESCTIS784064,Ischemic vascular dementia,1
+^ESCTMI802420,Mixed dementia,0
+^ESCTMU803324,Multi-infarct dementia due to atherosclerosis,1
+^ESCTVA808923,Vascular dementia with behavioural disturbance,1
+^ESCTVA808924,Vascular dementia with behavioral disturbance,1
+^ESCTVA990225,Vascular dementia without behavioural disturbance,1
+^ESCT1237064,Dementia with mixed etiology,0
+^ESCT1237065,MVAD - Mixed vascular Alzheimer dementia,0
+^ESCT1237066,Dementia with mixed aetiology,0
+^ESCT1393438,Cortical vascular dementia,1
+^ESCT1480525,Behavioural disturbance due to multi-infarct dementia,1
+G6,Cerebrovascular disease,0
+F11x2,Cerebral degeneration due to cerebrovascular disease,0
+G67,Other cerebrovascular disease,0
+G671z,Generalised ischaemic cerebrovascular disease NOS,0
+G67y,Other cerebrovascular disease OS,0
+G67z,Other cerebrovascular disease NOS,0
+G68,Late effects of cerebrovascular disease,0
+G6y,Other specified cerebrovascular disease,0
+G6z,Cerebrovascular disease NOS,0
+Gyu67,[X]Other specified cerebrovascular diseases,0
+1477,H/O: cerebrovascular disease,0
+G68W,Sequelae/other + unspecified cerebrovascular diseases,0
+1JA1,Suspected cerebrovascular disease,0
+Gyu6,[X]Cerebrovascular diseases,0
+Gyu6D,[X]Sequelae/other + unspecified cerebrovascular diseases,0
+G671,Diffuse cerebrovascular disease,0
+G679,Small vessel cerebrovascular disease,0
+EMISNQAT20,At risk of cerebrovascular disease,0
+EMISNQHI23,High risk of cerebrovascular disease,0
+EMISNQCE26,Cerebrovascular disease monitoring admin.,0
+EMISNQCE27,Cerebrovascular disease monitoring in primary care,0
+EMISNQCE28,Cerebrovascular disease monitoring in secondary care,0
+EMISNQCE29,Cerebrovascular disease monitoring default,0
+TESTPCE1,Cerebrovascular disease management,0
+^ESCTCV352270,CVD - Cerebrovascular disease,0
+^ESCTSE477831,Sequelae of cerebrovascular disease,0
+^ESCTAS501186,Asymptomatic cerebrovascular disease,0
+^ESCTVI802608,Visual disturbance as sequela of cerebrovascular disease,0
+^ESCTSU396465,Subcortical arteriosclerotic encephalopathy,1
+^ESCT1503911,Dementia due to cerebral vasculitis,0
+^ESCT1503914,Dementia due to cerebral amyloid angiopathy,0
+^ESCTCH396467,Chronic progressive subcortical encephalopathy,0

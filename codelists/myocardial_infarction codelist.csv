@@ -1,0 +1,229 @@
+OriginalReadCode,Term,required
+G30-4,Heart attack,1
+G30,Acute myocardial infarction,1
+G310,Post-myocardial infarction syndrome,0
+G307,Acute subendocardial infarction,1
+G38,Postoperative myocardial infarction,0
+G301,Acute anterior myocardial infarction,1
+G3010,Acute anteroapical infarction,1
+G301z,Anterior myocardial infarction NOS,1
+G304,Acute posterior myocardial infarction,1
+G305,Acute lateral myocardial infarction,1
+G306,True posterior myocardial infarction,1
+G308,Acute myocardial infarction of inferior wall,1
+G30y,Other acute myocardial infarction,1
+G30y0,Acute atrial infarction,1
+G30yz,Other acute myocardial infarction NOS,1
+G30z,Acute myocardial infarction NOS,1
+G35,Subsequent myocardial infarction,0
+G350,Subsequent myocardial infarction of anterior wall,0
+G351,Subsequent myocardial infarction of inferior wall,0
+G353,Subsequent myocardial infarction of other sites,0
+Gyu35,[X]Subsequent myocardial infarction of other sites,0
+Gyu36,[X]Subsequent myocardial infarction of unspecified site,0
+G30-7,Silent myocardial infarction,0
+G309,Acute Q-wave infarct,1
+G3070,Acute non-Q wave infarction,1
+G384,Postoperative subendocardial myocardial infarction,0
+G38z,"Postoperative myocardial infarction, unspecified",0
+G30y1,Acute papillary muscle infarction,1
+G303,Acute inferoposterior infarction,1
+G30y2,Acute septal infarction,1
+G30A,Mural thrombosis,0
+G30X0,Acute ST segment elevation myocardial infarction,1
+G3071,Acute non-ST segment elevation myocardial infarction,1
+G30-2,Coronary thrombosis,0
+G30-6,Thrombosis - coronary,0
+G3110-1,MI - Myocardial infarction aborted,0
+^ESCT1167259,Mural thrombus of right ventricle following acute myocardial infarction,0
+^ESCT1167751,Myocardial infarction clinical management plan,0
+G362,Ventricular septal defect as current complication following acute myocardial infarction,0
+G366,"Thrombosis of atrium, auricular appendage, and ventricle as current complications following acute myocardial infarction",0
+G35X,Subsequent myocardial infarction of unspecified site,0
+G363,Rupture of cardiac wall without haemopericardium as current complication following acute myocardial infarction,0
+G364,Rupture of chordae tendinae as current complication following acute myocardial infarction,0
+G365,Rupture of papillary muscle as current complication following acute myocardial infarction,0
+G380,Postoperative transmural myocardial infarction of anterior wall,0
+G381,Postoperative transmural myocardial infarction of inferior wall,0
+G382,Postoperative transmural myocardial infarction other sites,0
+G383,Postoperative transmural myocardial infarction unspec site,0
+G30-1,Attack - heart,0
+G30-5,MI - acute myocardial infarction,1
+Gyu34,[X]Acute transmural myocardial infarction of unspecif site,1
+Gyu31,[X]Other current complicatns following acute myocard infarct,0
+G300,Acute anterolateral myocardial infarction,1
+G3011,Acute anteroseptal myocardial infarction,1
+G302,Acute inferolateral myocardial infarction,1
+G30X,Acute transmural myocardial infarction of unspecif site,1
+G361,Atrial septal defect as current complication following acute myocardial infarction,0
+G30-3,Cardiac rupture after acute myocardial infarction,0
+G36,Myocardial infarction with complication,1
+889A,Diabetes mellitus insulin-glucose infusion in acute myocardial infarction,0
+G3110,Myocardial infarction aborted,0
+G360,Haemopericardium as current complication following acute myocardial infarction,0
+790H0-98,Infarct myocardiectomy,0
+G30-98,Coronary thrombosis,0
+G30-99,Myocardial Infarction,1
+HNG0009,[RFC] Reason for care : Myocardial infarction (MI),0
+G30B,Acute myocardial infarction of posterolateral wall,1
+EGTON2EGTON433,Cause of Death- Myocardial Infarction,0
+EGTON2G41,Cause of Death- Acute Myocardial Infarction,0
+^ESCTAC250300,Acute myocardial infarction of basal-lateral wall,1
+^ESCTSE251547,Septal infarction by electrocardiogram,0
+^ESCTIN261661,Inferior myocardial infarction on electrocardiogram,0
+^ESCT1171765,Postoperative transmural myocardial infarction,0
+^ESCT1171766,Acute nontransmural myocardial infarction,1
+^ESCT1171768,Acute transmural myocardial infarction,1
+^ESCTMY285530,Myocardial infarction,1
+^ESCTMI285534,MI - Myocardial infarction,1
+^ESCTMY285535,Myocardial infarct,1
+^ESCTLE295339,Left anterior descending coronary artery thrombosis,0
+^ESCTAC334347,Acute anteroapical myocardial infarction,1
+^ESCTAC338160,Acute myocardial infarction of anterior wall,1
+^ESCTAM342720,AMI - Acute myocardial infarction,1
+^ESCTAC345218,Acute myocardial infarction of lateral wall,1
+^ESCTAC345956,Acute myocardial infarction of apical-lateral wall,1
+^ESCTCO353658,Coronary occlusion,0
+^ESCTCO353659,Coronary artery occlusion,0
+^ESCTCO353660,Coronary artery occluded,0
+^ESCTAC355117,Acute myocardial infarction of high lateral wall,1
+^ESCTAC356587,Acute myocardial infarction of inferolateral wall,1
+^ESCTPO357637,Postmyocardial infarction syndrome,0
+^ESCTAC364164,Acute myocardial infarction of anterolateral wall,1
+^ESCTPE365516,Pericarditis secondary to acute myocardial infarction,0
+^ESCTAC369992,Acute inferior myocardial infarction,1
+^ESCTAC374574,Acute myocardial infarction of inferoposterior wall,1
+^ESCTAC378491,Acute myocardial infarction of septum,1
+^ESCTLE435413,Left coronary artery occlusion,0
+^ESCTRI435415,Right coronary artery occlusion,0
+^ESCTAN458611,Anteroseptal infarction on electrocardiogram,0
+^ESCTAC477589,Acute myocardial infarction of atrium,1
+^ESCTAB477593,Aborted myocardial infarction,0
+^ESCTRE477617,Reinfarction of myocardium,0
+^ESCTAC505627,Acute Q wave infarction - anteroseptal,1
+^ESCTAC505629,Acute Q wave infarction - anterolateral,1
+^ESCTAC505630,Acute non-Q wave infarction - anterolateral,1
+^ESCTAC505631,Acute Q wave infarction - inferior,1
+^ESCTAC505632,Acute non-Q wave infarction - inferior,1
+^ESCTAC505633,Acute Q wave infarction - inferolateral,1
+^ESCTAC505634,Acute non-Q wave infarction - inferolateral,1
+^ESCTMI505646,MI - Silent myocardial infarction,0
+^ESCTPE505695,Pericarditis following myocardial infarction,0
+^ESCTAC593532,Acute Q wave myocardial infarction,1
+^ESCTNO604377,Non-Q wave myocardial infarction,1
+^ESCTMY636060,Myocardial ischaemia manifest on stress test status post myocardial infarction,0
+^ESCTFI654675,First myocardial infarction,0
+^ESCTCO660112,Coronary artery thrombosis,0
+^ESCTCT660113,CT - Coronary thrombosis,0
+^ESCTST665122,STEMI - ST elevation myocardial infarction,1
+^ESCTNS665139,NSTEMI - Non-ST segment elevation MI,1
+^ESCTMY691497,Myocardial infarction in recovery phase,0
+^ESCTMI708480,Mixed myocardial ischaemia and infarction,0
+^ESCTRE709309,Recent myocardial infarction,1
+^ESCTNE710256,New myocardial infarction compared to prior study,0
+^ESCTAN710785,Anterior myocardial infarction on electrocardiogram,0
+^ESCTAC757158,Acute anterior ST segment elevation myocardial infarction,1
+^ESCTAC757159,Acute ST segment elevation myocardial infarction of anterior wall,1
+^ESCTAC757160,Acute STEMI (ST elevation myocardial infarction) of anterior wall,1
+^ESCTAC757161,Acute ST segment elevation myocardial infarction of anterior wall involving right ventricle,1
+^ESCTAC757162,Acute anterior ST segment elevation myocardial infarction with right ventricular involvement,1
+^ESCTSU757222,Subsequent ST segment elevation myocardial infarction of inferior wall,0
+^ESCTSU757225,Subsequent ST segment elevation myocardial infarction of anterior wall,0
+^ESCTSU757226,Subsequent STEMI (ST elevation myocardial infarction) of anterior wall,0
+^ESCTSU757228,Subsequent ST segment elevation myocardial infarction,0
+^ESCTSU757229,Subsequent STEMI (ST elevation myocardial infarction),0
+^ESCTAC757230,Acute myocardial infarction during procedure,0
+^ESCTAC757232,Acute ST segment elevation myocardial infarction of inferior wall,1
+^ESCTAC757233,Acute STEMI (ST elevation myocardial infarction) of inferior wall,1
+^ESCTAC757234,Acute inferior ST segment elevation myocardial infarction,1
+^ESCTAC757286,Acute myocardial infarction of anterior wall involving right ventricle,1
+^ESCTAC757288,Acute ST segment elevation myocardial infarction of inferior wall involving right ventricle,1
+^ESCTAC757290,Acute STEMI (ST elevation myocardial infarction) of inferior wall with right ventricular involvement,1
+^ESCTMI757404,Mitral valve regurgitation due to acute myocardial infarction,0
+^ESCTMI757408,Mitral valve regurgitation due to acute myocardial infarction without papillary muscle and chordal rupture,0
+^ESCTMI757410,Mitral valve regurgitation due to acute myocardial infarction with papillary muscle and chordal rupture,0
+^ESCTSU757448,Subsequent non-ST segment elevation myocardial infarction,0
+^ESCTSU757449,Subsequent NSTEMI (non-ST segment elevation myocardial infarction),0
+^ESCTIN766287,Inducible ischaemia manifest on stress test post myocardial infarction,0
+^ESCTVE784850,Ventricular aneurysm as current complication following acute myocardial infarction,0
+^ESCTPU784852,Pulmonary embolism as current complication following acute myocardial infarction,0
+^ESCTAR784854,Arrhythmia as current complication following acute myocardial infarction,0
+^ESCTAC800426,Acute myocardial infarction due to left coronary artery occlusion,1
+^ESCTAC801104,Acute myocardial infarction due to right coronary artery occlusion,1
+^ESCTAC808775,Acute ST segment elevation myocardial infarction involving left anterior descending coronary artery,1
+^ESCTAC984395,Acute ST segment elevation myocardial infarction of posterolateral wall,1
+^ESCTAC984396,Acute ST segment elevation myocardial infarction of anterolateral wall,1
+^ESCTAC984398,Acute ST segment elevation myocardial infarction of lateral wall,1
+^ESCTAC984399,Acute ST segment elevation myocardial infarction of anteroseptal wall,1
+^ESCTAC984401,Acute ST segment elevation myocardial infarction of posterior wall,1
+^ESCTAC984402,Acute ST segment elevation myocardial infarction due to left coronary artery occlusion,1
+^ESCTAC984405,Acute ST segment elevation myocardial infarction due to right coronary artery occlusion,1
+^ESCTAC984407,Acute ST segment elevation myocardial infarction of septum,1
+^ESCTMU986857,Mural thrombus of left ventricle following acute myocardial infarction,0
+^ESCT1212233,Acute ST segment elevation myocardial infarction of inferolateral wall,1
+^ESCT1212234,Acute ST segment elevation myocardial infarction of inferoposterior wall,1
+^ESCT1393003,Delayed postmyocardial infarction pericarditis,0
+^ESCT1393516,Acute myocardial infarction of right ventricle,1
+^ESCT1393519,Acute myocardial infarction of apex of heart,1
+^ESCT1393520,Acute apical myocardial infarction of heart,1
+^ESCT1393521,Acute myocardial infarction of inferolateral wall with posterior extension,1
+^ESCT1394109,Acute ST segment elevation myocardial infarction due to proximal left anterior descending coronary artery occlusion,1
+^ESCT1394111,Acute STEMI (ST elevation myocardial infarction) due to proximal LAD (left anterior descending) coronary artery occlusion,1
+^ESCT1394114,Acute ST segment elevation myocardial infarction due to mid left anterior descending coronary artery occlusion,1
+^ESCT1394116,Acute STEMI (ST elevation myocardial infarction) due to mid LAD (left anterior descending) coronary artery occlusion,1
+^ESCT1394121,Acute ST segment elevation myocardial infarction due to distal left anterior descending coronary artery occlusion,1
+^ESCT1394123,Acute STEMI (ST elevation myocardial infarction) due to distal LAD (left anterior descending) coronary artery occlusion,1
+^ESCT1394521,Acute ST segment elevation myocardial infarction due to occlusion of anterior descending branch of left coronary artery,1
+^ESCT1394523,Acute STEMI (ST segment elevation myocardial infarction) due to LAD (left anterior descending) coronary artery occlusion,1
+^ESCT1394598,Acute ST segment elevation myocardial infarction due to occlusion of septal branch of anterior descending branch of left coronary artery,1
+^ESCT1394759,Acute ST segment elevation myocardial infarction due to occlusion of diagonal branch of anterior descending branch of left coronary artery,1
+^ESCT1394772,Acute ST segment elevation myocardial infarction due to occlusion of intermediate artery,1
+^ESCT1396130,Acute ST segment elevation myocardial infarction due to occlusion of proximal portion of right coronary artery,1
+^ESCT1396131,Acute STEMI (ST elevation myocardial infarction) due to proximal RCA (right coronary artery) occlusion,1
+^ESCT1396134,Acute ST segment elevation myocardial infarction due to occlusion of distal portion of right coronary artery,1
+^ESCT1396135,Acute STEMI (ST elevation myocardial infarction) due to distal RCA (right coronary artery) occlusion,1
+^ESCT1396137,Acute ST segment elevation myocardial infarction due to occlusion of mid portion of right coronary artery,1
+^ESCT1396138,Acute STEMI (ST elevation myocardial infarction) due to mid RCA (right coronary artery) occlusion,1
+^ESCT1396142,Acute ST segment elevation myocardial infarction due to occlusion of marginal branch of right coronary artery,1
+^ESCT1396143,Acute STEMI (ST elevation myocardial infarction) due to AM (acute marginal) branch of RCA (right coronary artery) occlusion,1
+^ESCT1396144,Acute ST segment elevation myocardial infarction due to occlusion of posterior descending branch of right coronary artery,1
+^ESCT1396145,Acute STEMI (ST elevation myocardial infarction) due to PDA (posterior descending artery) branch of RCA (right coronary artery) occlusion,1
+^ESCT1396146,Acute ST segment elevation myocardial infarction due to occlusion of posterior lateral branch of right coronary artery,1
+^ESCT1396147,Acute STEMI (ST elevation myocardial infarction) due to PL (posterolateral) branch of RCA (right coronary artery) occlusion,1
+^ESCT1401503,Myocardial infarction due to demand ischaemia,1
+^ESCT1405722,Rupture of ventricle due to acute myocardial infarction,0
+^ESCT1413294,Myocardial infarction with non-obstructive coronary artery,1
+^ESCT1413295,MINOCA - myocardial infarction with non-obstructive coronary artery,1
+^ESCT1414537,Acute myocardial infarction due to occlusion of circumflex branch of left coronary artery,1
+^ESCT1414539,Acute ST segment elevation myocardial infarction due to occlusion of circumflex branch of left coronary artery,1
+^ESCT1414543,Acute ST segment elevation myocardial infarction of apex of heart,1
+^ESCT1414545,Acute STEMI (ST segment elevation myocardial infarction) of apex of heart,1
+^ESCT1414546,Acute ST segment elevation myocardial infarction of right ventricle,1
+^ESCT1419470,Myocardial infarction due to atherothrombotic coronary artery disease,1
+^ESCT1419471,Type 1 myocardial infarction,1
+^ESCT1442813,Mitral valve regurgitation due to acute myocardial infarction,0
+^ESCT1448886,Supraventricular tachycardia following acute myocardial infarction,0
+^ESCT1454651,Postmyocardial infarction pericardial effusion,0
+^ESCT1454672,Postoperative acute myocardial infarction,0
+^ESCT1474197,Acute inferior non-ST segment elevation myocardial infarction,1
+^ESCT1474201,Acute anterior non-ST segment elevation myocardial infarction,1
+^ESCT1474299,Acute non-ST segment elevation myocardial infarction of right ventricle,1
+^ESCT1475245,Ventricular thrombus following acute myocardial infarction,0
+^ESCT1475251,Subsequent inferior non-ST segment elevation myocardial infarction,0
+^ESCT1527612,Acute ST segment elevation myocardial infarction due to distal left circumflex coronary artery occlusion,1
+^ESCT1527615,Acute ST segment elevation myocardial infarction due to mid left circumflex coronary artery occlusion,1
+^ESCT1527616,Acute STEMI (ST elevation myocardial infarction) due to mid LCX (left circumflex coronary artery) occlusion,1
+^ESCT1527618,Acute ST segment elevation myocardial infarction due to obtuse marginal branch of left circumflex coronary artery occlusion,1
+^ESCT1527620,Acute STEMI (ST elevation myocardial infarction) due to OM (obtuse marginal) branch of LCX (left circumflex coronary artery) occlusion,1
+^ESCT1527621,Acute ST segment elevation myocardial infarction due to posterolateral branch of left circumflex coronary artery occlusion,1
+^ESCT1527622,Acute STEMI (ST elevation myocardial infarction) due to PL (posterolateral) branch of LCX (left circumflex coronary artery) occlusion,1
+^ESCT1527624,Acute ST segment elevation myocardial infarction due to proximal left circumflex coronary artery occlusion,1
+G31y1,Microinfarction of heart,0
+^ESCTMI318577,Microinfarct of heart,0
+323,ECG: myocardial infarction,0
+3233,ECG: antero-septal infarct.,0
+3234,ECG:posterior/inferior infarct,0
+3235,ECG: subendocardial infarct,0
+3236,ECG: lateral infarction,0
+323Z,ECG: myocardial infarct NOS,0
+^ESCTEC458613,ECG: anteroseptal infarction,0

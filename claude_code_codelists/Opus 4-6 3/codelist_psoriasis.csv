@@ -1,0 +1,105 @@
+"condition","medcodeid","term","snomedctconceptid","snomedctdescriptionid","originalreadcode","cleansedreadcode","emiscodecategoryid","observations"
+"Psoriasis","55627011","Psoriatic arthropathy","33339001","55627011","M160","M160.00",32,447712
+"Psoriasis","55628018","Psoriatic arthritis","33339001","55628018","M160-1","M160.11",32,124264
+"Psoriasis","61797015","Guttate psoriasis","37042000","61797015","M1616","M161600",32,254948
+"Psoriasis","251784017","H/O: psoriasis","161562002","251784017","14F2","14F2.00",32,115074
+"Psoriasis","308725015","Psoriasis and similar disorders","9014002","15886015","M16","M16..00",32,697222
+"Psoriasis","308730016","Psoriatic arthropathy NOS","33339001","55627011","M160z","M160z00",32,20001
+"Psoriasis","308731017","Other psoriasis","9014002","15886015","M161","M161.00",32,11714
+"Psoriasis","308732012","Psoriasis unspecified","9014002","15886015","M1610","M161000",32,376291
+"Psoriasis","308733019","Psoriasis annularis","200962007","308733019","M1611","M161100",32,1135
+"Psoriasis","308734013","Psoriasis circinata","200963002","308734013","M1612","M161200",32,511
+"Psoriasis","308735014","Psoriasis diffusa","200964008","308735014","M1613","M161300",32,1098
+"Psoriasis","308739015","Psoriasis geographica","200966005","308739015","M1615","M161500",32,191
+"Psoriasis","308740018","Psoriasis gyrata","200967001","308740018","M1617","M161700",32,22
+"Psoriasis","308741019","Psoriasis inveterata","200968006","308741019","M1618","M161800",32,106
+"Psoriasis","308744010","Psoriasis palmaris","200970002","308744010","M161A","M161A00",32,10505
+"Psoriasis","308745011","Psoriasis plantaris","200971003","308745011","M161B","M161B00",32,13538
+"Psoriasis","308746012","Psoriasis punctata","200972005","308746012","M161C","M161C00",32,240
+"Psoriasis","308747015","Pustular psoriasis","200973000","308747015","M161D","M161D00",32,46266
+"Psoriasis","308749017","Psoriasis universalis","200974006","308749017","M161E","M161E00",32,445
+"Psoriasis","308750017","Psoriasis vulgaris","200975007","308750017","M161F","M161F00",32,13733
+"Psoriasis","308752013","Erythrodermic psoriasis","200977004","308752013","M161H","M161H00",32,4700
+"Psoriasis","308753015","Psoriasis","9014002","15886015","M161z","M161z00",32,2817945
+"Psoriasis","308776017","Psoriasis and similar disorders NOS","9014002","15886015","M16z","M16z.00",32,97548
+"Psoriasis","309331014","[X]Other psoriasis","9014002","15886015","Myu30","Myu3000",32,4061
+"Psoriasis","312521010","Psoriasis with arthropathy","33339001","55626019","Nyu13","Nyu1300",32,54799
+"Psoriasis","357612014","Flexural psoriasis","238600001","1876481000006119","ESCTFL1","",32,6
+"Psoriasis","357623013","Scalp psoriasis","238608008","357623013","M16y0","M16y000",32,248983
+"Psoriasis","359310019","Juvenile arthritis in psoriasis","239803008","359310019","N0452","N045200",32,3112
+"Psoriasis","359321011","Distal interphalangeal psoriatic arthropathy","239812005","359321011","M1601","M160100",32,213
+"Psoriasis","483572016","Palmoplantar pustular psoriasis","27520001","483572016","M166","M166.00",32,11515
+"Psoriasis","198791000006112","Plaque psoriasis","200965009","308736010","M1614","M161400",32,23983
+"Psoriasis","198841000006110","Psoriasis ostracea","200969003","308742014","M1619","M161900",32,25
+"Psoriasis","198881000006116","Psoriatic spondylitis","200956002","308727011","M1600","M160000",32,1684
+"Psoriasis","1583831000006118","Chronic large plaque psoriasis","1583831000006102","1583831000006118","EMISNQCH31","",32,1315
+"Psoriasis","1629311000006117","Chronic large plaque psoriasis","402307000","1781467015","M161F-1","M161F11",32,43120
+"Psoriasis","1887571000006111","Flexural psoriasis","238600001","357612014","M161J","M161J00",32,8941
+"Psoriasis","2555281000006114","Acute palmoplantar pustular psoriasis","3533007","1228270014","^ESCTAC255528","",32,145
+"Psoriasis","2913591000006111","Seborrhoeic psoriasis","25847004","43312011","^ESCTSE291359","",31,17
+"Psoriasis","2913601000006115","Seborrheic psoriasis","25847004","43308017","^ESCTSE291360","",31,11
+"Psoriasis","2913641000006118","Sebopsoriasis","25847004","2912919010","^ESCTSE291364","",31,102
+"Psoriasis","2941451000006110","Chronic palmoplantar pustular psoriasis","27520001","483571011","^ESCTCH294145","",32,6
+"Psoriasis","2941481000006119","Pustular psoriasis of palms and soles","27520001","483575019","^ESCTPU294148","",32,5895
+"Psoriasis","3096771000006113","Psoriasis guttata","37042000","61798013","^ESCTPS309677","",32,3
+"Psoriasis","3117871000006112","Generalised pustular psoriasis of von Zumbush","38360005","490386015","^ESCTGE311787","",31,2
+"Psoriasis","3821921000006111","Localised pustular psoriasis","81271001","504652017","^ESCTLO382192","",31,20
+"Psoriasis","4515241000006118","Psoriatic arthritis","156370009","243961019","^ESCTPS451524","",32,61695
+"Psoriasis","4515251000006116","PsA (Psoriatic arthritis)","156370009","3083653019","^ESCTPS451525","",32,3
+"Psoriasis","4515261000006119","PA (Psoriatic arthritis)","156370009","3083707018","^ESCTPA451526","",32,31
+"Psoriasis","4541291000006118","History of psoriasis","161562002","2986948013","^ESCTHI454129","",32,6
+"Psoriasis","4805751000006114","Psoriasis and similar disorders","200955003","308725015","^ESCTPS480575","",31,12
+"Psoriasis","4805761000006111","Psoriatic arthritis with spine involvement","200956002","308726019","^ESCTPS480576","",32,1232
+"Psoriasis","4805821000006112","Nummular psoriasis","200965009","308737018","^ESCTNU480582","",32,6
+"Psoriasis","4805831000006110","Discoid psoriasis","200965009","308738011","^ESCTDI480583","",32,13
+"Psoriasis","4805871000006113","Rupioid psoriasis","200969003","308742014","^ESCTRU480587","",32,39
+"Psoriasis","4805951000006112","Psoriasis vulgaris & (Chronic large plaque psoriasis)","200975007","556541000000118","^ESCTPS480595","",32,8
+"Psoriasis","4805991000006118","Exfoliative dermatitis due to psoriasis","200977004","1784830015","^ESCTEX480599","",32,13
+"Psoriasis","5123861000006113","Inverse psoriasis","238600001","2912676014","^ESCTIN512386","",32,8
+"Psoriasis","5123871000006118","Unstable psoriasis","238601002","357613016","^ESCTUN512387","",31,53
+"Psoriasis","5123881000006115","Psoriasis-eczema overlap condition","238602009","357615011","^ESCTPS512388","",31,67
+"Psoriasis","5123891000006117","Eczematised psoriasis","238603004","357616012","^ESCTEC512389","",31,76
+"Psoriasis","5123901000006118","Eczematized psoriasis","238603004","357617015","^ESCTEC512390","",31,2
+"Psoriasis","5123911000006115","Psoriasis of nail","238604005","357618013","^ESCTPS512391","",32,526
+"Psoriasis","5123921000006111","Psoriatic nail dystrophy","238605006","357620011","^ESCTPS512392","",31,60
+"Psoriasis","5123931000006114","Psoriatic nail involvement","238605006","357619017","^ESCTPS512393","",31,7
+"Psoriasis","5123941000006116","Psoriatic nail pitting","238606007","357621010","^ESCTPS512394","",31,27
+"Psoriasis","5123951000006119","Psoriatic onycholysis","238607003","357622015","^ESCTPS512395","",31,19
+"Psoriasis","5123971000006112","Köbner psoriasis","238609000","2818698013","^ESCTKÖ512397","",31,34
+"Psoriasis","5123981000006110","Kobner psoriasis","238609000","2818697015","^ESCTKO512398","",31,1
+"Psoriasis","5124001000006116","Generalised pustular psoriasis","238612002","357627014","^ESCTGE512400","",31,6
+"Psoriasis","5124021000006114","Generalised pustular psoriasis of pregnancy","238613007","357630019","^ESCTGE512402","",32,5
+"Psoriasis","5124041000006119","Pustular psoriasis in children","238614001","357631015","^ESCTPU512404","",31,2
+"Psoriasis","5124051000006117","Juvenile pustular psoriasis","238615000","357632010","^ESCTJU512405","",31,3
+"Psoriasis","5124061000006115","Infantile pustular psoriasis","238616004","357633017","^ESCTIN512406","",31,2
+"Psoriasis","5139451000006113","Juvenile psoriatic arthritis","239802003","359308016","^ESCTJU513945","",31,50
+"Psoriasis","5139461000006110","Juvenile psoriatic arthritis with psoriasis","239803008","359309012","^ESCTJU513946","",32,365
+"Psoriasis","5139481000006117","Juvenile psoriatic arthritis without psoriasis","239804002","359311015","^ESCTJU513948","",31,2
+"Psoriasis","5139581000006118","Psoriatic arthritis with distal interphalangeal joint involvement","239812005","359320012","^ESCTPS513958","",32,77
+"Psoriasis","5139601000006111","Psoriatic dactylitis","239813000","359323014","^ESCTPS513960","",31,17
+"Psoriasis","6663551000006115","Chronic small plaque psoriasis","402308005","1781468013","^ESCTCH666355","",31,278
+"Psoriasis","6663561000006118","Chronic guttate pattern psoriasis","402309002","1781469017","^ESCTCH666356","",31,1
+"Psoriasis","6663571000006113","Chronic stable plaque psoriasis","402310007","1781470016","^ESCTCH666357","",31,79
+"Psoriasis","6663581000006111","Actively extending plaque psoriasis","402311006","1781471017","^ESCTAC666358","",31,2
+"Psoriasis","6663591000006114","Acute guttate psoriasis","402312004","1781472012","^ESCTAC666359","",31,6
+"Psoriasis","6663601000006118","Guttate flare of psoriasis with preexisting plaques","402313009","1781473019","^ESCTGU666360","",31,3
+"Psoriasis","6663611000006115","Psoriasis of vulva","402314003","1781474013","^ESCTPS666361","",31,1
+"Psoriasis","6663621000006111","Vulval psoriasis","402314003","1787556010","^ESCTVU666362","",31,18
+"Psoriasis","6663641000006116","Penile psoriasis","402315002","1787557018","^ESCTPE666364","",31,2
+"Psoriasis","6663651000006119","Psoriasis of perianal skin","402316001","1781476010","^ESCTPS666365","",31,4
+"Psoriasis","6663661000006117","Perianal psoriasis","402316001","1787558011","^ESCTPE666366","",31,7
+"Psoriasis","6663671000006112","Generalised psoriasis","402317005","1773603013","^ESCTGE666367","",31,6
+"Psoriasis","6663711000006111","Psoriasis of face","402320002","1781479015","^ESCTPS666371","",31,2
+"Psoriasis","6663721000006115","Facial psoriasis","402320002","1787559015","^ESCTFA666372","",31,9
+"Psoriasis","6663741000006110","Hypertrophic palmar psoriasis","402322005","1781481018","^ESCTHY666374","",31,3
+"Psoriasis","6663751000006112","Hypertrophic palmoplantar psoriasis","402323000","1781482013","^ESCTHY666375","",31,6
+"Psoriasis","6663801000006117","Acute generalised pustular flare of preexisting plaque psoriasis","402327004","1773605018","^ESCTAC666380","",31,1
+"Psoriasis","6663821000006110","Childhood pustular psoriasis","402328009","1781485010","^ESCTCH666382","",31,1
+"Psoriasis","6797961000006113","Iritis in psoriatic arthritis","410482007","2472143017","^ESCTIR679796","",31,1
+"Psoriasis","7819261000006114","Anogenital psoriasis","721538000","3325411018","^ESCTAN781926","",31,1
+"Psoriasis","9310141000006117","Psoriatic arthritis mutilans","10629311000119107","3043836013","^ESCTPS931014","",31,1
+"Psoriasis","13637071000006110","Pustular psoriasis of sole of foot","784327005","3764874011","^ESCT1363707","",31,1
+"Psoriasis","14197561000006117","Psoriasis with eczema","238602009","4230253015","^ESCT1419756","",31,117
+"Psoriasis","14197571000006112","Eczematous psoriasis","238602009","4212204016","^ESCT1419757","",31,30
+"Psoriasis","14197581000006110","Psoriasis of scalp","238608008","4169972011","^ESCT1419758","",32,6581
+"Psoriasis","14531631000006118","Oligoarticular psoriatic arthritis","1162306005","4588951018","^ESCT1453163","",31,1

@@ -1,0 +1,113 @@
+OriginalReadCode,Term,required
+M160,Psoriatic arthropathy,0
+M160-1,Psoriatic arthritis,0
+M1616,Guttate psoriasis,1
+14F2,H/O: psoriasis,0
+M16,Psoriasis and similar disorders,0
+M160z,Psoriatic arthropathy NOS,0
+M161,Other psoriasis,1
+M1610,Psoriasis unspecified,1
+M1611,Psoriasis annularis,1
+M1612,Psoriasis circinata,1
+M1613,Psoriasis diffusa,1
+M1615,Psoriasis geographica,1
+M1617,Psoriasis gyrata,1
+M1618,Psoriasis inveterata,1
+M161A,Psoriasis palmaris,1
+M161B,Psoriasis plantaris,1
+M161C,Psoriasis punctata,1
+M161D,Pustular psoriasis,1
+M161E,Psoriasis universalis,1
+M161F,Psoriasis vulgaris,1
+M161H,Erythrodermic psoriasis,1
+M161z,Psoriasis,1
+M16z,Psoriasis and similar disorders NOS,0
+Myu30,[X]Other psoriasis,1
+Nyu13,Psoriasis with arthropathy,1
+ESCTFL1,Flexural psoriasis,1
+M16y0,Scalp psoriasis,1
+N0452,Juvenile arthritis in psoriasis,0
+M1601,Distal interphalangeal psoriatic arthropathy,0
+M166,Palmoplantar pustular psoriasis,1
+M1614,Plaque psoriasis,1
+M1619,Psoriasis ostracea,1
+M1600,Psoriatic spondylitis,0
+HNG0042,[RFC] Reason for care : Psoriasis,0
+EMISNQCH31,Chronic large plaque psoriasis,1
+M161F-1,Chronic large plaque psoriasis,1
+M161J,Flexural psoriasis,1
+38Gg,Psoriasis area and severity index score,0
+^ESCTAC255528,Acute palmoplantar pustular psoriasis,1
+38Va,Psoriatic Arthritis Impact of Disease 9 questionnaire score,0
+^ESCTSE291359,Seborrhoeic psoriasis,0
+^ESCTSE291360,Seborrheic psoriasis,0
+^ESCTSE291364,Sebopsoriasis,0
+^ESCTCH294145,Chronic palmoplantar pustular psoriasis,1
+^ESCTPU294148,Pustular psoriasis of palms and soles,1
+^ESCTPS309677,Psoriasis guttata,1
+^ESCTGE311787,Generalised pustular psoriasis of von Zumbush,1
+^ESCTLO382192,Localised pustular psoriasis,1
+^ESCTPS451524,Psoriatic arthritis,0
+^ESCTPS451525,PsA (Psoriatic arthritis),0
+^ESCTPA451526,PA (Psoriatic arthritis),0
+^ESCTHI454129,History of psoriasis,0
+^ESCTPS480575,Psoriasis and similar disorders,0
+^ESCTPS480576,Psoriatic arthritis with spine involvement,0
+^ESCTNU480582,Nummular psoriasis,1
+^ESCTDI480583,Discoid psoriasis,1
+^ESCTRU480587,Rupioid psoriasis,1
+^ESCTPS480595,Psoriasis vulgaris & (Chronic large plaque psoriasis),1
+^ESCTEX480599,Exfoliative dermatitis due to psoriasis,1
+^ESCTIN512386,Inverse psoriasis,1
+^ESCTUN512387,Unstable psoriasis,1
+^ESCTPS512388,Psoriasis-eczema overlap condition,1
+^ESCTEC512389,Eczematised psoriasis,1
+^ESCTEC512390,Eczematized psoriasis,1
+^ESCTPS512391,Psoriasis of nail,1
+^ESCTPS512392,Psoriatic nail dystrophy,1
+^ESCTPS512393,Psoriatic nail involvement,1
+^ESCTPS512394,Psoriatic nail pitting,1
+^ESCTPS512395,Psoriatic onycholysis,1
+^ESCTKÖ512397,Köbner psoriasis,0
+^ESCTKO512398,Kobner psoriasis,0
+^ESCTGE512400,Generalised pustular psoriasis,1
+^ESCTGE512402,Generalised pustular psoriasis of pregnancy,1
+^ESCTPU512404,Pustular psoriasis in children,1
+^ESCTJU512405,Juvenile pustular psoriasis,1
+^ESCTIN512406,Infantile pustular psoriasis,1
+^ESCTJU513945,Juvenile psoriatic arthritis,0
+^ESCTJU513946,Juvenile psoriatic arthritis with psoriasis,0
+^ESCTJU513948,Juvenile psoriatic arthritis without psoriasis,0
+^ESCTPS513958,Psoriatic arthritis with distal interphalangeal joint involvement,0
+^ESCTPS513960,Psoriatic dactylitis,0
+^ESCTCH666355,Chronic small plaque psoriasis,1
+^ESCTCH666356,Chronic guttate pattern psoriasis,1
+^ESCTCH666357,Chronic stable plaque psoriasis,1
+^ESCTAC666358,Actively extending plaque psoriasis,1
+^ESCTAC666359,Acute guttate psoriasis,1
+^ESCTGU666360,Guttate flare of psoriasis with preexisting plaques,1
+^ESCTPS666361,Psoriasis of vulva,1
+^ESCTVU666362,Vulval psoriasis,1
+^ESCTPE666364,Penile psoriasis,1
+^ESCTPS666365,Psoriasis of perianal skin,1
+^ESCTPE666366,Perianal psoriasis,1
+^ESCTGE666367,Generalised psoriasis,1
+^ESCTPS666371,Psoriasis of face,1
+^ESCTFA666372,Facial psoriasis,1
+^ESCTHY666374,Hypertrophic palmar psoriasis,1
+^ESCTHY666375,Hypertrophic palmoplantar psoriasis,1
+^ESCTAC666380,Acute generalised pustular flare of preexisting plaque psoriasis,1
+^ESCTCH666382,Childhood pustular psoriasis,1
+^ESCTIR679796,Iritis in psoriatic arthritis,0
+^ESCTAN781926,Anogenital psoriasis,1
+^ESCTED828559,Education for psoriasis care,0
+^ESCTPA830076,PASI - psoriasis area and severity index,0
+^ESCTPA830081,PASI (psoriasis area and severity index) score,0
+^ESCTPS840701,PsAID-9 (Psoriatic Arthritis Impact of Disease 9) questionnaire,0
+^ESCTPS931014,Psoriatic arthritis mutilans,0
+^ESCT1193064,Psoriasis area and severity index,0
+^ESCT1363707,Pustular psoriasis of sole of foot,1
+^ESCT1419756,Psoriasis with eczema,1
+^ESCT1419757,Eczematous psoriasis,1
+^ESCT1419758,Psoriasis of scalp,1
+^ESCT1453163,Oligoarticular psoriatic arthritis,0
