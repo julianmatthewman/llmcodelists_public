@@ -1,0 +1,105 @@
+Term,OriginalReadCode
+Binswanger's disease,F21y2
+Uncomplicated arteriosclerotic dementia,E0040
+Arteriosclerotic dementia with delirium,E0041
+Arteriosclerotic dementia with paranoia,E0042
+Arteriosclerotic dementia with depression,E0043
+Arteriosclerotic dementia NOS,E004z
+[X]Other vascular dementia,Eu01y
+"[X]Vascular dementia, unspecified",Eu01z
+Arteriosclerotic dementia,E004
+Binswanger's encephalopathy,F21y2-1
+Subcortical dementia,^ESCT1169441
+[X]Arteriosclerotic dementia,Eu01-1
+Mixed cortical and subcortical vascular dementia,Eu013
+[X]Multi-infarct dementia,Eu011
+[X]Predominantly cortical dementia,Eu011-1
+Subcortical vascular dementia,Eu012
+Vascular dementia,Eu01
+Vascular dementia of acute onset,Eu010
+Multi-infarct dementia,E004-1
+[D] Vascular dementia,EMISNQDV1
+"Unspecified dementia, other mixed symptoms",EMISICD10|F03X4
+"Vascular dementia of acute onset, without additional symptoms",EMISICD10|F0100
+"Vascular dementia of acute onset, other symptoms, predominantly delusional",EMISICD10|F0101
+"Vascular dementia of acute onset, other mixed symptoms",EMISICD10|F0104
+"Multi-infarct dementia, other symptoms, predominantly delusional",EMISICD10|F0111
+"Multi-infarct dementia, other symptoms, predominantly depressive",EMISICD10|F0113
+"Multi-infarct dementia, other mixed symptoms",EMISICD10|F0114
+"Subcortical vascular dementia, without additional symptoms",EMISICD10|F0120
+"Subcortical vascular dementia, other symptoms, predominantly delusional",EMISICD10|F0121
+"Subcortical vascular dementia, other symptoms, predominantly hallucinatory",EMISICD10|F0122
+"Subcortical vascular dementia, other symptoms, predominantly depressive",EMISICD10|F0123
+"Subcortical vascular dementia, other mixed symptoms",EMISICD10|F0124
+"Mixed cortical and subcortical vascular dementia, without additional symptoms",EMISICD10|F0130
+"Mixed cortical and subcortical vascular dementia, other symptoms, predominantly delusional",EMISICD10|F0131
+"Mixed cortical and subcortical vascular dementia, other symptoms, predominantly hallucinatory",EMISICD10|F0132
+"Mixed cortical and subcortical vascular dementia, other symptoms, predominantly depressive",EMISICD10|F0133
+"Mixed cortical and subcortical vascular dementia, other mixed symptoms",EMISICD10|F0134
+"Other vascular dementia, without additional symptoms",EMISICD10|F0180
+"Other vascular dementia, other symptoms, predominantly delusional",EMISICD10|F0181
+"Other vascular dementia, other symptoms, predominantly hallucinatory",EMISICD10|F0182
+"Other vascular dementia, other symptoms, predominantly depressive",EMISICD10|F0183
+"Other vascular dementia, other mixed symptoms",EMISICD10|F0184
+"Vascular dementia, unspecified, without additional symptoms",EMISICD10|F0190
+"Vascular dementia, unspecified, other symptoms, predominantly delusional",EMISICD10|F0191
+"Vascular dementia, unspecified, other symptoms, predominantly hallucinatory",EMISICD10|F0192
+"Vascular dementia, unspecified, other symptoms, predominantly depressive",EMISICD10|F0193
+"Vascular dementia, unspecified, other mixed symptoms",EMISICD10|F0194
+Multi-infarct dementia with delirium,^ESCTMU266460
+"Vascular dementia, with delirium",^ESCTVA266461
+Multi-infarct dementia with depression,^ESCTMU272293
+Predominantly cortical dementia,^ESCT1171773
+Predominantly cortical vascular dementia,^ESCT1171774
+Multi-infarct dementia with delusions,^ESCTMU291232
+"Vascular dementia, with delusions",^ESCTVA291233
+MID - Multi-infarct dementia,^ESCTMI341423
+VAD - Vascular dementia,^ESCTVA341425
+Multi infarct dementia,^ESCTMU341426
+"Multi-infarct dementia, uncomplicated",^ESCTMU365367
+Subcortical atherosclerotic dementia,^ESCTSU396466
+Vascular dementia in remission,^ESCTVA751506
+Ischaemic vascular dementia,^ESCTIS784063
+Ischemic vascular dementia,^ESCTIS784064
+Mixed dementia,^ESCTMI802420
+Multi-infarct dementia due to atherosclerosis,^ESCTMU803324
+Vascular dementia with behavioural disturbance,^ESCTVA808923
+Vascular dementia with behavioral disturbance,^ESCTVA808924
+Vascular dementia without behavioural disturbance,^ESCTVA990225
+Dementia with mixed etiology,^ESCT1237064
+MVAD - Mixed vascular Alzheimer dementia,^ESCT1237065
+Dementia with mixed aetiology,^ESCT1237066
+Cortical vascular dementia,^ESCT1393438
+Behavioural disturbance due to multi-infarct dementia,^ESCT1480525
+Cerebrovascular disease,G6
+Cerebral degeneration due to cerebrovascular disease,F11x2
+Other cerebrovascular disease,G67
+Generalised ischaemic cerebrovascular disease NOS,G671z
+Other cerebrovascular disease OS,G67y
+Other cerebrovascular disease NOS,G67z
+Late effects of cerebrovascular disease,G68
+Other specified cerebrovascular disease,G6y
+Cerebrovascular disease NOS,G6z
+[X]Other specified cerebrovascular diseases,Gyu67
+H/O: cerebrovascular disease,1477
+Sequelae/other + unspecified cerebrovascular diseases,G68W
+Suspected cerebrovascular disease,1JA1
+[X]Cerebrovascular diseases,Gyu6
+[X]Sequelae/other + unspecified cerebrovascular diseases,Gyu6D
+Diffuse cerebrovascular disease,G671
+Small vessel cerebrovascular disease,G679
+At risk of cerebrovascular disease,EMISNQAT20
+High risk of cerebrovascular disease,EMISNQHI23
+Cerebrovascular disease monitoring admin.,EMISNQCE26
+Cerebrovascular disease monitoring in primary care,EMISNQCE27
+Cerebrovascular disease monitoring in secondary care,EMISNQCE28
+Cerebrovascular disease monitoring default,EMISNQCE29
+Cerebrovascular disease management,TESTPCE1
+CVD - Cerebrovascular disease,^ESCTCV352270
+Sequelae of cerebrovascular disease,^ESCTSE477831
+Asymptomatic cerebrovascular disease,^ESCTAS501186
+Visual disturbance as sequela of cerebrovascular disease,^ESCTVI802608
+Subcortical arteriosclerotic encephalopathy,^ESCTSU396465
+Dementia due to cerebral vasculitis,^ESCT1503911
+Dementia due to cerebral amyloid angiopathy,^ESCT1503914
+Chronic progressive subcortical encephalopathy,^ESCTCH396467

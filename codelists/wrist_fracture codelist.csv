@@ -1,0 +1,342 @@
+Term,OriginalReadCode
+Open fracture of forearm,ESCTOP6
+Closed fracture of forearm,ESCTCL6
+Closed reduction of fracture of wrist,7K1LM
+Closed fracture of upper end of forearm,S2300
+Closed fracture of proximal forearm not otherwise specified,S230z
+"Open fracture of proximal forearm, unspecified",S2310
+"Open fracture of forearm, upper end, NOS",S231z
+"Closed fracture of forearm, lower end, unspecified",S2340
+Closed fracture of lower end of forearm,S234z
+"Open fracture of forearm, lower end, unspecified",S2350
+Open extra-articular fracture of distal radius,S235D
+Open fracture of lower end of forearm,S235z
+Closed fracture of forearm,S23x0
+Open fracture of forearm,S23y0
+Closed fracture sesamoid bone of hand,S252
+Open fracture sesamoid bone of hand,S253
+Multiple fractures of forearm,S293
+[X]Fracture of other parts of forearm,Syu53
+"[X]Fracture of forearm, unspecified",Syu54
+Fracture of forearm,S23-1
+Path.fracture - fore arm,N331-96
+Fracture malunion - fore arm,N338-95
+Closed fracture of shaft of bone of forearm,^ESCTCL295073
+Closed fracture of base of thumb,^ESCTCL302053
+Closed fracture of distal end of forearm,^ESCTCL307093
+Forearm fracture,^ESCTFO357275
+Fracture of base of thumb,^ESCTFR363687
+Reduction of closed ulnar styloid fracture,^ESCTRE367487
+Open fracture of distal end of forearm,^ESCTOP378445
+Open fracture of shaft of bone of forearm,^ESCTOP379867
+Closed fracture of sesamoid bone of hand,^ESCTCL484294
+Open fracture of sesamoid bone of hand,^ESCTOP484296
+Fracture of sesamoid bone of hand,^ESCTFR546216
+Pathological fracture - forearm,^ESCTPA572205
+Fracture malunion - forearm,^ESCTFR572216
+Fracture of sesamoid bone,^ESCTFR710185
+Closed reduction of fracture of shaft of radius with closed reduction of dislocation of distal radioulnar joint,^ESCTCL723056
+Open reduction of fracture of carpal bone,^ESCTOP727136
+Open reduction of fracture of carpal bone with internal fixation,^ESCTOP748889
+Open reduction of epiphyseal fracture of radius with internal fixation,^ESCTOP748930
+Open reduction of fracture of carpal bone without internal fixation,^ESCTOP751789
+Open reduction of fracture of wrist bone without internal fixation,^ESCTOP751790
+Closed reduction of fracture of distal radius and percutaneous fixation using Kirschner wire,^ESCTCL764226
+Closed reduction and percutaneous K-wire fixation of fracture of distal radius,^ESCTCL764227
+Closed fracture of metaphysis of distal end of left radius,^ESCT1371694
+Closed fracture of metaphysis of distal end of right radius,^ESCT1371695
+Open fracture of metaphysis of distal right radius,^ESCT1529415
+Open fracture of metaphysis of distal left radius,^ESCT1529416
+Fracture of bone of left forearm,^ESCT1543730
+Fracture of bone of right forearm,^ESCT1543731
+Closed fracture finger metacarpal base,S2502
+Open fracture finger metacarpal base,S2512
+"Open fracture thumb metacarpal base, intra-articular, Bennett",S2511
+"Open fracture thumb metacarpal base, intra-articular, Rolando",S2519
+"Open fracture-subluxation, carpometacarpal joint",S4C33
+Open fracture-dislocation carpometacarpal joint,S4C13
+"Closed fracture dislocation, carpometacarpal joint",S4C03
+"Closed fracture-subluxation, carpometacarpal joint",S4C23
+"Closed fracture thumb metacarpal base, intra-articular, Bennett",S2501
+"Closed fracture thumb metacarpal base, intra-articular, Rolando",S2509
+Open fracture of base of metacarpal bone other than first metacarpal,^ESCTOP270707
+Closed fracture of base of first metacarpal,^ESCTCL302055
+Open reduction of fracture of carpals and metacarpals,^ESCTOP317569
+Reduction of closed carpometacarpal fracture dislocation of thumb with manipulation and skeletal fixation,^ESCTRE325951
+Closed fracture of base of metacarpal bone other than first metacarpal,^ESCTCL338669
+Fracture of base of metacarpal bone other than first metacarpal,^ESCTFR340510
+Open reduction of fracture of carpals and metacarpals with internal fixation,^ESCTOP361349
+Closed reduction of fracture of carpals and metacarpals,^ESCTCL385485
+Closed fracture dislocation of carpometacarpal joint,^ESCTCL484894
+Open fracture dislocation carpometacarpal joint,^ESCTOP484904
+Closed fracture subluxation of carpometacarpal joint,^ESCTCL484912
+Fracture of base of fifth metacarpal,^ESCTFR546214
+Closed reduction of fracture of carpals and metacarpals with internal fixation,^ESCTCL559095
+Fracture dislocation of carpometacarpal joint,^ESCTFR596529
+Closed fracture of base of fifth metacarpal,^ESCTCL750394
+Closed fracture of base of fourth metacarpal,^ESCTCL750395
+Closed fracture of base of third metacarpal,^ESCTCL750396
+Closed fracture of base of second metacarpal,^ESCTCL750397
+Open fracture of base of fifth metacarpal bone,^ESCTOP758543
+Open fracture of base of fourth metacarpal bone,^ESCTOP758544
+Open fracture of base of third metacarpal bone,^ESCTOP758788
+Open fracture of base of fourth metacarpal bone of right hand,^ESCT1528602
+Open fracture of base of first metacarpal bone of right hand,^ESCT1545867
+Closed fracture of base of first metacarpal bone of right hand,^ESCT1545870
+Closed fracture of base of third metacarpal bone of right hand,^ESCT1545874
+Closed fracture of base of fifth metacarpal bone of right hand,^ESCT1545878
+Closed fracture of base of fifth metacarpal bone of left hand,^ESCT1545879
+Open fracture of carpal bone,S241
+Open Colles' fracture,S2351
+Fracture of carpal bone,S24
+"Closed fracture of ulna, lower epiphysis",S2344
+Closed fracture of distal end of ulna,S2345
+Smith's fracture - closed,S2341-1
+Closed Smith's fracture,S2347
+Closed volar Barton's fracture,S2349
+Closed fracture radial styloid,S234B
+"Closed fracture distal radius, intra-articular, die-punch",S234C
+Closed extraarticular fracture of distal radius,S234D
+"Closed fracture distal radius, intra-articular, other type",S234E
+"Open fracture of ulna, styloid process",S2353
+"Open fracture of ulna, lower epiphysis",S2354
+Open fracture of distal end of ulna,S2355
+Smith's fracture - open,S2351-1
+Open volar Barton's fracture,S2359
+Open dorsal Barton's fracture,S235A
+Open fracture radial styloid,S235B
+"Open fracture distal radius, intra-articular, die-punch",S235C
+Open intra-articular fracture of distal radius,S235E
+"Closed fracture of carpal bone, unspecified",S2400
+"Closed fracture hamate, hook",S2409
+"Closed fracture scaphoid, proximal pole",S240A
+"Closed fracture scaphoid, waist, transverse",S240B
+"Closed fracture scaphoid, waist, oblique",S240C
+"Closed fracture scaphoid, waist, comminuted",S240D
+"Closed fracture scaphoid, tuberosity",S240E
+"Closed fracture carpal bones, multiple",S240F
+Closed fracture of other carpal bone,S240y
+Closed fracture of carpal bone NOS,S240z
+"Open fracture of carpal bone, unspecified",S2410
+"Open fracture hamate, hook",S2419
+"Open fracture scaphoid, proximal pole",S241A
+"Open fracture scaphoid, waist, transverse",S241B
+"Open fracture scaphoid, waist, oblique",S241C
+"Open fracture scaphoid, waist, comminuted",S241D
+"Open fracture scaphoid, tuberosity",S241E
+"Open fracture carpal bones, multiple",S241F
+Open fracture of other carpal bone,S241y
+Open fracture of carpal bone NOS,S241z
+Fracture at wrist and hand level,S242
+Fracture of carpal bone NOS,S24z
+Closed fracture dislocation of wrist,S4C0
+Open fracture dislocation wrist,S4C1
+Sequelae of fracture at wrist and hand level,SC3C0
+[X]Fracture of other carpal bone(s),Syu63
+Fracture of lower end of radius,S23B
+Fracture of lower end of both ulna and radius,S23C
+Closed Colles' fracture,S2341
+Closed fracture of distal end of radius,S2342
+Open fracture of distal end of radius,S2352
+Open Barton's fracture,S235F
+Closed Barton's fracture,S234F
+"Closed fracture of radius and ulna, lower end",S234
+"Open fracture of radius and ulna, lower end",S235
+Closed fracture of carpal bone,S240
+Closed fracture triquetral,S2403
+Open fracture hamate,S2418
+Closed fracture trapezoid,S2406
+Closed fracture hamate,S2408
+Closed fracture lunate,S2402
+"Closed fracture of ulna, styloid process",S2343
+Open fracture trapezoid,S2416
+Closed fracture of the scaphoid,S2401
+Closed fracture pisiform,S2404
+Open fracture capitate,S2417
+Open fracture lunate,S2412
+Closed fracture trapezium,S2405
+Open fracture trapezium,S2415
+Open fracture of the scaphoid,S2411
+Open fracture triquetral,S2413
+Hand fracture - carpal bone,S24-1
+Open fracture pisiform,S2414
+Closed fracture capitate,S2407
+"Closed fracture radius and ulna, distal",S2346
+Wrist fracture - open,S235-1
+"Open fracture radius and ulna, distal",S2356
+Fracture of lower end of radius with dorsal tilt,^ESCT1167569
+Fracture of lower end of radius with volar tilt,^ESCT1167570
+Open volar Barton fracture-dislocation,S2359-1
+Open volar Barton fracture-subluxation,S2359-2
+Open Smith's fracture,S2357
+Closed fracture of wrist,S234-1
+Open fracture-subluxation peri-lunate trans-scaphoid,S4C36
+Open fracture-subluxation radiocarpal joint,S4C31
+"Open fracture-subluxation, distal radio-ulnar joint",S4C30
+Open fracture-dislocation other carpal,S4C1y
+Open fracture-dislocation peri-lunate (dorsal),S4C15
+Open fracture-dislocation peri-lunate trans-scaphoid,S4C16
+Open fracture-dislocation radiocarpal joint,S4C11
+"Open fracture-dislocation, distal radio-ulnar joint",S4C10
+Open fracture-subluxation of the wrist,S4C3
+Open fracture-subluxation other carpal,S4C3y
+Open fracture-dislocation lunate (volar),S4C14
+Open fracture-dislocation mid carpal,S4C12
+Open dorsal Barton's fracture-dislocation,S235A-1
+Open dorsal Barton's fracture-subluxation,S235A-2
+Fracture at wrist and/or hand level,Syu65
+Closed dorsal Barton's fracture,S234A
+Closed dorsal Barton fracture-subluxation,S234A-2
+Closed dorsal Barton's fracture-dislocation,S234A-1
+Closed fracture dislocation distal radioulnar joint,S4C00
+Closed fracture-dislocation lunate (volar),S4C04
+Closed fracture-dislocation mid carpal,S4C02
+Closed fracture-dislocation other carpal,S4C0y
+Closed fracture-dislocation peri-lunate (dorsal),S4C05
+Closed fracture-dislocation peri-lunate trans-scaphoid,S4C06
+Closed fracture-dislocation radiocarpal joint,S4C01
+Closed fracture-subluxation lunate (volar),S4C24
+Closed fracture-subluxation mid carpal,S4C22
+Closed fracture subluxation of the wrist,S4C2
+Closed fracture-subluxation other carpal,S4C2y
+Closed fracture-subluxation peri-lunate (dorsal),S4C25
+Closed fracture-subluxation peri-lunate trans-scaphoid,S4C26
+Closed fracture-subluxation radiocarpal joint,S4C21
+"Closed fracture-subluxation, distal radio-ulnar jt",S4C20
+Closed volar Barton fracture-subluxation,S2349-2
+Closed volar Barton's fracture-dislocation,S2349-1
+Fracture of scaphoid bone of wrist,S2420
+Fracture dislocation or subluxation of wrist,S4C
+#Radius/ulna-lower end-colles,S2341-98
+Colles fracture,S2341-99
+Fracture of distal end of ulna,S2345-99
+#Bennett's fracture,S2501-99
+Greenstick fracture of distal radius,S234G
+Closed fracture of trapezoidal bone of wrist,^ESCTCL250422
+Fracture of lunate bone of wrist,^ESCTFR253074
+Fracture of lunate,^ESCTFR253076
+Fracture of triquetral bone of wrist,^ESCTFR262068
+Fracture of triquetral,^ESCTFR262070
+Fracture of triquetrum,^ESCTFR262071
+Open fracture of triquetral bone of wrist,^ESCTOP262611
+Closed fracture of carpal bone of wrist,^ESCTCL265096
+Fracture of trapezoidal bone of wrist,^ESCTFR273648
+Fracture of trapezoid,^ESCTFR273650
+Closed fracture of lower end of radius,^ESCTCL277320
+Closed fracture of triquetral bone of wrist,^ESCTCL299359
+Fracture of navicular bone of wrist,^ESCTFR301489
+Fracture of scaphoid bone,^ESCTFR301491
+Closed fracture of lower end of radius AND ulna,^ESCTCL303424
+Open fracture of hamate bone of wrist,^ESCTOP305807
+Closed fracture of hamate bone of wrist,^ESCTCL309869
+Closed fracture of lunate bone of wrist,^ESCTCL310603
+Closed fracture of styloid process of ulna,^ESCTCL316099
+Closed fracture of scaphoid bone of wrist,^ESCTCL319032
+Closed fracture of pisiform bone of wrist,^ESCTCL320474
+Open fracture of capitate bone of wrist,^ESCTOP321700
+Open fracture of lunate bone of wrist,^ESCTOP336361
+Barton's fracture,^ESCTBA338678
+Barton fracture,^ESCTBA338679
+Closed fracture of trapezium bone of wrist,^ESCTCL342815
+Bennett's fracture,^ESCTBE350152
+Bennett's fracture dislocation,^ESCTBE350154
+Bennett fracture,^ESCTBE350155
+Open fracture of trapezium of wrist,^ESCTOP359139
+Closed Bennett's fracture,^ESCTCL360145
+Closed Bennett fracture,^ESCTCL360146
+Open fracture of navicular bone of wrist,^ESCTOP360729
+Fracture of capitate bone of wrist,^ESCTFR369224
+Fracture of capitate,^ESCTFR369226
+Fracture of trapezium of wrist,^ESCTFR371033
+Fracture of trapezium,^ESCTFR371035
+Open Bennett's fracture,^ESCTOP374585
+Fracture of carpus,^ESCTFR383451
+Fracture of pisiform bone of wrist,^ESCTFR386705
+Fracture of pisiform,^ESCTFR386706
+Fracture of hamate bone of wrist,^ESCTFR389649
+Fracture of hamate,^ESCTFR389651
+Open fracture of lower end of radius AND ulna,^ESCTOP393200
+Open fracture of pisiform bone of wrist,^ESCTOP394930
+Closed fracture of capitate bone of wrist,^ESCTCL396486
+Arthroscopy of wrist with internal fixation for fracture,^ESCTAR421400
+Closed reverse Colles' fracture,^ESCTCL435380
+Open reverse Colles' fracture,^ESCTOP435381
+Colles' fracture,^ESCTCO435824
+Reversed Colles' fracture,^ESCTRE435825
+Smith's fracture,^ESCTSM435826
+Closed volar Barton fracture,^ESCTCL484225
+Closed dorsal Barton's fracture dislocation,^ESCTCL484228
+Closed dorsal Barton fracture,^ESCTCL484229
+Closed fracture dislocation radiocarpal joint,^ESCTCL484892
+Closed fracture dislocation midcarpal,^ESCTCL484893
+Closed fracture dislocation lunate (volar),^ESCTCL484896
+Closed fracture dislocation perilunate (dorsal),^ESCTCL484897
+Closed fracture dislocation perilunate transscaphoid,^ESCTCL484898
+Open fracture dislocation of distal radioulnar joint,^ESCTOP484900
+Open fracture dislocation radiocarpal joint,^ESCTOP484902
+Open fracture dislocation lunate (volar),^ESCTOP484905
+Open fracture dislocation perilunate (dorsal),^ESCTOP484906
+Open fracture dislocation perilunate transscaphoid,^ESCTOP484907
+Closed fracture subluxation of distal radioulnar joint,^ESCTCL484909
+Closed fracture subluxation radiocarpal joint,^ESCTCL484910
+Closed fracture subluxation lunate (volar),^ESCTCL484913
+Closed fracture subluxation perilunate (dorsal),^ESCTCL484914
+Closed fracture subluxation perilunate transscaphoid,^ESCTCL484915
+Open fracture subluxation of the wrist,^ESCTOP484916
+Open fracture subluxation of distal radioulnar joint,^ESCTOP484917
+Open fracture subluxation lunate (volar),^ESCTOP484921
+Fracture dislocation of wrist joint,^ESCTFR546059
+Fracture dislocation of radiocarpal joint,^ESCTFR546060
+Fracture dislocation of lunate,^ESCTFR546062
+Fracture subluxation of wrist,^ESCTFR546082
+Fracture subluxation of lunate,^ESCTFR546088
+Fracture of distal end of radius,^ESCTFR546199
+Volar Barton's fracture,^ESCTVO546201
+Volar Barton fracture,^ESCTVO546202
+Dorsal Barton's fracture,^ESCTDO546203
+Dorsal Barton fracture,^ESCTDO546204
+Fracture of distal end of ulna,^ESCTFR546208
+Fracture of distal end of radius and ulna,^ESCTFR546212
+Transscaphoid-perilunate fracture dislocation,^ESCTTR565252
+Transscaphoid-capitate-hamate-triquetral-perilunate fracture dislocation,^ESCTTR565254
+Transstyloid-perilunate fracture dislocation,^ESCTTR565255
+Transstyloid-scaphoid-perilunate fracture dislocation,^ESCTTR565256
+Fracture of radial styloid,^ESCTFR565268
+Fracture of ulnar styloid,^ESCTFR565271
+Fracture dislocation distal radioulnar joint,^ESCTFR596530
+Closed Barton fracture,^ESCTCL597198
+Fracture of head of radius with dislocation of distal radioulnar joint and interosseous membrane disruption,^ESCTFR726443
+Pathological fracture of distal radius,^ESCTPA730975
+Pathological fracture of distal ulna,^ESCTPA730976
+Closed fracture of distal epiphysis of radius,^ESCTCL758786
+Pathological fracture of distal radius and distal ulna,^ESCTPA766315
+Smith fracture,^ESCT1221720
+Closed fracture of trapezoidal bone of right wrist,^ESCT1370300
+Closed fracture of trapezoidal bone of left wrist,^ESCT1370301
+Closed fracture of lunate bone of left wrist,^ESCT1370303
+Disorder due to and following fracture at wrist and/or hand level,^ESCT1379051
+Closed Smith's fracture,^ESCT1419672
+Closed fracture of multiple carpal bones,^ESCT1507936
+Open fracture of multiple carpal bones,^ESCT1507937
+Fracture of distal end of left ulna,^ESCT1526231
+Fracture of distal end of left radius,^ESCT1526232
+Fracture of distal end of right ulna,^ESCT1529069
+Fracture of distal end of right radius,^ESCT1529546
+Fracture of bone of left wrist region,^ESCT1543734
+Fracture of bone of right wrist region,^ESCT1543735
+Fracture of bone of wrist region,^ESCT1543738
+Fracture of left carpus,^ESCT1565378
+Fracture of right scaphoid bone,^ESCT1605454
+Closed fracture subluxation of wrist,^ESCT1608054
+Hutchinson's fracture,^ESCTHU705948
+Chauffeur's fracture,^ESCTCH705949
+#Carpal bones,S24-99
+#Scaphoid,S2401-99
+#Carpal bones NOS,S24z-99
+#Carpal bones NOS,S24-98
+Closed Galeazzi fracture,S2348
+Open Galeazzi fracture,S2358
+Galeazzi fracture dislocation,^ESCTGA552631
+Galeazzi's fracture of radius,^ESCTGA552632
+"Dupuytren's fracture, radius - closed",S2342-1
+"Dupuytren's fracture, radius - open",S2352-1

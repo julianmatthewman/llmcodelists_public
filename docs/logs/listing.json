@@ -1,0 +1,1522 @@
+{
+  "2026-01-21T12-26-16+00-00_RAG_f5178a12554e983adb7209.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "3Rch3A6r3k2DXkN4702846",
+      "created": "2026-01-21T12:26:16+00:00",
+      "task": "RAG",
+      "task_id": "f5178a12554e983adb7209",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "rag_solver (gpt-5.2)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a persons medical record would indicate that the person currenly has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "rag_solver (gpt-5.2)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 14.2857,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-01-21T12:18:53+00:00",
+      "completed_at": "2026-01-21T12:26:16+00:00",
+      "model_usage": {
+        "gpt-5.2": {
+          "input_tokens": 262277,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "output_tokens": 18332,
+          "total_tokens": 280609
+        }
+      }
+    }
+  },
+  "2026-01-22T15-38-02+00-00_RAG_f5178a12554e983adb7209.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "JWkxzKX0VEdprTI9llV0YF",
+      "created": "2026-01-22T15:38:02+00:00",
+      "task": "RAG",
+      "task_id": "f5178a12554e983adb7209",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "rag_solver (gpt-5.2)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a persons medical record would indicate that the person currenly has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "rag_solver (gpt-5.2)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 28.5714,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-01-22T15:26:18+00:00",
+      "completed_at": "2026-01-22T15:38:02+00:00",
+      "model_usage": {
+        "gpt-5.2": {
+          "input_tokens": 111456,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 23296,
+          "output_tokens": 7035,
+          "total_tokens": 118491
+        }
+      }
+    }
+  },
+  "2026-01-26T10-41-03+00-00_RAG_f5178a12554e983adb7209.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "hKcRFDHS8hC4YqWt6BtrG7",
+      "created": "2026-01-26T10:41:03+00:00",
+      "task": "RAG",
+      "task_id": "f5178a12554e983adb7209",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "rag_solver (gemini-3-pro-preview)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a persons medical record would indicate that the person currenly has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "rag_solver (gemini-3-pro-preview)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 80.9524,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-01-26T10:11:56+00:00",
+      "completed_at": "2026-01-26T10:41:03+00:00",
+      "model_usage": {
+        "gemini-3-pro-preview": {
+          "input_tokens": 473316,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 212502,
+          "output_tokens": 103472,
+          "total_tokens": 576788
+        }
+      }
+    }
+  },
+  "2026-01-30T11-39-57+00-00_RAG_f5178a12554e983adb7209.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "aKpgujsPcy5zXPku3b8gtf",
+      "created": "2026-01-30T11:39:57+00:00",
+      "task": "RAG",
+      "task_id": "f5178a12554e983adb7209",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 1,
+        "sample_ids": 1,
+        "shuffled": false
+      },
+      "model": "rag_solver (gemini-3-pro-preview)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a persons medical record would indicate that the person currenly has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "rag_solver (gemini-3-pro-preview)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 3,
+      "completed_samples": 3,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 0,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-01-30T11:33:41+00:00",
+      "completed_at": "2026-01-30T11:39:57+00:00",
+      "model_usage": {
+        "gemini-3-pro-preview": {
+          "input_tokens": 428510,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 126851,
+          "output_tokens": 19829,
+          "total_tokens": 448339
+        }
+      }
+    }
+  },
+  "2026-02-04T12-03-25+00-00_RAG_f5178a12554e983adb7209.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "HkHkMOARD7mA3KuPjUyb0u",
+      "created": "2026-02-04T12:03:25+00:00",
+      "task": "RAG",
+      "task_id": "f5178a12554e983adb7209",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "rag_solver (gemini-3-flash-preview)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "rag_solver (gemini-3-flash-preview)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 19.0476,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-02-04T11:37:58+00:00",
+      "completed_at": "2026-02-04T12:03:25+00:00",
+      "model_usage": {
+        "gemini-3-flash-preview": {
+          "input_tokens": 601280,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 187977,
+          "output_tokens": 73651,
+          "total_tokens": 674931
+        }
+      }
+    }
+  },
+  "2026-02-04T16-54-42+00-00_String-Search_ef84136f54957d26e86075.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "cJIHREVoBtNMdkkXMo01Bg",
+      "created": "2026-02-04T16:54:42+00:00",
+      "task": "String-Search",
+      "task_id": "ef84136f54957d26e86075",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "stringsearch_solver (gemini-3-flash-preview)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "stringsearch_solver (gemini-3-flash-preview)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 66.6667,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-02-04T16:41:08+00:00",
+      "completed_at": "2026-02-04T16:54:42+00:00",
+      "model_usage": {
+        "gemini-3-flash-preview": {
+          "input_tokens": 971965,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 672368,
+          "output_tokens": 80270,
+          "total_tokens": 1052235
+        }
+      }
+    }
+  },
+  "2026-02-04T17-17-06+00-00_String-Search_ef84136f54957d26e86075.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "qeG8lxFn04z5CBFg3wRDCU",
+      "created": "2026-02-04T17:17:06+00:00",
+      "task": "String-Search",
+      "task_id": "ef84136f54957d26e86075",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "stringsearch_solver (gpt-5.2)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "stringsearch_solver (gpt-5.2)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 54.7619,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-02-04T17:08:37+00:00",
+      "completed_at": "2026-02-04T17:17:06+00:00",
+      "model_usage": {
+        "gpt-5.2": {
+          "input_tokens": 67988,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 20736,
+          "output_tokens": 17618,
+          "total_tokens": 85606
+        }
+      }
+    }
+  },
+  "2026-02-05T14-32-47+00-00_String-Search_ef84136f54957d26e86075.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "yYVC6rmMCk9CwD5xctcuEN",
+      "created": "2026-02-05T14:32:47+00:00",
+      "task": "String-Search",
+      "task_id": "ef84136f54957d26e86075",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "stringsearch_solver (gemini-3-flash-preview)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "stringsearch_solver (gemini-3-flash-preview)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 38.0952,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-02-05T14:15:26+00:00",
+      "completed_at": "2026-02-05T14:32:47+00:00",
+      "model_usage": {
+        "gemini-3-flash-preview": {
+          "input_tokens": 868283,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 411182,
+          "output_tokens": 87323,
+          "total_tokens": 955606
+        }
+      }
+    }
+  },
+  "2026-02-05T15-20-01+00-00_String-Search_ef84136f54957d26e86075.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "7KS0yGLK1PWoOgqXp6bi2N",
+      "created": "2026-02-05T15:20:01+00:00",
+      "task": "String-Search",
+      "task_id": "ef84136f54957d26e86075",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "stringsearch_solver (gpt-5.2)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "stringsearch_solver (gpt-5.2)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 14.2857,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-02-05T15:03:35+00:00",
+      "completed_at": "2026-02-05T15:20:01+00:00",
+      "model_usage": {
+        "gpt-5.2": {
+          "input_tokens": 151251,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 31360,
+          "output_tokens": 33203,
+          "total_tokens": 184454
+        }
+      }
+    }
+  },
+  "2026-02-18T11-22-37+00-00_String-Search_ef84136f54957d26e86075.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "15DGu8oW1v1XjLn7VhbR1W",
+      "created": "2026-02-18T11:22:37+00:00",
+      "task": "String-Search",
+      "task_id": "ef84136f54957d26e86075",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "stringsearch_solver (claude-sonnet-4-6)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "stringsearch_solver (claude-sonnet-4-6)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 26.1905,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-02-18T11:09:47+00:00",
+      "completed_at": "2026-02-18T11:22:37+00:00",
+      "model_usage": {
+        "claude-sonnet-4-6": {
+          "input_tokens": 235596.25,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 421841,
+          "output_tokens": 51388,
+          "total_tokens": 286984.25
+        }
+      }
+    }
+  },
+  "2026-02-18T11-31-31+00-00_String-Search_ef84136f54957d26e86075.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "ujCgDBipNOelS9rdeCVy09",
+      "created": "2026-02-18T11:31:31+00:00",
+      "task": "String-Search",
+      "task_id": "ef84136f54957d26e86075",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "stringsearch_solver (claude-sonnet-4-6)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "stringsearch_solver (claude-sonnet-4-6)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 64.2857,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-02-18T11:24:26+00:00",
+      "completed_at": "2026-02-18T11:31:31+00:00",
+      "model_usage": {
+        "claude-sonnet-4-6": {
+          "input_tokens": 163534.25,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 228992,
+          "output_tokens": 33787,
+          "total_tokens": 197321.25
+        }
+      }
+    }
+  },
+  "2026-02-19T12-55-50+00-00_RAG_5ab6567c11a9be5c54356c.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "mWGIqh72tR6XQtKk0TyhYC",
+      "created": "2026-02-19T12:55:50+00:00",
+      "task": "RAG",
+      "task_id": "5ab6567c11a9be5c54356c",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "rag_solver (claude-sonnet-4-6)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "rag_solver (claude-sonnet-4-6)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 35.7143,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-02-19T12:00:44+00:00",
+      "completed_at": "2026-02-19T12:55:50+00:00",
+      "model_usage": {
+        "claude-sonnet-4-6": {
+          "input_tokens": 1763097.25,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1840038,
+          "output_tokens": 58956,
+          "total_tokens": 1822053.25
+        }
+      }
+    }
+  },
+  "2026-02-19T14-19-44+00-00_RAG_5ab6567c11a9be5c54356c.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "e9xu6BrYJYdJXJIMwWXbAr",
+      "created": "2026-02-19T14:19:44+00:00",
+      "task": "RAG",
+      "task_id": "5ab6567c11a9be5c54356c",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "rag_solver (claude-sonnet-4-6)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "rag_solver (claude-sonnet-4-6)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 59.5238,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-02-19T13:56:08+00:00",
+      "completed_at": "2026-02-19T14:19:44+00:00",
+      "model_usage": {
+        "claude-sonnet-4-6": {
+          "input_tokens": 1434630.25,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1764394,
+          "output_tokens": 36383,
+          "total_tokens": 1471013.25
+        }
+      }
+    }
+  },
+  "2026-03-04T11-47-58+00-00_RAG_5ab6567c11a9be5c54356c.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "8IMWyBucemLecoqmInjcKT",
+      "created": "2026-03-04T11:47:58+00:00",
+      "task": "RAG",
+      "task_id": "5ab6567c11a9be5c54356c",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "rag_solver (gemini-3-pro-preview)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "rag_solver (gemini-3-pro-preview)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 42.8571,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-03-04T11:19:31+00:00",
+      "completed_at": "2026-03-04T11:47:58+00:00",
+      "model_usage": {
+        "gemini-3-pro-preview": {
+          "input_tokens": 635094,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 187936,
+          "output_tokens": 131031,
+          "total_tokens": 766125
+        }
+      }
+    }
+  },
+  "2026-03-04T14-46-00+00-00_RAG_5ab6567c11a9be5c54356c.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "OJlvJ2kUlcYvyz5GZwONdE",
+      "created": "2026-03-04T14:46:00+00:00",
+      "task": "RAG",
+      "task_id": "5ab6567c11a9be5c54356c",
+      "task_version": 0,
+      "task_file": "",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "rag_solver (gemini-3-flash-preview)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "rag_solver (gemini-3-flash-preview)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "<Chat>"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 69.0476,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-03-04T14:27:33+00:00",
+      "completed_at": "2026-03-04T14:46:00+00:00",
+      "model_usage": {
+        "gemini-3-flash-preview": {
+          "input_tokens": 889669,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 612604,
+          "output_tokens": 69342,
+          "total_tokens": 959011
+        }
+      }
+    }
+  },
+  "2026-03-05T16-10-13+00-00_RAG_5ab6567c11a9be5c54356c.json": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "run_id": "PqeoFMgr4sVzrvvkNUTDqf",
+      "created": "2026-03-05T16:10:13+00:00",
+      "task": "RAG",
+      "task_id": "5ab6567c11a9be5c54356c",
+      "task_version": 0,
+      "task_file": "vitals.R",
+      "task_attribs": {},
+      "task_args": {},
+      "dataset": {
+        "samples": 7,
+        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
+        "shuffled": false
+      },
+      "model": "rag_solver (gemini-3-pro-preview)",
+      "model_args": {},
+      "config": {},
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+        "commit": "9140d8a2"
+      },
+      "packages": {
+        "inspect_ai": "0.3.63"
+      },
+      "scorers": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
+          "options": {},
+          "metrics": [
+            {
+              "name": "mean",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+          }
+        },
+        {
+          "solver": "rag_solver (gemini-3-pro-preview)",
+          "params": {
+            "1": "self$get_samples()$input",
+            "solver_chat": "gemini$clone()"
+          }
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 21,
+      "completed_samples": 21,
+      "scores": [
+        {
+          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 30.9524,
+              "params": {
+                "1": "numeric_scores"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2026-03-05T15:47:30+00:00",
+      "completed_at": "2026-03-05T16:10:13+00:00",
+      "model_usage": {
+        "gemini-3-pro-preview": {
+          "input_tokens": 0,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+Term,OriginalReadCode
+Psoriatic arthropathy,M160
+Psoriatic arthritis,M160-1
+Guttate psoriasis,M1616
+H/O: psoriasis,14F2
+Psoriasis and similar disorders,M16
+Psoriatic arthropathy NOS,M160z
+Other psoriasis,M161
+Psoriasis unspecified,M1610
+Psoriasis annularis,M1611
+Psoriasis circinata,M1612
+Psoriasis diffusa,M1613
+Psoriasis geographica,M1615
+Psoriasis gyrata,M1617
+Psoriasis inveterata,M1618
+Psoriasis palmaris,M161A
+Psoriasis plantaris,M161B
+Psoriasis punctata,M161C
+Pustular psoriasis,M161D
+Psoriasis universalis,M161E
+Psoriasis vulgaris,M161F
+Erythrodermic psoriasis,M161H
+Psoriasis,M161z
+Psoriasis and similar disorders NOS,M16z
+[X]Other psoriasis,Myu30
+Psoriasis with arthropathy,Nyu13
+Flexural psoriasis,ESCTFL1
+Scalp psoriasis,M16y0
+Juvenile arthritis in psoriasis,N0452
+Distal interphalangeal psoriatic arthropathy,M1601
+Palmoplantar pustular psoriasis,M166
+Plaque psoriasis,M1614
+Psoriasis ostracea,M1619
+Psoriatic spondylitis,M1600
+[RFC] Reason for care : Psoriasis,HNG0042
+Chronic large plaque psoriasis,EMISNQCH31
+Chronic large plaque psoriasis,M161F-1
+Flexural psoriasis,M161J
+Psoriasis area and severity index score,38Gg
+Acute palmoplantar pustular psoriasis,^ESCTAC255528
+Psoriatic Arthritis Impact of Disease 9 questionnaire score,38Va
+Seborrhoeic psoriasis,^ESCTSE291359
+Seborrheic psoriasis,^ESCTSE291360
+Sebopsoriasis,^ESCTSE291364
+Chronic palmoplantar pustular psoriasis,^ESCTCH294145
+Pustular psoriasis of palms and soles,^ESCTPU294148
+Psoriasis guttata,^ESCTPS309677
+Generalised pustular psoriasis of von Zumbush,^ESCTGE311787
+Localised pustular psoriasis,^ESCTLO382192
+Psoriatic arthritis,^ESCTPS451524
+PsA (Psoriatic arthritis),^ESCTPS451525
+PA (Psoriatic arthritis),^ESCTPA451526
+History of psoriasis,^ESCTHI454129
+Psoriasis and similar disorders,^ESCTPS480575
+Psoriatic arthritis with spine involvement,^ESCTPS480576
+Nummular psoriasis,^ESCTNU480582
+Discoid psoriasis,^ESCTDI480583
+Rupioid psoriasis,^ESCTRU480587
+Psoriasis vulgaris & (Chronic large plaque psoriasis),^ESCTPS480595
+Exfoliative dermatitis due to psoriasis,^ESCTEX480599
+Inverse psoriasis,^ESCTIN512386
+Unstable psoriasis,^ESCTUN512387
+Psoriasis-eczema overlap condition,^ESCTPS512388
+Eczematised psoriasis,^ESCTEC512389
+Eczematized psoriasis,^ESCTEC512390
+Psoriasis of nail,^ESCTPS512391
+Psoriatic nail dystrophy,^ESCTPS512392
+Psoriatic nail involvement,^ESCTPS512393
+Psoriatic nail pitting,^ESCTPS512394
+Psoriatic onycholysis,^ESCTPS512395
+Köbner psoriasis,^ESCTKÖ512397
+Kobner psoriasis,^ESCTKO512398
+Generalised pustular psoriasis,^ESCTGE512400
+Generalised pustular psoriasis of pregnancy,^ESCTGE512402
+Pustular psoriasis in children,^ESCTPU512404
+Juvenile pustular psoriasis,^ESCTJU512405
+Infantile pustular psoriasis,^ESCTIN512406
+Juvenile psoriatic arthritis,^ESCTJU513945
+Juvenile psoriatic arthritis with psoriasis,^ESCTJU513946
+Juvenile psoriatic arthritis without psoriasis,^ESCTJU513948
+Psoriatic arthritis with distal interphalangeal joint involvement,^ESCTPS513958
+Psoriatic dactylitis,^ESCTPS513960
+Chronic small plaque psoriasis,^ESCTCH666355
+Chronic guttate pattern psoriasis,^ESCTCH666356
+Chronic stable plaque psoriasis,^ESCTCH666357
+Actively extending plaque psoriasis,^ESCTAC666358
+Acute guttate psoriasis,^ESCTAC666359
+Guttate flare of psoriasis with preexisting plaques,^ESCTGU666360
+Psoriasis of vulva,^ESCTPS666361
+Vulval psoriasis,^ESCTVU666362
+Penile psoriasis,^ESCTPE666364
+Psoriasis of perianal skin,^ESCTPS666365
+Perianal psoriasis,^ESCTPE666366
+Generalised psoriasis,^ESCTGE666367
+Psoriasis of face,^ESCTPS666371
+Facial psoriasis,^ESCTFA666372
+Hypertrophic palmar psoriasis,^ESCTHY666374
+Hypertrophic palmoplantar psoriasis,^ESCTHY666375
+Acute generalised pustular flare of preexisting plaque psoriasis,^ESCTAC666380
+Childhood pustular psoriasis,^ESCTCH666382
+Iritis in psoriatic arthritis,^ESCTIR679796
+Anogenital psoriasis,^ESCTAN781926
+Education for psoriasis care,^ESCTED828559
+PASI - psoriasis area and severity index,^ESCTPA830076
+PASI (psoriasis area and severity index) score,^ESCTPA830081
+PsAID-9 (Psoriatic Arthritis Impact of Disease 9) questionnaire,^ESCTPS840701
+Psoriatic arthritis mutilans,^ESCTPS931014
+Psoriasis area and severity index,^ESCT1193064
+Pustular psoriasis of sole of foot,^ESCT1363707
+Psoriasis with eczema,^ESCT1419756
+Eczematous psoriasis,^ESCT1419757
+Psoriasis of scalp,^ESCT1419758
+Oligoarticular psoriatic arthritis,^ESCT1453163

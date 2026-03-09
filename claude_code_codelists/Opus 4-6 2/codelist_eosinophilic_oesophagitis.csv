@@ -1,0 +1,4 @@
+"medcodeid","term","snomedctconceptid","snomedctdescriptionid","originalreadcode","cleansedreadcode","observations","condition"
+"353159016","Eosinophilic oesophagitis","235599003","353159016","J1017","J101700",21867,"Eosinophilic oesophagitis"
+"5082651000006117","Eosinophilic esophagitis","235599003","353158012","^ESCTEO508265","",27,"Eosinophilic oesophagitis"
+"3517781018","Food-induced eosinophilic oesophagitis","735455001","3517781018","^ESCT1165474","",1,"Eosinophilic oesophagitis"

@@ -1,0 +1,59 @@
+"condition","medcodeid","term","snomedctconceptid","snomedctdescriptionid","originalreadcode","cleansedreadcode","emiscodecategoryid","observations"
+"Atopic dermatitis","94953018","Flexural eczema","57092006","94953018","M113","M113.00",32,399497
+"Atopic dermatitis","150503015","Infantile eczema","90823000","150503015","M112","M112.00",32,1614147
+"Atopic dermatitis","308485016","Atopic dermatitis","24079001","40423010","M11","M11..00",32,557693
+"Atopic dermatitis","308489010","Besnier's prurigo","200773006","308489010","M115","M115.00",32,655
+"Atopic dermatitis","308497015","Atopic dermatitis NOS","24079001","40423010","M11z","M11z.00",32,118893
+"Atopic dermatitis","357583018","Neurodermatitis - diffuse","238585003","357583018","M116","M116.00",32,12294
+"Atopic dermatitis","497341000006116","Atopic dermatitis/eczema","24079001","40423010","M111","M111.00",32,6948707
+"Atopic dermatitis","676461000006118","Atopic neurodermatitis","200775004","308491019","M117","M117.00",32,6792
+"Atopic dermatitis","889161000006118","Atopic eczema/dermatitis","24079001","889161000006118","M111-98","M111.98",32,81312
+"Atopic dermatitis","889191000006114","Atopic eczema/dermatitis NOS","584621000000108","889191000006114","M11z-99","M11z.99",32,22613
+"Atopic dermatitis","2675101000006116","Acute infantile eczema","11011007","19101017","^ESCTAC267510","",31,7
+"Atopic dermatitis","2884301000006116","Atopic eczema","24079001","40426019","^ESCTAT288430","",32,10695
+"Atopic dermatitis","2884341000006119","AD - Atopic dermatitis","24079001","1223210015","^ESCTAD288434","",32,46
+"Atopic dermatitis","5122841000006119","Endogenous eczema","238540004","357506012","^ESCTEN512284","",31,34
+"Atopic dermatitis","5122851000006117","Atopic dermatitis of hands","238541000","357508013","^ESCTAT512285","",31,489
+"Atopic dermatitis","5122861000006115","Atopic eczema of hands","238541000","357507015","^ESCTAT512286","",31,3
+"Atopic dermatitis","5122871000006110","Inverse pattern atopic dermatitis","238542007","357509017","^ESCTIN512287","",31,3
+"Atopic dermatitis","5122881000006113","Discoid atopic dermatitis","238543002","357510010","^ESCTDI512288","",32,97
+"Atopic dermatitis","5122891000006111","Discoid pattern atopic dermatitis","238543002","2475904010","^ESCTDI512289","",32,1
+"Atopic dermatitis","5122901000006110","Discoid pattern atopic eczema","238543002","2475905011","^ESCTDI512290","",32,5
+"Atopic dermatitis","5122911000006113","Erythrodermic atopic dermatitis","238544008","357511014","^ESCTER512291","",31,34
+"Atopic dermatitis","5122921000006117","Erythrodermic atopic eczema","238544008","357512019","^ESCTER512292","",31,1
+"Atopic dermatitis","5122931000006119","Follicular atopic dermatitis","238545009","357513012","^ESCTFO512293","",31,130
+"Atopic dermatitis","5122941000006112","Follicular atopic eczema","238545009","357514018","^ESCTFO512294","",31,15
+"Atopic dermatitis","5122951000006114","Pruriginous atopic dermatitis","238546005","357516016","^ESCTPR512295","",31,13
+"Atopic dermatitis","5122961000006111","Pruriginous atopic eczema","238546005","357515017","^ESCTPR512296","",31,3
+"Atopic dermatitis","5122971000006116","Photosensitive atopic dermatitis","238547001","357517013","^ESCTPH512297","",31,42
+"Atopic dermatitis","5122991000006115","Photosensitive atopic eczema","238547001","357519011","^ESCTPH512299","",31,3
+"Atopic dermatitis","5123001000006119","Photoaggravated atopic dermatitis","238548006","357521018","^ESCTPH512300","",31,16
+"Atopic dermatitis","5123011000006116","Photoaggravated atopic eczema","238548006","357520017","^ESCTPH512301","",31,6
+"Atopic dermatitis","5989171000006115","Chronic lichenified atopic dermatitis","309461001","452894019","^ESCTCH598917","",31,195
+"Atopic dermatitis","5989181000006117","Chronic lichenified atopic eczema","309461001","452895018","^ESCTCH598918","",31,7
+"Atopic dermatitis","6661161000006111","Flexural atopic dermatitis","402183009","1781360019","^ESCTFL666116","",32,18249
+"Atopic dermatitis","6661171000006116","Flexural atopic eczema","402183009","1787493018","^ESCTFL666117","",32,3
+"Atopic dermatitis","6661201000006117","Generalised atopic dermatitis","402186001","1773586010","^ESCTGE666120","",31,16
+"Atopic dermatitis","6661221000006110","Generalised atopic eczema","402186001","1783754010","^ESCTGE666122","",31,6
+"Atopic dermatitis","6661241000006115","Prurigo pattern atopic dermatitis","402187005","1781363017","^ESCTPR666124","",31,3
+"Atopic dermatitis","6661271000006111","Xerosis due to atopic dermatitis","402189008","1781365012","^ESCTXE666127","",31,3
+"Atopic dermatitis","6661301000006113","Atopic dermatitis of scalp","402191000","1781367016","^ESCTAT666130","",31,15
+"Atopic dermatitis","6661311000006111","Atopic eczema of scalp","402191000","1787498010","^ESCTAT666131","",31,1
+"Atopic dermatitis","6661321000006115","Atopic dermatitis of face","402192007","1781368014","^ESCTAT666132","",31,9
+"Atopic dermatitis","6661331000006117","Atopic eczema of face","402192007","1787499019","^ESCTAT666133","",31,2
+"Atopic dermatitis","6661341000006110","Atopic dermatitis of eyelid","402193002","1781369018","^ESCTAT666134","",31,6
+"Atopic dermatitis","6661361000006114","Atopic dermatitis of eyelids","402193002","1787501010","^ESCTAT666136","",31,3
+"Atopic dermatitis","6661381000006116","Cheilitis due to atopic eczema","402194008","1787502015","^ESCTCH666138","",31,1
+"Atopic dermatitis","6661391000006118","Infantile atopic dermatitis","402195009","1781371018","^ESCTIN666139","",31,3
+"Atopic dermatitis","6661401000006116","Infantile atopic eczema","402195009","1787503013","^ESCTIN666140","",31,8
+"Atopic dermatitis","6661411000006118","Childhood atopic dermatitis","402196005","1781372013","^ESCTCH666141","",32,315
+"Atopic dermatitis","6661421000006114","Childhood atopic eczema","402196005","1787504019","^ESCTCH666142","",32,25
+"Atopic dermatitis","6661431000006112","Adult atopic dermatitis","402197001","1781373015","^ESCTAD666143","",31,14
+"Atopic dermatitis","6661441000006119","Adult atopic eczema","402197001","1787505018","^ESCTAD666144","",31,14
+"Atopic dermatitis","6661461000006115","Adult atopic eczema persistent from childhood","402198006","1787506017","^ESCTAD666146","",31,1
+"Atopic dermatitis","6661481000006113","Adult atopic eczema recurrent in adult life","402199003","1787507014","^ESCTAD666148","",31,4
+"Atopic dermatitis","6661511000006117","Impetiginized atopic dermatitis","402201001","1781377019","^ESCTIM666151","",31,6
+"Atopic dermatitis","6661521000006113","Infected atopic dermatitis","402201001","1787509012","^ESCTIN666152","",31,11
+"Atopic dermatitis","14502461000006112","Atopic dermatitis of bilateral hands","238541000","4573437015","^ESCT1450246","",31,434
+"Atopic dermatitis","14507041000006116","Acute atopic dermatitis of hand","402229003","4573438013","^ESCT1450704","",31,1
+"Atopic dermatitis","15007501000006115","Childhood generalised erythematous atopic dermatitis","1251411007","5133290010","^ESCT1500750","",31,1
