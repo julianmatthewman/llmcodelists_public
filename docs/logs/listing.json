@@ -1,137 +1,4 @@
 {
-  "2026-08-11T14-20-01+01-00_RAG-gemini-3.1-pro-preview-35338cee026c2f9676f041.json": {
-    "eval_id": {},
-    "run_id": "H7olv8Qw0XbNLKRrnGkhHm",
-    "task": "Main / Full / Hidradenitis suppurativa",
-    "task_id": "Main / Full / Hidradenitis suppurativa / gemini-3.1-pro-preview",
-    "task_version": 0,
-    "version": 2,
-    "status": "success",
-    "model": "rag_solver (gemini-3.1-pro-preview)",
-    "started_at": "2026-08-11T14:20:01+01:00",
-    "completed_at": "2026-08-11T14:20:01+01:00",
-    "primary_metric": {
-      "name": "accuracy",
-      "value": 66.6667,
-      "params": {
-        "1": "numeric_scores"
-      }
-    }
-  },
-  "2026-08-11T14-29-17+01-00_RAG-gemini-3.1-pro-preview-35338cee026c2f9676f041.json": {
-    "eval_id": {},
-    "run_id": "XtOmRsZR1ZKvIDnxSsbQU2",
-    "task": "Main / Full / Atopic eczema",
-    "task_id": "Main / Full / Atopic eczema / gemini-3.1-pro-preview",
-    "task_version": 0,
-    "version": 2,
-    "status": "success",
-    "model": "rag_solver (gemini-3.1-pro-preview)",
-    "started_at": "2026-08-11T14:29:17+01:00",
-    "completed_at": "2026-08-11T14:29:17+01:00",
-    "primary_metric": {
-      "name": "accuracy",
-      "value": 100,
-      "params": {
-        "1": "numeric_scores"
-      }
-    }
-  },
-  "2026-08-11T14-35-31+01-00_RAG-gemini-3.1-pro-preview-35338cee026c2f9676f041.json": {
-    "eval_id": {},
-    "run_id": "M1mkVhl1il5l1SWw18g6dT",
-    "task": "Main / Full / Vascular dementia",
-    "task_id": "Main / Full / Vascular dementia / gemini-3.1-pro-preview",
-    "task_version": 0,
-    "version": 2,
-    "status": "success",
-    "model": "rag_solver (gemini-3.1-pro-preview)",
-    "started_at": "2026-08-11T14:35:31+01:00",
-    "completed_at": "2026-08-11T14:35:31+01:00",
-    "primary_metric": {
-      "name": "accuracy",
-      "value": 100,
-      "params": {
-        "1": "numeric_scores"
-      }
-    }
-  },
-  "2026-08-11T14-38-40+01-00_RAG-gemini-3.1-pro-preview-35338cee026c2f9676f041.json": {
-    "eval_id": {},
-    "run_id": "OCWzvAKQXrHYNJJjerw6zc",
-    "task": "Main / Full / Eosinophilic oesophagitis",
-    "task_id": "Main / Full / Eosinophilic oesophagitis / gemini-3.1-pro-preview",
-    "task_version": 0,
-    "version": 2,
-    "status": "success",
-    "model": "rag_solver (gemini-3.1-pro-preview)",
-    "started_at": "2026-08-11T14:38:40+01:00",
-    "completed_at": "2026-08-11T14:38:40+01:00",
-    "primary_metric": {
-      "name": "accuracy",
-      "value": 100,
-      "params": {
-        "1": "numeric_scores"
-      }
-    }
-  },
-  "2026-08-11T14-46-25+01-00_RAG-gemini-3.1-pro-preview-35338cee026c2f9676f041.json": {
-    "eval_id": {},
-    "run_id": "yS9htvMopTgBQC1iwj9sn1",
-    "task": "Main / Full / Psoriasis",
-    "task_id": "Main / Full / Psoriasis / gemini-3.1-pro-preview",
-    "task_version": 0,
-    "version": 2,
-    "status": "success",
-    "model": "rag_solver (gemini-3.1-pro-preview)",
-    "started_at": "2026-08-11T14:46:25+01:00",
-    "completed_at": "2026-08-11T14:46:25+01:00",
-    "primary_metric": {
-      "name": "accuracy",
-      "value": 33.3333,
-      "params": {
-        "1": "numeric_scores"
-      }
-    }
-  },
-  "2026-08-11T14-54-32+01-00_RAG-gemini-3.1-pro-preview-35338cee026c2f9676f041.json": {
-    "eval_id": {},
-    "run_id": "eXRBdiApL339qSiCqy9wq6",
-    "task": "Main / Full / Myocardial infarction",
-    "task_id": "Main / Full / Myocardial infarction / gemini-3.1-pro-preview",
-    "task_version": 0,
-    "version": 2,
-    "status": "success",
-    "model": "rag_solver (gemini-3.1-pro-preview)",
-    "started_at": "2026-08-11T14:54:32+01:00",
-    "completed_at": "2026-08-11T14:54:32+01:00",
-    "primary_metric": {
-      "name": "accuracy",
-      "value": 0,
-      "params": {
-        "1": "numeric_scores"
-      }
-    }
-  },
-  "2026-08-11T15-07-22+01-00_RAG-gemini-3.1-pro-preview-35338cee026c2f9676f041.json": {
-    "eval_id": {},
-    "run_id": "y5YPXUuWCLrGnMUQBnZOtG",
-    "task": "Main / Full / Wrist fracture",
-    "task_id": "Main / Full / Wrist fracture / gemini-3.1-pro-preview",
-    "task_version": 0,
-    "version": 2,
-    "status": "success",
-    "model": "rag_solver (gemini-3.1-pro-preview)",
-    "started_at": "2026-08-11T15:07:22+01:00",
-    "completed_at": "2026-08-11T15:07:22+01:00",
-    "primary_metric": {
-      "name": "accuracy",
-      "value": 0,
-      "params": {
-        "1": "numeric_scores"
-      }
-    }
-  },
   "2026-08-13T09-49-20+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
     "eval_id": {},
     "run_id": "nt8fcuq8dYJQuPv5a08VEB",
@@ -3718,6 +3585,139 @@
     "primary_metric": {
       "name": "accuracy",
       "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-11-06T15-26-32+01-00_RAG-gemini-3.1-pro-preview-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "2JYhRQecJt2W7sVSi8HW0q",
+    "task": "Main / Full / Atopic eczema",
+    "task_id": "Main / Full / Atopic eczema / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-11-06T15:26:32+01:00",
+    "completed_at": "2026-11-06T15:26:32+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-11-06T15-32-06+01-00_RAG-gemini-3.1-pro-preview-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "GNPcsmmwdplWjR6SD3fAv1",
+    "task": "Main / Full / Vascular dementia",
+    "task_id": "Main / Full / Vascular dementia / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-11-06T15:32:06+01:00",
+    "completed_at": "2026-11-06T15:32:06+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 83.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-11-06T15-35-16+01-00_RAG-gemini-3.1-pro-preview-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "uqbpPgjT6L7jF4wwZTYmjC",
+    "task": "Main / Full / Eosinophilic oesophagitis",
+    "task_id": "Main / Full / Eosinophilic oesophagitis / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-11-06T15:35:16+01:00",
+    "completed_at": "2026-11-06T15:35:16+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-11-06T15-39-56+01-00_RAG-gemini-3.1-pro-preview-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "BEB8xc3QWtNY159AoSjOga",
+    "task": "Main / Full / Psoriasis",
+    "task_id": "Main / Full / Psoriasis / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-11-06T15:39:56+01:00",
+    "completed_at": "2026-11-06T15:39:56+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-11-06T15-43-47+01-00_RAG-gemini-3.1-pro-preview-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "X8UPBTCNyve8uIB0O34jEi",
+    "task": "Main / Full / Hidradenitis suppurativa",
+    "task_id": "Main / Full / Hidradenitis suppurativa / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-11-06T15:43:47+01:00",
+    "completed_at": "2026-11-06T15:43:47+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-11-06T15-49-33+01-00_RAG-gemini-3.1-pro-preview-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "QCjJ9O7cisRe69f6fHkiQf",
+    "task": "Main / Full / Myocardial infarction",
+    "task_id": "Main / Full / Myocardial infarction / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-11-06T15:49:33+01:00",
+    "completed_at": "2026-11-06T15:49:33+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-11-06T15-56-25+01-00_RAG-gemini-3.1-pro-preview-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "E11dyAQ2QfXwRug2BeGlEb",
+    "task": "Main / Full / Wrist fracture",
+    "task_id": "Main / Full / Wrist fracture / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-11-06T15:56:25+01:00",
+    "completed_at": "2026-11-06T15:56:25+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
       "params": {
         "1": "numeric_scores"
       }
