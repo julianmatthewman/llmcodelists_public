@@ -10,5 +10,4 @@ This repository contains evaluation scripts and codelists.
 - `vitals.R`: Script performing the evaluations using the vitals framework.
 - `eval.R`: Script to report the evaluations.
 - [`codelists/`](codelists/) Reference codelists.
-- [`claude_code_codelists/`](claude_code_codelists/): Codelists generated using Claude Code.
 - [`docs/`](docs/) Evaluation bundles for hosting with GitHub pages.

@@ -1,0 +1,5059 @@
+{
+  "version": 2,
+  "status": "success",
+  "eval": {
+    "run_id": "Ne6RQr0yNESzuUAVqqlsUG",
+    "created": "2026-10-08T13:46:05+02:00",
+    "task": "String-Search/claude-sonnet-5-5/95db44c197971e844d22c8",
+    "task_id": "String-Search/claude-sonnet-5-5/95db44c197971e844d22c8",
+    "task_version": 0,
+    "task_file": "",
+    "task_attribs": {},
+    "task_args": {},
+    "dataset": {
+      "samples": 1,
+      "sample_ids": [
+        1
+      ],
+      "shuffled": false
+    },
+    "model": "anthropic/claude-sonnet-5-5",
+    "model_args": {},
+    "config": {},
+    "revision": {
+      "type": "git",
+      "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+      "commit": "9140d8a2"
+    },
+    "packages": {
+      "inspect_ai": "0.3.63"
+    },
+    "scorers": [
+      {
+        "name": "detect_codelist(code_terms = code_terms)",
+        "options": {},
+        "metrics": [
+          {
+            "name": "mean",
+            "options": {}
+          }
+        ],
+        "metadata": {}
+      }
+    ]
+  },
+  "plan": {
+    "name": "plan",
+    "steps": [
+      {
+        "solver": "system_message",
+        "params": {
+          "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
+        }
+      },
+      {
+        "solver": "stringsearch_solver(data_name) (claude-sonnet-5-5)",
+        "params": {
+          "1": "self$get_samples()$input",
+          "solver_chat": "<Chat>"
+        }
+      }
+    ],
+    "config": {}
+  },
+  "results": {
+    "total_samples": 3,
+    "completed_samples": 3,
+    "scores": [
+      {
+        "name": "detect_codelist(code_terms = code_terms)",
+        "scorer": "detect_codelist(code_terms = code_terms)",
+        "params": {},
+        "metrics": {
+          "accuracy": {
+            "name": "accuracy",
+            "value": 100,
+            "params": {
+              "1": "numeric_scores"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "stats": {
+    "started_at": "2026-10-08T13:45:35+02:00",
+    "completed_at": "2026-10-08T13:46:05+02:00",
+    "model_usage": {
+      "anthropic/claude-sonnet-5-5": {
+        "input_tokens": 7873,
+        "output_tokens": 1504,
+        "total_tokens": 9377,
+        "input_tokens_cache_write": 0,
+        "input_tokens_cache_read": 7002
+      }
+    }
+  },
+  "samples": [
+    {
+      "id": 3,
+      "epoch": 1,
+      "input": "Eosinophilic esophagitis",
+      "target": "J1017 Eosinophilic oesophagitis 1",
+      "messages": [
+        {
+          "id": "bfFsvZJ8tORgT3AvTSAptW",
+          "content": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables.",
+          "role": "system"
+        },
+        {
+          "id": "pnhfwZZ2y6vj8tGdiZUCIQ",
+          "content": "Eosinophilic esophagitis",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "id": "rOmGa6VTFZKyDVb9Ytp51Z",
+          "content": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ],
+          "source": "generate",
+          "tool_calls": [
+            {
+              "id": "toolu_017iZ4cCcp9wH19p253t9rig",
+              "function": "tool_term_search_cprd",
+              "arguments": {
+                "search_term": "eosinophilic oesophagitis"
+              }
+            },
+            {
+              "id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+              "function": "tool_term_search_cprd",
+              "arguments": {
+                "search_term": "eosinophilic esophagitis"
+              }
+            },
+            {
+              "id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+              "function": "tool_term_search_cprd",
+              "arguments": {
+                "search_term": "eosinophilic oesophag"
+              }
+            },
+            {
+              "id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+              "function": "tool_term_search_cprd",
+              "arguments": {
+                "search_term": "eosinophilic gastro"
+              }
+            }
+          ],
+          "model": "claude-sonnet-5-5",
+          "role": "assistant"
+        },
+        {
+          "id": "5AzVFC9E4nRf4bYmPxW1CU",
+          "content": "|originalreadcode |term                      |\n|:----------------|:-------------------------|\n|J1017            |Eosinophilic oesophagitis |",
+          "role": "tool",
+          "tool_call_id": "toolu_017iZ4cCcp9wH19p253t9rig",
+          "function": "tool_term_search_cprd"
+        },
+        {
+          "id": "6CrAXEXgAOXuRYLMVE2FWd",
+          "content": "|originalreadcode |term                      |\n|:----------------|:-------------------------|\n|J1017            |Eosinophilic oesophagitis |",
+          "role": "tool",
+          "tool_call_id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+          "function": "tool_term_search_cprd"
+        },
+        {
+          "id": "KTUh3zbZDxrQpCo2WdiiAi",
+          "content": "|originalreadcode |term                      |\n|:----------------|:-------------------------|\n|J1017            |Eosinophilic oesophagitis |",
+          "role": "tool",
+          "tool_call_id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+          "function": "tool_term_search_cprd"
+        },
+        {
+          "id": "UcENLpfpUcOxs75sya4ixi",
+          "content": "No matches found.",
+          "role": "tool",
+          "tool_call_id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+          "function": "tool_term_search_cprd"
+        },
+        {
+          "id": "f5i7oJX2WWD19VMorh8qs1",
+          "content": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ],
+          "source": "generate",
+          "tool_calls": [
+            {
+              "id": "toolu_01XEaYsKV6XJ8LAPJct1dMNJ",
+              "function": "tool_code_search_cprd",
+              "arguments": {
+                "search_term": "J101"
+              }
+            }
+          ],
+          "model": "claude-sonnet-5-5",
+          "role": "assistant"
+        },
+        {
+          "id": "9qiDCmxeOf86SWvWhCKPVV",
+          "content": "|originalreadcode |term                                                |\n|:----------------|:---------------------------------------------------|\n|J101             |Oesophagitis                                        |\n|J1013            |Postoperative oesophagitis                          |\n|J1011-5          |Gastro-oesophageal reflux disease with oesophagitis |\n|J1010            |Abscess of oesophagus                               |\n|J1014            |Gangrenous oesophagitis                             |\n|J1015            |Phlegmonous oesophagitis                            |\n|J101y            |Other specified oesophagitis                        |\n|J101z            |Oesophagitis NOS                                    |\n|J1017            |Eosinophilic oesophagitis                           |\n|J1011-3          |Oesophageal reflux with oesophagitis                |\n|J1011            |Reflux oesophagitis                                 |\n|J1016-1          |Barrett's oesophagus                                |\n|J1012            |Chemical oesophagitis                               |\n|J1011-4          |Peptic oesophagitis                                 |\n|J1016            |Ulcerative oesophagitis                             |\n|J1011-1          |Acid reflux                                         |\n|J1011-2          |Gastro-oesophageal reflux with oesophagitis         |",
+          "role": "tool",
+          "tool_call_id": "toolu_01XEaYsKV6XJ8LAPJct1dMNJ",
+          "function": "tool_code_search_cprd"
+        },
+        {
+          "id": "xp8haG6opKUacAP1B7bD70",
+          "content": [
+            {
+              "type": "text",
+              "text": "Only one code in the CPRD Read code lists matches eosinophilic oesophagitis (the US spelling is eosinophilic esophagitis).\n\n| Read code | Term |\n|:--|:--|\n| J1017 | Eosinophilic oesophagitis |\n\nI searched on \"eosinophilic oesophagitis\", \"eosinophilic esophagitis\" and \"eosinophilic oesophag\". All three returned only J1017. A search for \"eosinophilic gastro\" found nothing, so there are no separate eosinophilic gastroenteritis codes to consider. I also checked the neighbouring J101 codes (reflux, Barrett's, other oesophagitis). I left them out because none of them describes eosinophilic disease."
+            }
+          ],
+          "source": "generate",
+          "model": "claude-sonnet-5-5",
+          "role": "assistant"
+        },
+        {
+          "id": "8xfB1RedWqeVdEmbLcpYfX",
+          "content": "List the OriginalReadCode, exactly as it appears in the source data, of every code in your final codelist. Include every code you selected and nothing else.",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "id": "C9IELFX1Z1akZ7Yrbrxa3i",
+          "content": [
+            {
+              "type": "text",
+              "text": "<ellmer::ContentJson>\n @ data  : NULL\n @ string: chr \"{\\\"codes\\\":[\\\"J1017\\\"]}\"\n @ parsed:List of 1\n .. $ codes:List of 1\n ..  ..$ : chr \"J1017\""
+            }
+          ],
+          "source": "generate",
+          "model": "claude-sonnet-5-5",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-sonnet-5-5",
+        "choices": [
+          {
+            "message": {
+              "id": "XYfCXx9SZaOMf00rcpAAEI",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "<ellmer::ContentJson>\n @ data  : NULL\n @ string: chr \"{\\\"codes\\\":[\\\"J1017\\\"]}\"\n @ parsed:List of 1\n .. $ codes:List of 1\n ..  ..$ : chr \"J1017\""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 2778,
+          "output_tokens": 563,
+          "total_tokens": 3341,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 2770
+        },
+        "time": 1.3149
+      },
+      "scores": {
+        "detect_codelist(code_terms = code_terms)": {
+          "value": "C",
+          "answer": "Only one code in the CPRD Read code lists matches eosinophilic oesophagitis (the US spelling is eosinophilic esophagitis).\n\n| Read code | Term |\n|:--|:--|\n| J1017 | Eosinophilic oesophagitis |\n\nI searched on \"eosinophilic oesophagitis\", \"eosinophilic esophagitis\" and \"eosinophilic oesophag\". All three returned only J1017. A search for \"eosinophilic gastro\" found nothing, so there are no separate eosinophilic gastroenteritis codes to consider. I also checked the neighbouring J101 codes (reflux, Barrett's, other oesophagitis). I left them out because none of them describes eosinophilic disease.",
+          "explanation": "1 codes extracted; 0 optional target codes missing.\nMissing required (0): none\nNot in target codelist (0): none\nNot in source data (0): none\nRequired codes retrieved into context: 1/1\nNever retrieved (0): none\nRetrieved but not used (0): none",
+          "metadata": {
+            "scorer_metadata": ["List of 1", " $ :List of 16", "  ..$ n_found             : int 1", "  ..$ n_missing_required  : int 0", "  ..$ n_missing_optional  : int 0", "  ..$ n_irrelevant        : int 0", "  ..$ n_nonexistent       : int 0", "  ..$ n_required          : int 1", "  ..$ n_retrieved         : int 1", "  ..$ n_not_retrieved     : int 0", "  ..$ n_retrieved_not_used: int 0", "  ..$ pct_retrieved       : num 1", "  ..$ missing_required    : chr(0) ", "  ..$ missing_optional    : chr(0) ", "  ..$ irrelevant          : chr(0) ", "  ..$ nonexistent         : chr(0) ", "  ..$ not_retrieved       : chr(0) ", "  ..$ retrieved_not_used  : chr(0) "]
+          }
+        }
+      },
+      "metadata": {
+        "solver_metadata": ["List of 1", " $ :List of 1", "  ..$ codes: chr \"J1017\""]
+      },
+      "store": {},
+      "events": [
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 0,
+          "event": "step",
+          "action": "begin",
+          "name": "init"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 0,
+          "event": "sample_init",
+          "sample": {
+            "input": "Eosinophilic esophagitis",
+            "target": "J1017 Eosinophilic oesophagitis 1",
+            "id": 3
+          },
+          "state": {
+            "messages": [
+              {
+                "id": "paxnWC1HMHVq6QvV2Qwt8d",
+                "content": "Eosinophilic esophagitis",
+                "source": "input",
+                "role": "user"
+              }
+            ],
+            "tools": [],
+            "tool_choice": {},
+            "store": {},
+            "output": {
+              "model": "anthropic/claude-sonnet-5-5",
+              "choices": []
+            },
+            "completed": false,
+            "metadata": {}
+          }
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 7.7744,
+          "event": "step",
+          "action": "end",
+          "name": "init"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 0,
+          "event": "step",
+          "action": "begin",
+          "type": "solver",
+          "name": "use_tools"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 0,
+          "event": "state",
+          "changes": [
+            {
+              "op": "add",
+              "path": "/tools/0",
+              "value": {
+                "name": "tool_term_search_cprd",
+                "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+                "parameters": {
+                  "type": "object",
+                  "description": "",
+                  "properties": {
+                    "search_term": {
+                      "type": "string",
+                      "description": "The term to search for in the CPRD records."
+                    }
+                  },
+                  "required": [
+                    "search_term"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "op": "add",
+              "path": "/tools/1",
+              "value": {
+                "name": "tool_code_search_cprd",
+                "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+                "parameters": {
+                  "type": "object",
+                  "description": "",
+                  "properties": {
+                    "search_term": {
+                      "type": "string",
+                      "description": "The code to search for in the CPRD records."
+                    }
+                  },
+                  "required": [
+                    "search_term"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "op": "replace",
+              "path": "/tool_choice",
+              "value": "auto"
+            }
+          ]
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 7.7744,
+          "event": "step",
+          "action": "end",
+          "type": "solver",
+          "name": "use_tools"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 0,
+          "event": "step",
+          "action": "begin",
+          "type": "solver",
+          "name": "generate"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 0,
+          "event": "model",
+          "model": "anthropic/claude-sonnet-5-5",
+          "input": [
+            {
+              "id": "EXbGwUWdh9Y0fQlFs5CQxU",
+              "content": "Eosinophilic esophagitis",
+              "source": "input",
+              "role": "user"
+            }
+          ],
+          "tools": [
+            {
+              "name": "tool_term_search_cprd",
+              "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The term to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            },
+            {
+              "name": "tool_code_search_cprd",
+              "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The code to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            }
+          ],
+          "tool_choice": "auto",
+          "config": {
+            "max_tokens": 16000
+          },
+          "output": {
+            "model": "claude-sonnet-5-5",
+            "choices": [
+              {
+                "message": {
+                  "id": "pQcXYhBpbMoPSFUlYp6NF1",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    }
+                  ],
+                  "source": "generate",
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "id": "toolu_017iZ4cCcp9wH19p253t9rig",
+                      "function": "tool_term_search_cprd",
+                      "arguments": {
+                        "search_term": "eosinophilic oesophagitis"
+                      }
+                    },
+                    {
+                      "id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+                      "function": "tool_term_search_cprd",
+                      "arguments": {
+                        "search_term": "eosinophilic esophagitis"
+                      }
+                    },
+                    {
+                      "id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+                      "function": "tool_term_search_cprd",
+                      "arguments": {
+                        "search_term": "eosinophilic oesophag"
+                      }
+                    },
+                    {
+                      "id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+                      "function": "tool_term_search_cprd",
+                      "arguments": {
+                        "search_term": "eosinophilic gastro"
+                      }
+                    }
+                  ],
+                  "model": "claude-sonnet-5-5"
+                },
+                "stop_reason": "tool_calls"
+              }
+            ],
+            "usage": {
+              "input_tokens": 88,
+              "input_tokens_cache_write": 0,
+              "input_tokens_cache_read": 689,
+              "output_tokens": 253
+            },
+            "time": 3.8498
+          },
+          "call": {
+            "request": {
+              "messages": [
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Eosinophilic esophagitis"
+                    }
+                  ]
+                }
+              ],
+              "tools": [
+                {
+                  "name": "tool_term_search_cprd",
+                  "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The term to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                {
+                  "name": "tool_code_search_cprd",
+                  "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The code to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              ],
+              "tool_choice": {
+                "type": "auto"
+              },
+              "model": "claude-sonnet-5-5",
+              "max_tokens": 16000
+            },
+            "response": {
+              "id": "msg_ZhEoyilUWhMONu0bgHK6gv",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                },
+                {
+                  "id": "toolu_017iZ4cCcp9wH19p253t9rig",
+                  "input": {
+                    "search_term": "eosinophilic oesophagitis"
+                  },
+                  "name": "tool_term_search_cprd",
+                  "type": "tool_use"
+                },
+                {
+                  "id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+                  "input": {
+                    "search_term": "eosinophilic esophagitis"
+                  },
+                  "name": "tool_term_search_cprd",
+                  "type": "tool_use"
+                },
+                {
+                  "id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+                  "input": {
+                    "search_term": "eosinophilic oesophag"
+                  },
+                  "name": "tool_term_search_cprd",
+                  "type": "tool_use"
+                },
+                {
+                  "id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+                  "input": {
+                    "search_term": "eosinophilic gastro"
+                  },
+                  "name": "tool_term_search_cprd",
+                  "type": "tool_use"
+                }
+              ],
+              "model": "claude-sonnet-5-5",
+              "role": "assistant",
+              "stop_reason": "tool_use",
+              "stop_sequence": {},
+              "type": "message",
+              "usage": {
+                "input_tokens": 88,
+                "input_tokens_cache_write": 0,
+                "input_tokens_cache_read": 689,
+                "output_tokens": 253
+              }
+            },
+            "time": 3.8498
+          },
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 3.8498
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 3.8498,
+          "event": "tool",
+          "type": "function",
+          "id": "toolu_017iZ4cCcp9wH19p253t9rig",
+          "function": "tool_term_search_cprd",
+          "arguments": {
+            "search_term": "eosinophilic oesophagitis"
+          },
+          "result": "attachment://e00c07c2795ab3275e10902c1333a370",
+          "events": [],
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 0
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 3.8498,
+          "event": "tool",
+          "type": "function",
+          "id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+          "function": "tool_term_search_cprd",
+          "arguments": {
+            "search_term": "eosinophilic esophagitis"
+          },
+          "result": "attachment://e00c07c2795ab3275e10902c1333a370",
+          "events": [],
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 0
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 3.8498,
+          "event": "tool",
+          "type": "function",
+          "id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+          "function": "tool_term_search_cprd",
+          "arguments": {
+            "search_term": "eosinophilic oesophag"
+          },
+          "result": "attachment://e00c07c2795ab3275e10902c1333a370",
+          "events": [],
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 0
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 3.8498,
+          "event": "tool",
+          "type": "function",
+          "id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+          "function": "tool_term_search_cprd",
+          "arguments": {
+            "search_term": "eosinophilic gastro"
+          },
+          "result": "No matches found.",
+          "events": [],
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 0
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 3.8498,
+          "event": "model",
+          "model": "anthropic/claude-sonnet-5-5",
+          "input": [
+            {
+              "id": "sT7TkKn09SROp5NtEPNMnv",
+              "content": "Eosinophilic esophagitis",
+              "source": "input",
+              "role": "user"
+            },
+            {
+              "id": "Bkp1CCuuKm6fBmGIhaU2r3",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "id": "toolu_017iZ4cCcp9wH19p253t9rig",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic esophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophag"
+                  }
+                },
+                {
+                  "id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic gastro"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "AtTCKZfxzqQnPIeICWsE0W",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_017iZ4cCcp9wH19p253t9rig",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "Ngd8fMqyU16yfAsB9IMigh",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "YSsJcEl0p0r0VhFlIAfacE",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "VqyZxw2crPt0W5LYDvHXxm",
+              "content": "No matches found.",
+              "role": "tool",
+              "tool_call_id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+              "function": "tool_term_search_cprd"
+            }
+          ],
+          "tools": [
+            {
+              "name": "tool_term_search_cprd",
+              "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The term to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            },
+            {
+              "name": "tool_code_search_cprd",
+              "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The code to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            }
+          ],
+          "tool_choice": "auto",
+          "config": {
+            "max_tokens": 16000
+          },
+          "output": {
+            "model": "claude-sonnet-5-5",
+            "choices": [
+              {
+                "message": {
+                  "id": "PIoY6ZWkFxvQsjDKyJs71m",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    }
+                  ],
+                  "source": "generate",
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "id": "toolu_01XEaYsKV6XJ8LAPJct1dMNJ",
+                      "function": "tool_code_search_cprd",
+                      "arguments": {
+                        "search_term": "J101"
+                      }
+                    }
+                  ],
+                  "model": "claude-sonnet-5-5"
+                },
+                "stop_reason": "tool_calls"
+              }
+            ],
+            "usage": {
+              "input_tokens": 537,
+              "input_tokens_cache_write": 0,
+              "input_tokens_cache_read": 773,
+              "output_tokens": 57
+            },
+            "time": 1.069
+          },
+          "call": {
+            "request": {
+              "messages": [
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Eosinophilic esophagitis"
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_017iZ4cCcp9wH19p253t9rig",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic esophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophag"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic gastro"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_017iZ4cCcp9wH19p253t9rig",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "No matches found."
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                }
+              ],
+              "tools": [
+                {
+                  "name": "tool_term_search_cprd",
+                  "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The term to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                {
+                  "name": "tool_code_search_cprd",
+                  "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The code to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              ],
+              "tool_choice": {
+                "type": "auto"
+              },
+              "model": "claude-sonnet-5-5",
+              "max_tokens": 16000
+            },
+            "response": {
+              "id": "msg_13b0bBGSgKnL1eeoYsa9MZ",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                },
+                {
+                  "id": "toolu_01XEaYsKV6XJ8LAPJct1dMNJ",
+                  "input": {
+                    "search_term": "J101"
+                  },
+                  "name": "tool_code_search_cprd",
+                  "type": "tool_use"
+                }
+              ],
+              "model": "claude-sonnet-5-5",
+              "role": "assistant",
+              "stop_reason": "tool_use",
+              "stop_sequence": {},
+              "type": "message",
+              "usage": {
+                "input_tokens": 537,
+                "input_tokens_cache_write": 0,
+                "input_tokens_cache_read": 773,
+                "output_tokens": 57
+              }
+            },
+            "time": 1.069
+          },
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 1.069
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 4.9188,
+          "event": "tool",
+          "type": "function",
+          "id": "toolu_01XEaYsKV6XJ8LAPJct1dMNJ",
+          "function": "tool_code_search_cprd",
+          "arguments": {
+            "search_term": "J101"
+          },
+          "result": "attachment://df431922e219d44b99a0a77c35f3b1fa",
+          "events": [],
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 0
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 4.9188,
+          "event": "model",
+          "model": "anthropic/claude-sonnet-5-5",
+          "input": [
+            {
+              "id": "3XqM1pJcG04xBB8VJbxDuh",
+              "content": "Eosinophilic esophagitis",
+              "source": "input",
+              "role": "user"
+            },
+            {
+              "id": "5Zo8s2d4zrBX0kQc07gHwU",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "id": "toolu_017iZ4cCcp9wH19p253t9rig",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic esophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophag"
+                  }
+                },
+                {
+                  "id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic gastro"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "HZ7Xc4CkIwYpYGBBPZaUad",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_017iZ4cCcp9wH19p253t9rig",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "PfuNSum899PmJeTn5csCjf",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "CAcQE4D8QeOT2VIBHeK2RI",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "WqByV0AZaiEvOk4JFo6DcO",
+              "content": "No matches found.",
+              "role": "tool",
+              "tool_call_id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "V3D25X3oAohxLgDtRpsK3D",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "id": "toolu_01XEaYsKV6XJ8LAPJct1dMNJ",
+                  "function": "tool_code_search_cprd",
+                  "arguments": {
+                    "search_term": "J101"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "DEhYaOOYm6nMB6f1F6xnum",
+              "content": "attachment://df431922e219d44b99a0a77c35f3b1fa",
+              "role": "tool",
+              "tool_call_id": "toolu_01XEaYsKV6XJ8LAPJct1dMNJ",
+              "function": "tool_code_search_cprd"
+            }
+          ],
+          "tools": [
+            {
+              "name": "tool_term_search_cprd",
+              "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The term to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            },
+            {
+              "name": "tool_code_search_cprd",
+              "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The code to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            }
+          ],
+          "tool_choice": "auto",
+          "config": {
+            "max_tokens": 16000
+          },
+          "output": {
+            "model": "claude-sonnet-5-5",
+            "choices": [
+              {
+                "message": {
+                  "id": "JpdPcdyR0JXPlqi7soKujc",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "attachment://f5958d4b38c399463d558b56ba736cd2"
+                    }
+                  ],
+                  "source": "generate",
+                  "role": "assistant",
+                  "model": "claude-sonnet-5-5"
+                },
+                "stop_reason": "stop"
+              }
+            ],
+            "usage": {
+              "input_tokens": 479,
+              "input_tokens_cache_write": 0,
+              "input_tokens_cache_read": 1308,
+              "output_tokens": 239
+            },
+            "time": 2.8556
+          },
+          "call": {
+            "request": {
+              "messages": [
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Eosinophilic esophagitis"
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_017iZ4cCcp9wH19p253t9rig",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic esophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophag"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic gastro"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_017iZ4cCcp9wH19p253t9rig",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "No matches found."
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01XEaYsKV6XJ8LAPJct1dMNJ",
+                      "name": "tool_code_search_cprd",
+                      "input": {
+                        "search_term": "J101"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01XEaYsKV6XJ8LAPJct1dMNJ",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://df431922e219d44b99a0a77c35f3b1fa"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                }
+              ],
+              "tools": [
+                {
+                  "name": "tool_term_search_cprd",
+                  "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The term to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                {
+                  "name": "tool_code_search_cprd",
+                  "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The code to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              ],
+              "tool_choice": {
+                "type": "auto"
+              },
+              "model": "claude-sonnet-5-5",
+              "max_tokens": 16000
+            },
+            "response": {
+              "id": "msg_dwJ9nmqvaga8k1RCj5ltPN",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "attachment://f5958d4b38c399463d558b56ba736cd2"
+                }
+              ],
+              "model": "claude-sonnet-5-5",
+              "role": "assistant",
+              "stop_reason": "end_turn",
+              "stop_sequence": {},
+              "type": "message",
+              "usage": {
+                "input_tokens": 479,
+                "input_tokens_cache_write": 0,
+                "input_tokens_cache_read": 1308,
+                "output_tokens": 239
+              }
+            },
+            "time": 2.8556
+          },
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 2.8556
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 7.7744,
+          "event": "model",
+          "model": "anthropic/claude-sonnet-5-5",
+          "input": [
+            {
+              "id": "LiowUW4drZS6xjCq5tJKnd",
+              "content": "Eosinophilic esophagitis",
+              "source": "input",
+              "role": "user"
+            },
+            {
+              "id": "qU5jrDQhz4rfa22IxyUYL5",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "id": "toolu_017iZ4cCcp9wH19p253t9rig",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic esophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophag"
+                  }
+                },
+                {
+                  "id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic gastro"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "umXPd0UAghxmLg2yaDC3sA",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_017iZ4cCcp9wH19p253t9rig",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "MCRhgmkzQeSmTwuNGojlJd",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "AIpLkllFNw84YcasFGUHEx",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "Hl33XykmmrwcxgfMEvcVU7",
+              "content": "No matches found.",
+              "role": "tool",
+              "tool_call_id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "y7hQeiq3RTogR6nPmxdsFe",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "id": "toolu_01XEaYsKV6XJ8LAPJct1dMNJ",
+                  "function": "tool_code_search_cprd",
+                  "arguments": {
+                    "search_term": "J101"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "UVIfRDutOloRLnqZWcsLi0",
+              "content": "attachment://df431922e219d44b99a0a77c35f3b1fa",
+              "role": "tool",
+              "tool_call_id": "toolu_01XEaYsKV6XJ8LAPJct1dMNJ",
+              "function": "tool_code_search_cprd"
+            },
+            {
+              "id": "wo4EGY1GRT6w93RoEycwsY",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "attachment://f5958d4b38c399463d558b56ba736cd2"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            {
+              "id": "SKDYVsKiU7Rg3j11ZZCoil",
+              "content": "attachment://edd8759e718b9d4bb8937c0788cfd8f0",
+              "source": "input",
+              "role": "user"
+            }
+          ],
+          "tools": [
+            {
+              "name": "tool_term_search_cprd",
+              "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The term to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            },
+            {
+              "name": "tool_code_search_cprd",
+              "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The code to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            }
+          ],
+          "tool_choice": "auto",
+          "config": {
+            "max_tokens": 16000
+          },
+          "output": {
+            "model": "claude-sonnet-5-5",
+            "choices": [
+              {
+                "message": {
+                  "id": "cbpZ61mYvTyVwgsSP1dbv4",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "attachment://5ee70c1e14002328f3bf5f5720e61d51"
+                    }
+                  ],
+                  "source": "generate",
+                  "role": "assistant",
+                  "model": "claude-sonnet-5-5"
+                },
+                "stop_reason": "stop"
+              }
+            ],
+            "usage": {
+              "input_tokens": 1674,
+              "input_tokens_cache_write": 0,
+              "input_tokens_cache_read": 0,
+              "output_tokens": 14
+            },
+            "time": 1.3149
+          },
+          "call": {
+            "request": {
+              "messages": [
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Eosinophilic esophagitis"
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_017iZ4cCcp9wH19p253t9rig",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic esophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophag"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic gastro"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_017iZ4cCcp9wH19p253t9rig",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01VQUWJhhJnNTCnXo4HfMqdu",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01PgWXgXgF9ApDoSJCfNhhPt",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01XyQCkbUzVbYVcGzGDyaUrD",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "No matches found."
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01XEaYsKV6XJ8LAPJct1dMNJ",
+                      "name": "tool_code_search_cprd",
+                      "input": {
+                        "search_term": "J101"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01XEaYsKV6XJ8LAPJct1dMNJ",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://df431922e219d44b99a0a77c35f3b1fa"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "attachment://f5958d4b38c399463d558b56ba736cd2"
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "attachment://edd8759e718b9d4bb8937c0788cfd8f0"
+                    }
+                  ]
+                }
+              ],
+              "tools": [
+                {
+                  "name": "tool_term_search_cprd",
+                  "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The term to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                {
+                  "name": "tool_code_search_cprd",
+                  "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The code to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              ],
+              "tool_choice": {
+                "type": "auto"
+              },
+              "model": "claude-sonnet-5-5",
+              "max_tokens": 16000
+            },
+            "response": {
+              "id": "msg_KEbHn8wrHCxqlRJ68WAvpd",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "attachment://5ee70c1e14002328f3bf5f5720e61d51"
+                }
+              ],
+              "model": "claude-sonnet-5-5",
+              "role": "assistant",
+              "stop_reason": "end_turn",
+              "stop_sequence": {},
+              "type": "message",
+              "usage": {
+                "input_tokens": 1674,
+                "input_tokens_cache_write": 0,
+                "input_tokens_cache_read": 0,
+                "output_tokens": 14
+              }
+            },
+            "time": 1.3149
+          },
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 1.3149
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 7.7744,
+          "event": "step",
+          "action": "end",
+          "type": "solver",
+          "name": "generate"
+        }
+      ],
+      "model_usage": {
+        "anthropic/claude-sonnet-5-5": {
+          "input_tokens": 2778,
+          "output_tokens": 563,
+          "total_tokens": 3341,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 2770
+        }
+      },
+      "attachments": {
+        "18d534d6d5cf2477de924779d96aace9": "Search for records in CPRD using a specified term. The tool detects the presence of the searchterm anywhere in the term column. Multiple words within a search term are detected in any order, e.g., 'apple banana' matches 'apples and bananas' and 'bananas and apples'. Use word stems where appropriate, e.g., 'app' matches 'apple' and 'application'.",
+        "5ee70c1e14002328f3bf5f5720e61d51": "<ellmer::ContentJson>\n @ data  : NULL\n @ string: chr \"{\\\"codes\\\":[\\\"J1017\\\"]}\"\n @ parsed:List of 1\n .. $ codes:List of 1\n ..  ..$ : chr \"J1017\"",
+        "80cf8787e919eceb58d593c2e44bf7d3": "Search for records in CPRD using a specified Read code. The tool detects the presence of the searchterm at the start of the string in the code column.",
+        "df431922e219d44b99a0a77c35f3b1fa": "|originalreadcode |term                                                |\n|:----------------|:---------------------------------------------------|\n|J101             |Oesophagitis                                        |\n|J1013            |Postoperative oesophagitis                          |\n|J1011-5          |Gastro-oesophageal reflux disease with oesophagitis |\n|J1010            |Abscess of oesophagus                               |\n|J1014            |Gangrenous oesophagitis                             |\n|J1015            |Phlegmonous oesophagitis                            |\n|J101y            |Other specified oesophagitis                        |\n|J101z            |Oesophagitis NOS                                    |\n|J1017            |Eosinophilic oesophagitis                           |\n|J1011-3          |Oesophageal reflux with oesophagitis                |\n|J1011            |Reflux oesophagitis                                 |\n|J1016-1          |Barrett's oesophagus                                |\n|J1012            |Chemical oesophagitis                               |\n|J1011-4          |Peptic oesophagitis                                 |\n|J1016            |Ulcerative oesophagitis                             |\n|J1011-1          |Acid reflux                                         |\n|J1011-2          |Gastro-oesophageal reflux with oesophagitis         |",
+        "e00c07c2795ab3275e10902c1333a370": "|originalreadcode |term                      |\n|:----------------|:-------------------------|\n|J1017            |Eosinophilic oesophagitis |",
+        "edd8759e718b9d4bb8937c0788cfd8f0": "List the OriginalReadCode, exactly as it appears in the source data, of every code in your final codelist. Include every code you selected and nothing else.",
+        "f5958d4b38c399463d558b56ba736cd2": "Only one code in the CPRD Read code lists matches eosinophilic oesophagitis (the US spelling is eosinophilic esophagitis).\n\n| Read code | Term |\n|:--|:--|\n| J1017 | Eosinophilic oesophagitis |\n\nI searched on \"eosinophilic oesophagitis\", \"eosinophilic esophagitis\" and \"eosinophilic oesophag\". All three returned only J1017. A search for \"eosinophilic gastro\" found nothing, so there are no separate eosinophilic gastroenteritis codes to consider. I also checked the neighbouring J101 codes (reflux, Barrett's, other oesophagitis). I left them out because none of them describes eosinophilic disease."
+      }
+    },
+    {
+      "id": 3,
+      "epoch": 2,
+      "input": "Eosinophilic esophagitis",
+      "target": "J1017 Eosinophilic oesophagitis 1",
+      "messages": [
+        {
+          "id": "K6GEha21b5QtPcqItb0atp",
+          "content": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables.",
+          "role": "system"
+        },
+        {
+          "id": "qBN5zPyi21WZ7eBqoKtMWN",
+          "content": "Eosinophilic esophagitis",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "id": "OqOJoiveBBXy6xIuENc33I",
+          "content": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ],
+          "source": "generate",
+          "tool_calls": [
+            {
+              "id": "toolu_01P8BGVgfzLDgQGSoqV3BCkW",
+              "function": "tool_term_search_cprd",
+              "arguments": {
+                "search_term": "eosinophilic oesophagitis"
+              }
+            },
+            {
+              "id": "toolu_01Agtq6SdSNszw8dttUGQuNo",
+              "function": "tool_term_search_cprd",
+              "arguments": {
+                "search_term": "eosinophilic esophagitis"
+              }
+            },
+            {
+              "id": "toolu_015teMht1NR4ofJTVaLGPAnY",
+              "function": "tool_term_search_cprd",
+              "arguments": {
+                "search_term": "eosinophilic"
+              }
+            }
+          ],
+          "model": "claude-sonnet-5-5",
+          "role": "assistant"
+        },
+        {
+          "id": "vxwvDS4Hu6argN2YQcgJZf",
+          "content": "|originalreadcode |term                      |\n|:----------------|:-------------------------|\n|J1017            |Eosinophilic oesophagitis |",
+          "role": "tool",
+          "tool_call_id": "toolu_01P8BGVgfzLDgQGSoqV3BCkW",
+          "function": "tool_term_search_cprd"
+        },
+        {
+          "id": "IaApOH1iqZOjnXsaYEefHN",
+          "content": "|originalreadcode |term                      |\n|:----------------|:-------------------------|\n|J1017            |Eosinophilic oesophagitis |",
+          "role": "tool",
+          "tool_call_id": "toolu_01Agtq6SdSNszw8dttUGQuNo",
+          "function": "tool_term_search_cprd"
+        },
+        {
+          "id": "WEMP8ipz0oZB78kqrMleNv",
+          "content": "|originalreadcode |term                                  |\n|:----------------|:-------------------------------------|\n|J08z5            |Eosinophilic granuloma of oral mucosa |\n|N00y0            |Eosinophilic fasciitis                |\n|F021             |Eosinophilic meningitis               |\n|D4035            |Hypereosinophilic syndrome            |\n|B6510            |Chronic eosinophilic leukaemia        |\n|BBr8             |[M]Eosinophilic leukaemias            |\n|BBr8z            |Eosinophilic leukaemia                |\n|J1017            |Eosinophilic oesophagitis             |\n|C37y1            |Eosinophilic granuloma                |\n|D403             |Eosinophilic disorder                 |\n|BBr80            |[M]Eosinophilic leukaemia             |\n|M2y7             |Eosinophilic cellulitis               |\n|H5832            |Eosinophilic bronchitis               |",
+          "role": "tool",
+          "tool_call_id": "toolu_015teMht1NR4ofJTVaLGPAnY",
+          "function": "tool_term_search_cprd"
+        },
+        {
+          "id": "w9m3BWcue1OWGCaiivARjH",
+          "content": [
+            {
+              "type": "text",
+              "text": "| Read code | Term |\n|---|---|\n| J1017 | Eosinophilic oesophagitis |\n\nI found one relevant code. Searches for both the \"oesophagitis\" and \"esophagitis\" spellings returned only J1017. A broader search on \"eosinophilic\" turned up only unrelated conditions, such as eosinophilic fasciitis, eosinophilic bronchitis and hypereosinophilic syndrome. I left those out."
+            }
+          ],
+          "source": "generate",
+          "model": "claude-sonnet-5-5",
+          "role": "assistant"
+        },
+        {
+          "id": "ECo34udom8PzkR45DECHiN",
+          "content": "List the OriginalReadCode, exactly as it appears in the source data, of every code in your final codelist. Include every code you selected and nothing else.",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "id": "SvY2UAOAQuo3IKeFgtmddR",
+          "content": [
+            {
+              "type": "text",
+              "text": "<ellmer::ContentJson>\n @ data  : NULL\n @ string: chr \"{\\\"codes\\\":[\\\"J1017\\\"]}\"\n @ parsed:List of 1\n .. $ codes:List of 1\n ..  ..$ : chr \"J1017\""
+            }
+          ],
+          "source": "generate",
+          "model": "claude-sonnet-5-5",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-sonnet-5-5",
+        "choices": [
+          {
+            "message": {
+              "id": "2kh0z3Sf9U9ei1eodkcpgm",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "<ellmer::ContentJson>\n @ data  : NULL\n @ string: chr \"{\\\"codes\\\":[\\\"J1017\\\"]}\"\n @ parsed:List of 1\n .. $ codes:List of 1\n ..  ..$ : chr \"J1017\""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 2074,
+          "output_tokens": 349,
+          "total_tokens": 2423,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 1462
+        },
+        "time": 1.1831
+      },
+      "scores": {
+        "detect_codelist(code_terms = code_terms)": {
+          "value": "C",
+          "answer": "| Read code | Term |\n|---|---|\n| J1017 | Eosinophilic oesophagitis |\n\nI found one relevant code. Searches for both the \"oesophagitis\" and \"esophagitis\" spellings returned only J1017. A broader search on \"eosinophilic\" turned up only unrelated conditions, such as eosinophilic fasciitis, eosinophilic bronchitis and hypereosinophilic syndrome. I left those out.",
+          "explanation": "1 codes extracted; 0 optional target codes missing.\nMissing required (0): none\nNot in target codelist (0): none\nNot in source data (0): none\nRequired codes retrieved into context: 1/1\nNever retrieved (0): none\nRetrieved but not used (0): none",
+          "metadata": {
+            "scorer_metadata": ["List of 1", " $ :List of 16", "  ..$ n_found             : int 1", "  ..$ n_missing_required  : int 0", "  ..$ n_missing_optional  : int 0", "  ..$ n_irrelevant        : int 0", "  ..$ n_nonexistent       : int 0", "  ..$ n_required          : int 1", "  ..$ n_retrieved         : int 1", "  ..$ n_not_retrieved     : int 0", "  ..$ n_retrieved_not_used: int 0", "  ..$ pct_retrieved       : num 1", "  ..$ missing_required    : chr(0) ", "  ..$ missing_optional    : chr(0) ", "  ..$ irrelevant          : chr(0) ", "  ..$ nonexistent         : chr(0) ", "  ..$ not_retrieved       : chr(0) ", "  ..$ retrieved_not_used  : chr(0) "]
+          }
+        }
+      },
+      "metadata": {
+        "solver_metadata": ["List of 1", " $ :List of 1", "  ..$ codes: chr \"J1017\""]
+      },
+      "store": {},
+      "events": [
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 0,
+          "event": "step",
+          "action": "begin",
+          "name": "init"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 9.0893,
+          "event": "sample_init",
+          "sample": {
+            "input": "Eosinophilic esophagitis",
+            "target": "J1017 Eosinophilic oesophagitis 1",
+            "id": 3
+          },
+          "state": {
+            "messages": [
+              {
+                "id": "SvUBP1CmQnZT0VqUXe70dY",
+                "content": "Eosinophilic esophagitis",
+                "source": "input",
+                "role": "user"
+              }
+            ],
+            "tools": [],
+            "tool_choice": {},
+            "store": {},
+            "output": {
+              "model": "anthropic/claude-sonnet-5-5",
+              "choices": []
+            },
+            "completed": false,
+            "metadata": {}
+          }
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 12.6963,
+          "event": "step",
+          "action": "end",
+          "name": "init"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 9.0893,
+          "event": "step",
+          "action": "begin",
+          "type": "solver",
+          "name": "use_tools"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 9.0893,
+          "event": "state",
+          "changes": [
+            {
+              "op": "add",
+              "path": "/tools/0",
+              "value": {
+                "name": "tool_term_search_cprd",
+                "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+                "parameters": {
+                  "type": "object",
+                  "description": "",
+                  "properties": {
+                    "search_term": {
+                      "type": "string",
+                      "description": "The term to search for in the CPRD records."
+                    }
+                  },
+                  "required": [
+                    "search_term"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "op": "add",
+              "path": "/tools/1",
+              "value": {
+                "name": "tool_code_search_cprd",
+                "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+                "parameters": {
+                  "type": "object",
+                  "description": "",
+                  "properties": {
+                    "search_term": {
+                      "type": "string",
+                      "description": "The code to search for in the CPRD records."
+                    }
+                  },
+                  "required": [
+                    "search_term"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "op": "replace",
+              "path": "/tool_choice",
+              "value": "auto"
+            }
+          ]
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 12.6963,
+          "event": "step",
+          "action": "end",
+          "type": "solver",
+          "name": "use_tools"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 0,
+          "event": "step",
+          "action": "begin",
+          "type": "solver",
+          "name": "generate"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 9.0893,
+          "event": "model",
+          "model": "anthropic/claude-sonnet-5-5",
+          "input": [
+            {
+              "id": "lpnL4vsEdEIP19iiUYMBDy",
+              "content": "Eosinophilic esophagitis",
+              "source": "input",
+              "role": "user"
+            }
+          ],
+          "tools": [
+            {
+              "name": "tool_term_search_cprd",
+              "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The term to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            },
+            {
+              "name": "tool_code_search_cprd",
+              "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The code to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            }
+          ],
+          "tool_choice": "auto",
+          "config": {
+            "max_tokens": 16000
+          },
+          "output": {
+            "model": "claude-sonnet-5-5",
+            "choices": [
+              {
+                "message": {
+                  "id": "c5XbuV13cnJnaZrPQu8Yue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    }
+                  ],
+                  "source": "generate",
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "id": "toolu_01P8BGVgfzLDgQGSoqV3BCkW",
+                      "function": "tool_term_search_cprd",
+                      "arguments": {
+                        "search_term": "eosinophilic oesophagitis"
+                      }
+                    },
+                    {
+                      "id": "toolu_01Agtq6SdSNszw8dttUGQuNo",
+                      "function": "tool_term_search_cprd",
+                      "arguments": {
+                        "search_term": "eosinophilic esophagitis"
+                      }
+                    },
+                    {
+                      "id": "toolu_015teMht1NR4ofJTVaLGPAnY",
+                      "function": "tool_term_search_cprd",
+                      "arguments": {
+                        "search_term": "eosinophilic"
+                      }
+                    }
+                  ],
+                  "model": "claude-sonnet-5-5"
+                },
+                "stop_reason": "tool_calls"
+              }
+            ],
+            "usage": {
+              "input_tokens": 88,
+              "input_tokens_cache_write": 0,
+              "input_tokens_cache_read": 689,
+              "output_tokens": 188
+            },
+            "time": 1.769
+          },
+          "call": {
+            "request": {
+              "messages": [
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Eosinophilic esophagitis"
+                    }
+                  ]
+                }
+              ],
+              "tools": [
+                {
+                  "name": "tool_term_search_cprd",
+                  "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The term to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                {
+                  "name": "tool_code_search_cprd",
+                  "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The code to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              ],
+              "tool_choice": {
+                "type": "auto"
+              },
+              "model": "claude-sonnet-5-5",
+              "max_tokens": 16000
+            },
+            "response": {
+              "id": "msg_sUrLoIymNBLJ1OeLdACLd1",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                },
+                {
+                  "id": "toolu_01P8BGVgfzLDgQGSoqV3BCkW",
+                  "input": {
+                    "search_term": "eosinophilic oesophagitis"
+                  },
+                  "name": "tool_term_search_cprd",
+                  "type": "tool_use"
+                },
+                {
+                  "id": "toolu_01Agtq6SdSNszw8dttUGQuNo",
+                  "input": {
+                    "search_term": "eosinophilic esophagitis"
+                  },
+                  "name": "tool_term_search_cprd",
+                  "type": "tool_use"
+                },
+                {
+                  "id": "toolu_015teMht1NR4ofJTVaLGPAnY",
+                  "input": {
+                    "search_term": "eosinophilic"
+                  },
+                  "name": "tool_term_search_cprd",
+                  "type": "tool_use"
+                }
+              ],
+              "model": "claude-sonnet-5-5",
+              "role": "assistant",
+              "stop_reason": "tool_use",
+              "stop_sequence": {},
+              "type": "message",
+              "usage": {
+                "input_tokens": 88,
+                "input_tokens_cache_write": 0,
+                "input_tokens_cache_read": 689,
+                "output_tokens": 188
+              }
+            },
+            "time": 1.769
+          },
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 1.769
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 10.8584,
+          "event": "tool",
+          "type": "function",
+          "id": "toolu_01P8BGVgfzLDgQGSoqV3BCkW",
+          "function": "tool_term_search_cprd",
+          "arguments": {
+            "search_term": "eosinophilic oesophagitis"
+          },
+          "result": "attachment://e00c07c2795ab3275e10902c1333a370",
+          "events": [],
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 0
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 10.8584,
+          "event": "tool",
+          "type": "function",
+          "id": "toolu_01Agtq6SdSNszw8dttUGQuNo",
+          "function": "tool_term_search_cprd",
+          "arguments": {
+            "search_term": "eosinophilic esophagitis"
+          },
+          "result": "attachment://e00c07c2795ab3275e10902c1333a370",
+          "events": [],
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 0
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 10.8584,
+          "event": "tool",
+          "type": "function",
+          "id": "toolu_015teMht1NR4ofJTVaLGPAnY",
+          "function": "tool_term_search_cprd",
+          "arguments": {
+            "search_term": "eosinophilic"
+          },
+          "result": "attachment://3facd55522bf27eee4edac7212893c4c",
+          "events": [],
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 0
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 10.8584,
+          "event": "model",
+          "model": "anthropic/claude-sonnet-5-5",
+          "input": [
+            {
+              "id": "dFseUBp7rnoqxXENIhOGWr",
+              "content": "Eosinophilic esophagitis",
+              "source": "input",
+              "role": "user"
+            },
+            {
+              "id": "6Vh8M7OkfjOlQPHekAioFQ",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "id": "toolu_01P8BGVgfzLDgQGSoqV3BCkW",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_01Agtq6SdSNszw8dttUGQuNo",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic esophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_015teMht1NR4ofJTVaLGPAnY",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "bkzX3QPEjGHhFCJYDZCiy5",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01P8BGVgfzLDgQGSoqV3BCkW",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "XtBJKxTAw0vCoCagXouV47",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01Agtq6SdSNszw8dttUGQuNo",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "ahWjiJm93qTFAUFhm4FDAI",
+              "content": "attachment://3facd55522bf27eee4edac7212893c4c",
+              "role": "tool",
+              "tool_call_id": "toolu_015teMht1NR4ofJTVaLGPAnY",
+              "function": "tool_term_search_cprd"
+            }
+          ],
+          "tools": [
+            {
+              "name": "tool_term_search_cprd",
+              "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The term to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            },
+            {
+              "name": "tool_code_search_cprd",
+              "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The code to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            }
+          ],
+          "tool_choice": "auto",
+          "config": {
+            "max_tokens": 16000
+          },
+          "output": {
+            "model": "claude-sonnet-5-5",
+            "choices": [
+              {
+                "message": {
+                  "id": "pb7rGgQR1zIY7yS6mrV4gG",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "attachment://4ad0de51ac6169ac7200dcee80cba42b"
+                    }
+                  ],
+                  "source": "generate",
+                  "role": "assistant",
+                  "model": "claude-sonnet-5-5"
+                },
+                "stop_reason": "stop"
+              }
+            ],
+            "usage": {
+              "input_tokens": 709,
+              "input_tokens_cache_write": 0,
+              "input_tokens_cache_read": 773,
+              "output_tokens": 147
+            },
+            "time": 1.838
+          },
+          "call": {
+            "request": {
+              "messages": [
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Eosinophilic esophagitis"
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01P8BGVgfzLDgQGSoqV3BCkW",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01Agtq6SdSNszw8dttUGQuNo",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic esophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_015teMht1NR4ofJTVaLGPAnY",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01P8BGVgfzLDgQGSoqV3BCkW",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01Agtq6SdSNszw8dttUGQuNo",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_015teMht1NR4ofJTVaLGPAnY",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://3facd55522bf27eee4edac7212893c4c"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                }
+              ],
+              "tools": [
+                {
+                  "name": "tool_term_search_cprd",
+                  "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The term to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                {
+                  "name": "tool_code_search_cprd",
+                  "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The code to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              ],
+              "tool_choice": {
+                "type": "auto"
+              },
+              "model": "claude-sonnet-5-5",
+              "max_tokens": 16000
+            },
+            "response": {
+              "id": "msg_qrRfAI6mxeNMs4DsG9nYmv",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "attachment://4ad0de51ac6169ac7200dcee80cba42b"
+                }
+              ],
+              "model": "claude-sonnet-5-5",
+              "role": "assistant",
+              "stop_reason": "end_turn",
+              "stop_sequence": {},
+              "type": "message",
+              "usage": {
+                "input_tokens": 709,
+                "input_tokens_cache_write": 0,
+                "input_tokens_cache_read": 773,
+                "output_tokens": 147
+              }
+            },
+            "time": 1.838
+          },
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 1.838
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 12.6963,
+          "event": "model",
+          "model": "anthropic/claude-sonnet-5-5",
+          "input": [
+            {
+              "id": "TekztdtanlE7nHm1503G1l",
+              "content": "Eosinophilic esophagitis",
+              "source": "input",
+              "role": "user"
+            },
+            {
+              "id": "falmPwdNPi9tbmoyYm4hvT",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "id": "toolu_01P8BGVgfzLDgQGSoqV3BCkW",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_01Agtq6SdSNszw8dttUGQuNo",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic esophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_015teMht1NR4ofJTVaLGPAnY",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "LbikwwLKEFcoZKK0jn1lsa",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01P8BGVgfzLDgQGSoqV3BCkW",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "u7kc8RwUja1EKJ5T7gbyw0",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01Agtq6SdSNszw8dttUGQuNo",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "XKxBY4A7qAWfYI0HEZQ0OU",
+              "content": "attachment://3facd55522bf27eee4edac7212893c4c",
+              "role": "tool",
+              "tool_call_id": "toolu_015teMht1NR4ofJTVaLGPAnY",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "qyHeGK5m7pMAAzI4goNiNA",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "attachment://4ad0de51ac6169ac7200dcee80cba42b"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            {
+              "id": "7speIVrzKz8wxiCmcW8Hh5",
+              "content": "attachment://edd8759e718b9d4bb8937c0788cfd8f0",
+              "source": "input",
+              "role": "user"
+            }
+          ],
+          "tools": [
+            {
+              "name": "tool_term_search_cprd",
+              "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The term to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            },
+            {
+              "name": "tool_code_search_cprd",
+              "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The code to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            }
+          ],
+          "tool_choice": "auto",
+          "config": {
+            "max_tokens": 16000
+          },
+          "output": {
+            "model": "claude-sonnet-5-5",
+            "choices": [
+              {
+                "message": {
+                  "id": "qYzxN7Vjl9Jjc6DRv4NZRq",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "attachment://5ee70c1e14002328f3bf5f5720e61d51"
+                    }
+                  ],
+                  "source": "generate",
+                  "role": "assistant",
+                  "model": "claude-sonnet-5-5"
+                },
+                "stop_reason": "stop"
+              }
+            ],
+            "usage": {
+              "input_tokens": 1277,
+              "input_tokens_cache_write": 0,
+              "input_tokens_cache_read": 0,
+              "output_tokens": 14
+            },
+            "time": 1.1831
+          },
+          "call": {
+            "request": {
+              "messages": [
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Eosinophilic esophagitis"
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01P8BGVgfzLDgQGSoqV3BCkW",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01Agtq6SdSNszw8dttUGQuNo",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic esophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_015teMht1NR4ofJTVaLGPAnY",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01P8BGVgfzLDgQGSoqV3BCkW",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01Agtq6SdSNszw8dttUGQuNo",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_015teMht1NR4ofJTVaLGPAnY",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://3facd55522bf27eee4edac7212893c4c"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "attachment://4ad0de51ac6169ac7200dcee80cba42b"
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "attachment://edd8759e718b9d4bb8937c0788cfd8f0"
+                    }
+                  ]
+                }
+              ],
+              "tools": [
+                {
+                  "name": "tool_term_search_cprd",
+                  "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The term to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                {
+                  "name": "tool_code_search_cprd",
+                  "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The code to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              ],
+              "tool_choice": {
+                "type": "auto"
+              },
+              "model": "claude-sonnet-5-5",
+              "max_tokens": 16000
+            },
+            "response": {
+              "id": "msg_LVk2ZAHWBaXRVMLqiV2sUg",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "attachment://5ee70c1e14002328f3bf5f5720e61d51"
+                }
+              ],
+              "model": "claude-sonnet-5-5",
+              "role": "assistant",
+              "stop_reason": "end_turn",
+              "stop_sequence": {},
+              "type": "message",
+              "usage": {
+                "input_tokens": 1277,
+                "input_tokens_cache_write": 0,
+                "input_tokens_cache_read": 0,
+                "output_tokens": 14
+              }
+            },
+            "time": 1.1831
+          },
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 1.1831
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 12.6963,
+          "event": "step",
+          "action": "end",
+          "type": "solver",
+          "name": "generate"
+        }
+      ],
+      "model_usage": {
+        "anthropic/claude-sonnet-5-5": {
+          "input_tokens": 2074,
+          "output_tokens": 349,
+          "total_tokens": 2423,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 1462
+        }
+      },
+      "attachments": {
+        "18d534d6d5cf2477de924779d96aace9": "Search for records in CPRD using a specified term. The tool detects the presence of the searchterm anywhere in the term column. Multiple words within a search term are detected in any order, e.g., 'apple banana' matches 'apples and bananas' and 'bananas and apples'. Use word stems where appropriate, e.g., 'app' matches 'apple' and 'application'.",
+        "3facd55522bf27eee4edac7212893c4c": "|originalreadcode |term                                  |\n|:----------------|:-------------------------------------|\n|J08z5            |Eosinophilic granuloma of oral mucosa |\n|N00y0            |Eosinophilic fasciitis                |\n|F021             |Eosinophilic meningitis               |\n|D4035            |Hypereosinophilic syndrome            |\n|B6510            |Chronic eosinophilic leukaemia        |\n|BBr8             |[M]Eosinophilic leukaemias            |\n|BBr8z            |Eosinophilic leukaemia                |\n|J1017            |Eosinophilic oesophagitis             |\n|C37y1            |Eosinophilic granuloma                |\n|D403             |Eosinophilic disorder                 |\n|BBr80            |[M]Eosinophilic leukaemia             |\n|M2y7             |Eosinophilic cellulitis               |\n|H5832            |Eosinophilic bronchitis               |",
+        "4ad0de51ac6169ac7200dcee80cba42b": "| Read code | Term |\n|---|---|\n| J1017 | Eosinophilic oesophagitis |\n\nI found one relevant code. Searches for both the \"oesophagitis\" and \"esophagitis\" spellings returned only J1017. A broader search on \"eosinophilic\" turned up only unrelated conditions, such as eosinophilic fasciitis, eosinophilic bronchitis and hypereosinophilic syndrome. I left those out.",
+        "5ee70c1e14002328f3bf5f5720e61d51": "<ellmer::ContentJson>\n @ data  : NULL\n @ string: chr \"{\\\"codes\\\":[\\\"J1017\\\"]}\"\n @ parsed:List of 1\n .. $ codes:List of 1\n ..  ..$ : chr \"J1017\"",
+        "80cf8787e919eceb58d593c2e44bf7d3": "Search for records in CPRD using a specified Read code. The tool detects the presence of the searchterm at the start of the string in the code column.",
+        "e00c07c2795ab3275e10902c1333a370": "|originalreadcode |term                      |\n|:----------------|:-------------------------|\n|J1017            |Eosinophilic oesophagitis |",
+        "edd8759e718b9d4bb8937c0788cfd8f0": "List the OriginalReadCode, exactly as it appears in the source data, of every code in your final codelist. Include every code you selected and nothing else."
+      }
+    },
+    {
+      "id": 3,
+      "epoch": 3,
+      "input": "Eosinophilic esophagitis",
+      "target": "J1017 Eosinophilic oesophagitis 1",
+      "messages": [
+        {
+          "id": "zXERWSBfyf5e8Kw2y3svge",
+          "content": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables.",
+          "role": "system"
+        },
+        {
+          "id": "GPro5tR4KH9NyleLNqyfPu",
+          "content": "Eosinophilic esophagitis",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "id": "GECV47sO7NKyoFbjQBjizB",
+          "content": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ],
+          "source": "generate",
+          "tool_calls": [
+            {
+              "id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+              "function": "tool_term_search_cprd",
+              "arguments": {
+                "search_term": "eosinophilic oesophagitis"
+              }
+            },
+            {
+              "id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+              "function": "tool_term_search_cprd",
+              "arguments": {
+                "search_term": "eosinophilic esophagitis"
+              }
+            },
+            {
+              "id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+              "function": "tool_term_search_cprd",
+              "arguments": {
+                "search_term": "eosinophilic oesophag"
+              }
+            },
+            {
+              "id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+              "function": "tool_term_search_cprd",
+              "arguments": {
+                "search_term": "eosinophilic gastro"
+              }
+            }
+          ],
+          "model": "claude-sonnet-5-5",
+          "role": "assistant"
+        },
+        {
+          "id": "ykVkTPrCG8NRFrcMonz0Vj",
+          "content": "|originalreadcode |term                      |\n|:----------------|:-------------------------|\n|J1017            |Eosinophilic oesophagitis |",
+          "role": "tool",
+          "tool_call_id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+          "function": "tool_term_search_cprd"
+        },
+        {
+          "id": "tAXhQwu4r6p9ScJksVcjh2",
+          "content": "|originalreadcode |term                      |\n|:----------------|:-------------------------|\n|J1017            |Eosinophilic oesophagitis |",
+          "role": "tool",
+          "tool_call_id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+          "function": "tool_term_search_cprd"
+        },
+        {
+          "id": "NSK9UxhBIaJJYbnN1KzVdB",
+          "content": "|originalreadcode |term                      |\n|:----------------|:-------------------------|\n|J1017            |Eosinophilic oesophagitis |",
+          "role": "tool",
+          "tool_call_id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+          "function": "tool_term_search_cprd"
+        },
+        {
+          "id": "RKRgfK8zR2LsfhFfPUSkgq",
+          "content": "No matches found.",
+          "role": "tool",
+          "tool_call_id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+          "function": "tool_term_search_cprd"
+        },
+        {
+          "id": "7eOm8ecBUKEghhybsZwUBL",
+          "content": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ],
+          "source": "generate",
+          "tool_calls": [
+            {
+              "id": "toolu_01A2oWcNMsi1D6nrdVrQRbPb",
+              "function": "tool_code_search_cprd",
+              "arguments": {
+                "search_term": "J101"
+              }
+            },
+            {
+              "id": "toolu_01CMYmGWnAsT2p9iJvZK42Xc",
+              "function": "tool_term_search_cprd",
+              "arguments": {
+                "search_term": "eosinophilic oesophagitis OR allergic oesophagitis"
+              }
+            }
+          ],
+          "model": "claude-sonnet-5-5",
+          "role": "assistant"
+        },
+        {
+          "id": "S78D0pS3fDaT1peWn1qJSg",
+          "content": "|originalreadcode |term                                                |\n|:----------------|:---------------------------------------------------|\n|J101             |Oesophagitis                                        |\n|J1013            |Postoperative oesophagitis                          |\n|J1011-5          |Gastro-oesophageal reflux disease with oesophagitis |\n|J1010            |Abscess of oesophagus                               |\n|J1014            |Gangrenous oesophagitis                             |\n|J1015            |Phlegmonous oesophagitis                            |\n|J101y            |Other specified oesophagitis                        |\n|J101z            |Oesophagitis NOS                                    |\n|J1017            |Eosinophilic oesophagitis                           |\n|J1011-3          |Oesophageal reflux with oesophagitis                |\n|J1011            |Reflux oesophagitis                                 |\n|J1016-1          |Barrett's oesophagus                                |\n|J1012            |Chemical oesophagitis                               |\n|J1011-4          |Peptic oesophagitis                                 |\n|J1016            |Ulcerative oesophagitis                             |\n|J1011-1          |Acid reflux                                         |\n|J1011-2          |Gastro-oesophageal reflux with oesophagitis         |",
+          "role": "tool",
+          "tool_call_id": "toolu_01A2oWcNMsi1D6nrdVrQRbPb",
+          "function": "tool_code_search_cprd"
+        },
+        {
+          "id": "RcIekvfQmD5eoZoc5ESVIw",
+          "content": "No matches found.",
+          "role": "tool",
+          "tool_call_id": "toolu_01CMYmGWnAsT2p9iJvZK42Xc",
+          "function": "tool_term_search_cprd"
+        },
+        {
+          "id": "7R9Zm0QEY8oroH2L8j0gX2",
+          "content": [
+            {
+              "type": "text",
+              "text": "I searched the CPRD terms for eosinophilic oesophagitis (and the US spelling, esophagitis), eosinophilic oesophag-, and eosinophilic gastro-. Only one Read code matched. I also browsed the J101 (oesophagitis) code family and found no other eosinophilic oesophagitis codes. The other J101 codes are different types of oesophagitis, such as reflux, chemical and ulcerative.\n\n| Read code | Term | Include |\n|:--|:--|:--|\n| J1017 | Eosinophilic oesophagitis | Yes |"
+            }
+          ],
+          "source": "generate",
+          "model": "claude-sonnet-5-5",
+          "role": "assistant"
+        },
+        {
+          "id": "AzFTTiYWRSiy5xi8QG16mk",
+          "content": "List the OriginalReadCode, exactly as it appears in the source data, of every code in your final codelist. Include every code you selected and nothing else.",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "id": "1JiM9Gvttg1EUdE3AmHGJc",
+          "content": [
+            {
+              "type": "text",
+              "text": "<ellmer::ContentJson>\n @ data  : NULL\n @ string: chr \"{\\\"codes\\\":[\\\"J1017\\\"]}\"\n @ parsed:List of 1\n .. $ codes:List of 1\n ..  ..$ : chr \"J1017\""
+            }
+          ],
+          "source": "generate",
+          "model": "claude-sonnet-5-5",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-sonnet-5-5",
+        "choices": [
+          {
+            "message": {
+              "id": "lVlUmdnMNxodQKAARToC1m",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "<ellmer::ContentJson>\n @ data  : NULL\n @ string: chr \"{\\\"codes\\\":[\\\"J1017\\\"]}\"\n @ parsed:List of 1\n .. $ codes:List of 1\n ..  ..$ : chr \"J1017\""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 3021,
+          "output_tokens": 592,
+          "total_tokens": 3613,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 2770
+        },
+        "time": 1.3709
+      },
+      "scores": {
+        "detect_codelist(code_terms = code_terms)": {
+          "value": "C",
+          "answer": "I searched the CPRD terms for eosinophilic oesophagitis (and the US spelling, esophagitis), eosinophilic oesophag-, and eosinophilic gastro-. Only one Read code matched. I also browsed the J101 (oesophagitis) code family and found no other eosinophilic oesophagitis codes. The other J101 codes are different types of oesophagitis, such as reflux, chemical and ulcerative.\n\n| Read code | Term | Include |\n|:--|:--|:--|\n| J1017 | Eosinophilic oesophagitis | Yes |",
+          "explanation": "1 codes extracted; 0 optional target codes missing.\nMissing required (0): none\nNot in target codelist (0): none\nNot in source data (0): none\nRequired codes retrieved into context: 1/1\nNever retrieved (0): none\nRetrieved but not used (0): none",
+          "metadata": {
+            "scorer_metadata": ["List of 1", " $ :List of 16", "  ..$ n_found             : int 1", "  ..$ n_missing_required  : int 0", "  ..$ n_missing_optional  : int 0", "  ..$ n_irrelevant        : int 0", "  ..$ n_nonexistent       : int 0", "  ..$ n_required          : int 1", "  ..$ n_retrieved         : int 1", "  ..$ n_not_retrieved     : int 0", "  ..$ n_retrieved_not_used: int 0", "  ..$ pct_retrieved       : num 1", "  ..$ missing_required    : chr(0) ", "  ..$ missing_optional    : chr(0) ", "  ..$ irrelevant          : chr(0) ", "  ..$ nonexistent         : chr(0) ", "  ..$ not_retrieved       : chr(0) ", "  ..$ retrieved_not_used  : chr(0) "]
+          }
+        }
+      },
+      "metadata": {
+        "solver_metadata": ["List of 1", " $ :List of 1", "  ..$ codes: chr \"J1017\""]
+      },
+      "store": {},
+      "events": [
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 0,
+          "event": "step",
+          "action": "begin",
+          "name": "init"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 13.8794,
+          "event": "sample_init",
+          "sample": {
+            "input": "Eosinophilic esophagitis",
+            "target": "J1017 Eosinophilic oesophagitis 1",
+            "id": 3
+          },
+          "state": {
+            "messages": [
+              {
+                "id": "HDX2SecN8TmLbJc8ncvkAC",
+                "content": "Eosinophilic esophagitis",
+                "source": "input",
+                "role": "user"
+              }
+            ],
+            "tools": [],
+            "tool_choice": {},
+            "store": {},
+            "output": {
+              "model": "anthropic/claude-sonnet-5-5",
+              "choices": []
+            },
+            "completed": false,
+            "metadata": {}
+          }
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 19.4531,
+          "event": "step",
+          "action": "end",
+          "name": "init"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 13.8794,
+          "event": "step",
+          "action": "begin",
+          "type": "solver",
+          "name": "use_tools"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 13.8794,
+          "event": "state",
+          "changes": [
+            {
+              "op": "add",
+              "path": "/tools/0",
+              "value": {
+                "name": "tool_term_search_cprd",
+                "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+                "parameters": {
+                  "type": "object",
+                  "description": "",
+                  "properties": {
+                    "search_term": {
+                      "type": "string",
+                      "description": "The term to search for in the CPRD records."
+                    }
+                  },
+                  "required": [
+                    "search_term"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "op": "add",
+              "path": "/tools/1",
+              "value": {
+                "name": "tool_code_search_cprd",
+                "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+                "parameters": {
+                  "type": "object",
+                  "description": "",
+                  "properties": {
+                    "search_term": {
+                      "type": "string",
+                      "description": "The code to search for in the CPRD records."
+                    }
+                  },
+                  "required": [
+                    "search_term"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "op": "replace",
+              "path": "/tool_choice",
+              "value": "auto"
+            }
+          ]
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 19.4531,
+          "event": "step",
+          "action": "end",
+          "type": "solver",
+          "name": "use_tools"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 0,
+          "event": "step",
+          "action": "begin",
+          "type": "solver",
+          "name": "generate"
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 13.8794,
+          "event": "model",
+          "model": "anthropic/claude-sonnet-5-5",
+          "input": [
+            {
+              "id": "XPMKwBvTbYU5fPlZ7zxE8M",
+              "content": "Eosinophilic esophagitis",
+              "source": "input",
+              "role": "user"
+            }
+          ],
+          "tools": [
+            {
+              "name": "tool_term_search_cprd",
+              "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The term to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            },
+            {
+              "name": "tool_code_search_cprd",
+              "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The code to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            }
+          ],
+          "tool_choice": "auto",
+          "config": {
+            "max_tokens": 16000
+          },
+          "output": {
+            "model": "claude-sonnet-5-5",
+            "choices": [
+              {
+                "message": {
+                  "id": "CafrFDTdYY6uhCz3X3rQsY",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    }
+                  ],
+                  "source": "generate",
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+                      "function": "tool_term_search_cprd",
+                      "arguments": {
+                        "search_term": "eosinophilic oesophagitis"
+                      }
+                    },
+                    {
+                      "id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+                      "function": "tool_term_search_cprd",
+                      "arguments": {
+                        "search_term": "eosinophilic esophagitis"
+                      }
+                    },
+                    {
+                      "id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+                      "function": "tool_term_search_cprd",
+                      "arguments": {
+                        "search_term": "eosinophilic oesophag"
+                      }
+                    },
+                    {
+                      "id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+                      "function": "tool_term_search_cprd",
+                      "arguments": {
+                        "search_term": "eosinophilic gastro"
+                      }
+                    }
+                  ],
+                  "model": "claude-sonnet-5-5"
+                },
+                "stop_reason": "tool_calls"
+              }
+            ],
+            "usage": {
+              "input_tokens": 88,
+              "input_tokens_cache_write": 0,
+              "input_tokens_cache_read": 689,
+              "output_tokens": 253
+            },
+            "time": 2.0721
+          },
+          "call": {
+            "request": {
+              "messages": [
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Eosinophilic esophagitis"
+                    }
+                  ]
+                }
+              ],
+              "tools": [
+                {
+                  "name": "tool_term_search_cprd",
+                  "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The term to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                {
+                  "name": "tool_code_search_cprd",
+                  "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The code to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              ],
+              "tool_choice": {
+                "type": "auto"
+              },
+              "model": "claude-sonnet-5-5",
+              "max_tokens": 16000
+            },
+            "response": {
+              "id": "msg_ZZd9aRIMTXvgORCXrtpRTu",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                },
+                {
+                  "id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+                  "input": {
+                    "search_term": "eosinophilic oesophagitis"
+                  },
+                  "name": "tool_term_search_cprd",
+                  "type": "tool_use"
+                },
+                {
+                  "id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+                  "input": {
+                    "search_term": "eosinophilic esophagitis"
+                  },
+                  "name": "tool_term_search_cprd",
+                  "type": "tool_use"
+                },
+                {
+                  "id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+                  "input": {
+                    "search_term": "eosinophilic oesophag"
+                  },
+                  "name": "tool_term_search_cprd",
+                  "type": "tool_use"
+                },
+                {
+                  "id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+                  "input": {
+                    "search_term": "eosinophilic gastro"
+                  },
+                  "name": "tool_term_search_cprd",
+                  "type": "tool_use"
+                }
+              ],
+              "model": "claude-sonnet-5-5",
+              "role": "assistant",
+              "stop_reason": "tool_use",
+              "stop_sequence": {},
+              "type": "message",
+              "usage": {
+                "input_tokens": 88,
+                "input_tokens_cache_write": 0,
+                "input_tokens_cache_read": 689,
+                "output_tokens": 253
+              }
+            },
+            "time": 2.0721
+          },
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 2.0721
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 15.9515,
+          "event": "tool",
+          "type": "function",
+          "id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+          "function": "tool_term_search_cprd",
+          "arguments": {
+            "search_term": "eosinophilic oesophagitis"
+          },
+          "result": "attachment://e00c07c2795ab3275e10902c1333a370",
+          "events": [],
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 0
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 15.9515,
+          "event": "tool",
+          "type": "function",
+          "id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+          "function": "tool_term_search_cprd",
+          "arguments": {
+            "search_term": "eosinophilic esophagitis"
+          },
+          "result": "attachment://e00c07c2795ab3275e10902c1333a370",
+          "events": [],
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 0
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 15.9515,
+          "event": "tool",
+          "type": "function",
+          "id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+          "function": "tool_term_search_cprd",
+          "arguments": {
+            "search_term": "eosinophilic oesophag"
+          },
+          "result": "attachment://e00c07c2795ab3275e10902c1333a370",
+          "events": [],
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 0
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 15.9515,
+          "event": "tool",
+          "type": "function",
+          "id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+          "function": "tool_term_search_cprd",
+          "arguments": {
+            "search_term": "eosinophilic gastro"
+          },
+          "result": "No matches found.",
+          "events": [],
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 0
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 15.9515,
+          "event": "model",
+          "model": "anthropic/claude-sonnet-5-5",
+          "input": [
+            {
+              "id": "2cr8eMEakB1qDmsj0kaK98",
+              "content": "Eosinophilic esophagitis",
+              "source": "input",
+              "role": "user"
+            },
+            {
+              "id": "6yHOIn0qQAMOhMeEDWoqO4",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic esophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophag"
+                  }
+                },
+                {
+                  "id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic gastro"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "LMIJJDhgt4o83KdFn9o1HR",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "xV7A15cDLirvpGGXEuuVsL",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "c50Vbm7CBc1H5soV0wYvrG",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "dkgfgiYzrXNxfdzRLoS9yj",
+              "content": "No matches found.",
+              "role": "tool",
+              "tool_call_id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+              "function": "tool_term_search_cprd"
+            }
+          ],
+          "tools": [
+            {
+              "name": "tool_term_search_cprd",
+              "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The term to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            },
+            {
+              "name": "tool_code_search_cprd",
+              "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The code to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            }
+          ],
+          "tool_choice": "auto",
+          "config": {
+            "max_tokens": 16000
+          },
+          "output": {
+            "model": "claude-sonnet-5-5",
+            "choices": [
+              {
+                "message": {
+                  "id": "FQwWs2zhnQ2NWK3nkyy356",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    }
+                  ],
+                  "source": "generate",
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "id": "toolu_01A2oWcNMsi1D6nrdVrQRbPb",
+                      "function": "tool_code_search_cprd",
+                      "arguments": {
+                        "search_term": "J101"
+                      }
+                    },
+                    {
+                      "id": "toolu_01CMYmGWnAsT2p9iJvZK42Xc",
+                      "function": "tool_term_search_cprd",
+                      "arguments": {
+                        "search_term": "eosinophilic oesophagitis OR allergic oesophagitis"
+                      }
+                    }
+                  ],
+                  "model": "claude-sonnet-5-5"
+                },
+                "stop_reason": "tool_calls"
+              }
+            ],
+            "usage": {
+              "input_tokens": 537,
+              "input_tokens_cache_write": 0,
+              "input_tokens_cache_read": 773,
+              "output_tokens": 132
+            },
+            "time": 1.4379
+          },
+          "call": {
+            "request": {
+              "messages": [
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Eosinophilic esophagitis"
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic esophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophag"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic gastro"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "No matches found."
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                }
+              ],
+              "tools": [
+                {
+                  "name": "tool_term_search_cprd",
+                  "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The term to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                {
+                  "name": "tool_code_search_cprd",
+                  "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The code to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              ],
+              "tool_choice": {
+                "type": "auto"
+              },
+              "model": "claude-sonnet-5-5",
+              "max_tokens": 16000
+            },
+            "response": {
+              "id": "msg_glRIynefqg5Hkr4aMo09Am",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                },
+                {
+                  "id": "toolu_01A2oWcNMsi1D6nrdVrQRbPb",
+                  "input": {
+                    "search_term": "J101"
+                  },
+                  "name": "tool_code_search_cprd",
+                  "type": "tool_use"
+                },
+                {
+                  "id": "toolu_01CMYmGWnAsT2p9iJvZK42Xc",
+                  "input": {
+                    "search_term": "eosinophilic oesophagitis OR allergic oesophagitis"
+                  },
+                  "name": "tool_term_search_cprd",
+                  "type": "tool_use"
+                }
+              ],
+              "model": "claude-sonnet-5-5",
+              "role": "assistant",
+              "stop_reason": "tool_use",
+              "stop_sequence": {},
+              "type": "message",
+              "usage": {
+                "input_tokens": 537,
+                "input_tokens_cache_write": 0,
+                "input_tokens_cache_read": 773,
+                "output_tokens": 132
+              }
+            },
+            "time": 1.4379
+          },
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 1.4379
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 17.3894,
+          "event": "tool",
+          "type": "function",
+          "id": "toolu_01A2oWcNMsi1D6nrdVrQRbPb",
+          "function": "tool_code_search_cprd",
+          "arguments": {
+            "search_term": "J101"
+          },
+          "result": "attachment://df431922e219d44b99a0a77c35f3b1fa",
+          "events": [],
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 0
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 17.3894,
+          "event": "tool",
+          "type": "function",
+          "id": "toolu_01CMYmGWnAsT2p9iJvZK42Xc",
+          "function": "tool_term_search_cprd",
+          "arguments": {
+            "search_term": "eosinophilic oesophagitis OR allergic oesophagitis"
+          },
+          "result": "No matches found.",
+          "events": [],
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 0
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 17.3894,
+          "event": "model",
+          "model": "anthropic/claude-sonnet-5-5",
+          "input": [
+            {
+              "id": "6RqkoV1avu04DijsX1dOQL",
+              "content": "Eosinophilic esophagitis",
+              "source": "input",
+              "role": "user"
+            },
+            {
+              "id": "a74b5CL7U6hdyic98AVgQl",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic esophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophag"
+                  }
+                },
+                {
+                  "id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic gastro"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Fem8LKLhy9rE0JEOhWX767",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "a5kpXjASfE0kXzzIpdVaA6",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "0XtYYdPvK7NrI9x7BfhzrK",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "3EWjJOq5PYEIa7kV9goa8l",
+              "content": "No matches found.",
+              "role": "tool",
+              "tool_call_id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "8CF4dYceA5mXV11KXzczqA",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "id": "toolu_01A2oWcNMsi1D6nrdVrQRbPb",
+                  "function": "tool_code_search_cprd",
+                  "arguments": {
+                    "search_term": "J101"
+                  }
+                },
+                {
+                  "id": "toolu_01CMYmGWnAsT2p9iJvZK42Xc",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophagitis OR allergic oesophagitis"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "WBFuwQMVO35eJn38HT9ZH4",
+              "content": "attachment://df431922e219d44b99a0a77c35f3b1fa",
+              "role": "tool",
+              "tool_call_id": "toolu_01A2oWcNMsi1D6nrdVrQRbPb",
+              "function": "tool_code_search_cprd"
+            },
+            {
+              "id": "ztbFCgi8fY2GVjPyHkD4qv",
+              "content": "No matches found.",
+              "role": "tool",
+              "tool_call_id": "toolu_01CMYmGWnAsT2p9iJvZK42Xc",
+              "function": "tool_term_search_cprd"
+            }
+          ],
+          "tools": [
+            {
+              "name": "tool_term_search_cprd",
+              "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The term to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            },
+            {
+              "name": "tool_code_search_cprd",
+              "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The code to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            }
+          ],
+          "tool_choice": "auto",
+          "config": {
+            "max_tokens": 16000
+          },
+          "output": {
+            "model": "claude-sonnet-5-5",
+            "choices": [
+              {
+                "message": {
+                  "id": "PB8hJ0QPEeId4EOsVn9J8D",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "attachment://594b74d08111850eee0ae43864b23881"
+                    }
+                  ],
+                  "source": "generate",
+                  "role": "assistant",
+                  "model": "claude-sonnet-5-5"
+                },
+                "stop_reason": "stop"
+              }
+            ],
+            "usage": {
+              "input_tokens": 624,
+              "input_tokens_cache_write": 0,
+              "input_tokens_cache_read": 1308,
+              "output_tokens": 193
+            },
+            "time": 2.0637
+          },
+          "call": {
+            "request": {
+              "messages": [
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Eosinophilic esophagitis"
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic esophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophag"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic gastro"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "No matches found."
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01A2oWcNMsi1D6nrdVrQRbPb",
+                      "name": "tool_code_search_cprd",
+                      "input": {
+                        "search_term": "J101"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01CMYmGWnAsT2p9iJvZK42Xc",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophagitis OR allergic oesophagitis"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01A2oWcNMsi1D6nrdVrQRbPb",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://df431922e219d44b99a0a77c35f3b1fa"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01CMYmGWnAsT2p9iJvZK42Xc",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "No matches found."
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                }
+              ],
+              "tools": [
+                {
+                  "name": "tool_term_search_cprd",
+                  "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The term to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                {
+                  "name": "tool_code_search_cprd",
+                  "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The code to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              ],
+              "tool_choice": {
+                "type": "auto"
+              },
+              "model": "claude-sonnet-5-5",
+              "max_tokens": 16000
+            },
+            "response": {
+              "id": "msg_m1BzqqKfnA5VFP0YGRsk6q",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "attachment://594b74d08111850eee0ae43864b23881"
+                }
+              ],
+              "model": "claude-sonnet-5-5",
+              "role": "assistant",
+              "stop_reason": "end_turn",
+              "stop_sequence": {},
+              "type": "message",
+              "usage": {
+                "input_tokens": 624,
+                "input_tokens_cache_write": 0,
+                "input_tokens_cache_read": 1308,
+                "output_tokens": 193
+              }
+            },
+            "time": 2.0637
+          },
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 2.0637
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 19.4531,
+          "event": "model",
+          "model": "anthropic/claude-sonnet-5-5",
+          "input": [
+            {
+              "id": "nAG0D0rUYtmEjbHLeAPU4V",
+              "content": "Eosinophilic esophagitis",
+              "source": "input",
+              "role": "user"
+            },
+            {
+              "id": "iFF7Ggv0Q6IBfherEFENgA",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic esophagitis"
+                  }
+                },
+                {
+                  "id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophag"
+                  }
+                },
+                {
+                  "id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic gastro"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "BNUAkdhOz8yvFbGORjUuQE",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "zPizDDLQ9imOVptUdPdYaA",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "Gd5GJHADeqCiQxbfX9p2LM",
+              "content": "attachment://e00c07c2795ab3275e10902c1333a370",
+              "role": "tool",
+              "tool_call_id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "dl0vHajjC4SVb2j4ZtxEPP",
+              "content": "No matches found.",
+              "role": "tool",
+              "tool_call_id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "9xnyCLF7YRxjb5AO1zrFxc",
+              "content": [
+                {
+                  "type": "text",
+                  "text": ""
+                }
+              ],
+              "source": "generate",
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "id": "toolu_01A2oWcNMsi1D6nrdVrQRbPb",
+                  "function": "tool_code_search_cprd",
+                  "arguments": {
+                    "search_term": "J101"
+                  }
+                },
+                {
+                  "id": "toolu_01CMYmGWnAsT2p9iJvZK42Xc",
+                  "function": "tool_term_search_cprd",
+                  "arguments": {
+                    "search_term": "eosinophilic oesophagitis OR allergic oesophagitis"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "VRaMWCZUWnpM4dfA7Bh8lw",
+              "content": "attachment://df431922e219d44b99a0a77c35f3b1fa",
+              "role": "tool",
+              "tool_call_id": "toolu_01A2oWcNMsi1D6nrdVrQRbPb",
+              "function": "tool_code_search_cprd"
+            },
+            {
+              "id": "3z7bfcfk2iryafkSzqB7zP",
+              "content": "No matches found.",
+              "role": "tool",
+              "tool_call_id": "toolu_01CMYmGWnAsT2p9iJvZK42Xc",
+              "function": "tool_term_search_cprd"
+            },
+            {
+              "id": "PfSFIoDF21ulOOW8NeF8aI",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "attachment://594b74d08111850eee0ae43864b23881"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            {
+              "id": "g66fs1EnBZE5LGXaPEuj3Y",
+              "content": "attachment://edd8759e718b9d4bb8937c0788cfd8f0",
+              "source": "input",
+              "role": "user"
+            }
+          ],
+          "tools": [
+            {
+              "name": "tool_term_search_cprd",
+              "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The term to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            },
+            {
+              "name": "tool_code_search_cprd",
+              "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+              "parameters": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                  "search_term": {
+                    "type": "string",
+                    "description": "The code to search for in the CPRD records."
+                  }
+                },
+                "required": [
+                  "search_term"
+                ],
+                "additionalProperties": false
+              }
+            }
+          ],
+          "tool_choice": "auto",
+          "config": {
+            "max_tokens": 16000
+          },
+          "output": {
+            "model": "claude-sonnet-5-5",
+            "choices": [
+              {
+                "message": {
+                  "id": "KIc7CuBg5yVyH0Ve0dKDYu",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "attachment://5ee70c1e14002328f3bf5f5720e61d51"
+                    }
+                  ],
+                  "source": "generate",
+                  "role": "assistant",
+                  "model": "claude-sonnet-5-5"
+                },
+                "stop_reason": "stop"
+              }
+            ],
+            "usage": {
+              "input_tokens": 1772,
+              "input_tokens_cache_write": 0,
+              "input_tokens_cache_read": 0,
+              "output_tokens": 14
+            },
+            "time": 1.3709
+          },
+          "call": {
+            "request": {
+              "messages": [
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Eosinophilic esophagitis"
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic esophagitis"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophag"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic gastro"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01C1ezkqpD3h86Z1zuBaxpTT",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01CaLFs5kG4jSf8pAaJKtLub",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_016wq5wwLJpvcHLJxLBXgs1U",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://e00c07c2795ab3275e10902c1333a370"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01LJaPDowq5xU61kELYTSAQi",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "No matches found."
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": ""
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01A2oWcNMsi1D6nrdVrQRbPb",
+                      "name": "tool_code_search_cprd",
+                      "input": {
+                        "search_term": "J101"
+                      }
+                    },
+                    {
+                      "type": "tool_use",
+                      "id": "toolu_01CMYmGWnAsT2p9iJvZK42Xc",
+                      "name": "tool_term_search_cprd",
+                      "input": {
+                        "search_term": "eosinophilic oesophagitis OR allergic oesophagitis"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01A2oWcNMsi1D6nrdVrQRbPb",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "attachment://df431922e219d44b99a0a77c35f3b1fa"
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "tool_use_id": "toolu_01CMYmGWnAsT2p9iJvZK42Xc",
+                      "type": "tool_result",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "No matches found."
+                        }
+                      ],
+                      "is_error": false
+                    }
+                  ]
+                },
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "attachment://594b74d08111850eee0ae43864b23881"
+                    }
+                  ]
+                },
+                {
+                  "role": "user",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "attachment://edd8759e718b9d4bb8937c0788cfd8f0"
+                    }
+                  ]
+                }
+              ],
+              "tools": [
+                {
+                  "name": "tool_term_search_cprd",
+                  "description": "attachment://18d534d6d5cf2477de924779d96aace9",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The term to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                {
+                  "name": "tool_code_search_cprd",
+                  "description": "attachment://80cf8787e919eceb58d593c2e44bf7d3",
+                  "parameters": {
+                    "type": "object",
+                    "description": "",
+                    "properties": {
+                      "search_term": {
+                        "type": "string",
+                        "description": "The code to search for in the CPRD records."
+                      }
+                    },
+                    "required": [
+                      "search_term"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              ],
+              "tool_choice": {
+                "type": "auto"
+              },
+              "model": "claude-sonnet-5-5",
+              "max_tokens": 16000
+            },
+            "response": {
+              "id": "msg_bVWdGVYCn20PUQ9vSSBFnX",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "attachment://5ee70c1e14002328f3bf5f5720e61d51"
+                }
+              ],
+              "model": "claude-sonnet-5-5",
+              "role": "assistant",
+              "stop_reason": "end_turn",
+              "stop_sequence": {},
+              "type": "message",
+              "usage": {
+                "input_tokens": 1772,
+                "input_tokens_cache_write": 0,
+                "input_tokens_cache_read": 0,
+                "output_tokens": 14
+              }
+            },
+            "time": 1.3709
+          },
+          "completed": "2026-10-08T13:45:35.379164+02:00",
+          "working_time": 1.3709
+        },
+        {
+          "timestamp": "2026-10-08T13:45:35.379164+02:00",
+          "working_start": 19.4531,
+          "event": "step",
+          "action": "end",
+          "type": "solver",
+          "name": "generate"
+        }
+      ],
+      "model_usage": {
+        "anthropic/claude-sonnet-5-5": {
+          "input_tokens": 3021,
+          "output_tokens": 592,
+          "total_tokens": 3613,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 2770
+        }
+      },
+      "attachments": {
+        "18d534d6d5cf2477de924779d96aace9": "Search for records in CPRD using a specified term. The tool detects the presence of the searchterm anywhere in the term column. Multiple words within a search term are detected in any order, e.g., 'apple banana' matches 'apples and bananas' and 'bananas and apples'. Use word stems where appropriate, e.g., 'app' matches 'apple' and 'application'.",
+        "594b74d08111850eee0ae43864b23881": "I searched the CPRD terms for eosinophilic oesophagitis (and the US spelling, esophagitis), eosinophilic oesophag-, and eosinophilic gastro-. Only one Read code matched. I also browsed the J101 (oesophagitis) code family and found no other eosinophilic oesophagitis codes. The other J101 codes are different types of oesophagitis, such as reflux, chemical and ulcerative.\n\n| Read code | Term | Include |\n|:--|:--|:--|\n| J1017 | Eosinophilic oesophagitis | Yes |",
+        "5ee70c1e14002328f3bf5f5720e61d51": "<ellmer::ContentJson>\n @ data  : NULL\n @ string: chr \"{\\\"codes\\\":[\\\"J1017\\\"]}\"\n @ parsed:List of 1\n .. $ codes:List of 1\n ..  ..$ : chr \"J1017\"",
+        "80cf8787e919eceb58d593c2e44bf7d3": "Search for records in CPRD using a specified Read code. The tool detects the presence of the searchterm at the start of the string in the code column.",
+        "df431922e219d44b99a0a77c35f3b1fa": "|originalreadcode |term                                                |\n|:----------------|:---------------------------------------------------|\n|J101             |Oesophagitis                                        |\n|J1013            |Postoperative oesophagitis                          |\n|J1011-5          |Gastro-oesophageal reflux disease with oesophagitis |\n|J1010            |Abscess of oesophagus                               |\n|J1014            |Gangrenous oesophagitis                             |\n|J1015            |Phlegmonous oesophagitis                            |\n|J101y            |Other specified oesophagitis                        |\n|J101z            |Oesophagitis NOS                                    |\n|J1017            |Eosinophilic oesophagitis                           |\n|J1011-3          |Oesophageal reflux with oesophagitis                |\n|J1011            |Reflux oesophagitis                                 |\n|J1016-1          |Barrett's oesophagus                                |\n|J1012            |Chemical oesophagitis                               |\n|J1011-4          |Peptic oesophagitis                                 |\n|J1016            |Ulcerative oesophagitis                             |\n|J1011-1          |Acid reflux                                         |\n|J1011-2          |Gastro-oesophageal reflux with oesophagitis         |",
+        "e00c07c2795ab3275e10902c1333a370": "|originalreadcode |term                      |\n|:----------------|:-------------------------|\n|J1017            |Eosinophilic oesophagitis |",
+        "edd8759e718b9d4bb8937c0788cfd8f0": "List the OriginalReadCode, exactly as it appears in the source data, of every code in your final codelist. Include every code you selected and nothing else."
+      }
+    }
+  ]
+}

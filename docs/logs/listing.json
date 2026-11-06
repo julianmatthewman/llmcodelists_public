@@ -1,1521 +1,3725 @@
 {
-  "2026-01-21T12-26-16+00-00_RAG_f5178a12554e983adb7209.json": {
+  "2026-08-11T14-20-01+01-00_RAG-gemini-3.1-pro-preview-35338cee026c2f9676f041.json": {
+    "eval_id": {},
+    "run_id": "H7olv8Qw0XbNLKRrnGkhHm",
+    "task": "Main / Full / Hidradenitis suppurativa",
+    "task_id": "Main / Full / Hidradenitis suppurativa / gemini-3.1-pro-preview",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "3Rch3A6r3k2DXkN4702846",
-      "created": "2026-01-21T12:26:16+00:00",
-      "task": "RAG",
-      "task_id": "f5178a12554e983adb7209",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "rag_solver (gpt-5.2)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a persons medical record would indicate that the person currenly has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "rag_solver (gpt-5.2)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 14.2857,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-01-21T12:18:53+00:00",
-      "completed_at": "2026-01-21T12:26:16+00:00",
-      "model_usage": {
-        "gpt-5.2": {
-          "input_tokens": 262277,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 0,
-          "output_tokens": 18332,
-          "total_tokens": 280609
-        }
+    "model": "rag_solver (gemini-3.1-pro-preview)",
+    "started_at": "2026-08-11T14:20:01+01:00",
+    "completed_at": "2026-08-11T14:20:01+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-01-22T15-38-02+00-00_RAG_f5178a12554e983adb7209.json": {
+  "2026-08-11T14-29-17+01-00_RAG-gemini-3.1-pro-preview-35338cee026c2f9676f041.json": {
+    "eval_id": {},
+    "run_id": "XtOmRsZR1ZKvIDnxSsbQU2",
+    "task": "Main / Full / Atopic eczema",
+    "task_id": "Main / Full / Atopic eczema / gemini-3.1-pro-preview",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "JWkxzKX0VEdprTI9llV0YF",
-      "created": "2026-01-22T15:38:02+00:00",
-      "task": "RAG",
-      "task_id": "f5178a12554e983adb7209",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "rag_solver (gpt-5.2)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a persons medical record would indicate that the person currenly has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "rag_solver (gpt-5.2)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 28.5714,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-01-22T15:26:18+00:00",
-      "completed_at": "2026-01-22T15:38:02+00:00",
-      "model_usage": {
-        "gpt-5.2": {
-          "input_tokens": 111456,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 23296,
-          "output_tokens": 7035,
-          "total_tokens": 118491
-        }
+    "model": "rag_solver (gemini-3.1-pro-preview)",
+    "started_at": "2026-08-11T14:29:17+01:00",
+    "completed_at": "2026-08-11T14:29:17+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-01-26T10-41-03+00-00_RAG_f5178a12554e983adb7209.json": {
+  "2026-08-11T14-35-31+01-00_RAG-gemini-3.1-pro-preview-35338cee026c2f9676f041.json": {
+    "eval_id": {},
+    "run_id": "M1mkVhl1il5l1SWw18g6dT",
+    "task": "Main / Full / Vascular dementia",
+    "task_id": "Main / Full / Vascular dementia / gemini-3.1-pro-preview",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "hKcRFDHS8hC4YqWt6BtrG7",
-      "created": "2026-01-26T10:41:03+00:00",
-      "task": "RAG",
-      "task_id": "f5178a12554e983adb7209",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "rag_solver (gemini-3-pro-preview)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a persons medical record would indicate that the person currenly has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "rag_solver (gemini-3-pro-preview)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 80.9524,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-01-26T10:11:56+00:00",
-      "completed_at": "2026-01-26T10:41:03+00:00",
-      "model_usage": {
-        "gemini-3-pro-preview": {
-          "input_tokens": 473316,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 212502,
-          "output_tokens": 103472,
-          "total_tokens": 576788
-        }
+    "model": "rag_solver (gemini-3.1-pro-preview)",
+    "started_at": "2026-08-11T14:35:31+01:00",
+    "completed_at": "2026-08-11T14:35:31+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-01-30T11-39-57+00-00_RAG_f5178a12554e983adb7209.json": {
+  "2026-08-11T14-38-40+01-00_RAG-gemini-3.1-pro-preview-35338cee026c2f9676f041.json": {
+    "eval_id": {},
+    "run_id": "OCWzvAKQXrHYNJJjerw6zc",
+    "task": "Main / Full / Eosinophilic oesophagitis",
+    "task_id": "Main / Full / Eosinophilic oesophagitis / gemini-3.1-pro-preview",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "aKpgujsPcy5zXPku3b8gtf",
-      "created": "2026-01-30T11:39:57+00:00",
-      "task": "RAG",
-      "task_id": "f5178a12554e983adb7209",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 1,
-        "sample_ids": 1,
-        "shuffled": false
-      },
-      "model": "rag_solver (gemini-3-pro-preview)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a persons medical record would indicate that the person currenly has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "rag_solver (gemini-3-pro-preview)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 3,
-      "completed_samples": 3,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 0,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-01-30T11:33:41+00:00",
-      "completed_at": "2026-01-30T11:39:57+00:00",
-      "model_usage": {
-        "gemini-3-pro-preview": {
-          "input_tokens": 428510,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 126851,
-          "output_tokens": 19829,
-          "total_tokens": 448339
-        }
+    "model": "rag_solver (gemini-3.1-pro-preview)",
+    "started_at": "2026-08-11T14:38:40+01:00",
+    "completed_at": "2026-08-11T14:38:40+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-02-04T12-03-25+00-00_RAG_f5178a12554e983adb7209.json": {
+  "2026-08-11T14-46-25+01-00_RAG-gemini-3.1-pro-preview-35338cee026c2f9676f041.json": {
+    "eval_id": {},
+    "run_id": "yS9htvMopTgBQC1iwj9sn1",
+    "task": "Main / Full / Psoriasis",
+    "task_id": "Main / Full / Psoriasis / gemini-3.1-pro-preview",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "HkHkMOARD7mA3KuPjUyb0u",
-      "created": "2026-02-04T12:03:25+00:00",
-      "task": "RAG",
-      "task_id": "f5178a12554e983adb7209",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "rag_solver (gemini-3-flash-preview)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "rag_solver (gemini-3-flash-preview)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = instructions_single_step) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 19.0476,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-02-04T11:37:58+00:00",
-      "completed_at": "2026-02-04T12:03:25+00:00",
-      "model_usage": {
-        "gemini-3-flash-preview": {
-          "input_tokens": 601280,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 187977,
-          "output_tokens": 73651,
-          "total_tokens": 674931
-        }
+    "model": "rag_solver (gemini-3.1-pro-preview)",
+    "started_at": "2026-08-11T14:46:25+01:00",
+    "completed_at": "2026-08-11T14:46:25+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-02-04T16-54-42+00-00_String-Search_ef84136f54957d26e86075.json": {
+  "2026-08-11T14-54-32+01-00_RAG-gemini-3.1-pro-preview-35338cee026c2f9676f041.json": {
+    "eval_id": {},
+    "run_id": "eXRBdiApL339qSiCqy9wq6",
+    "task": "Main / Full / Myocardial infarction",
+    "task_id": "Main / Full / Myocardial infarction / gemini-3.1-pro-preview",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "cJIHREVoBtNMdkkXMo01Bg",
-      "created": "2026-02-04T16:54:42+00:00",
-      "task": "String-Search",
-      "task_id": "ef84136f54957d26e86075",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "stringsearch_solver (gemini-3-flash-preview)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "stringsearch_solver (gemini-3-flash-preview)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 66.6667,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-02-04T16:41:08+00:00",
-      "completed_at": "2026-02-04T16:54:42+00:00",
-      "model_usage": {
-        "gemini-3-flash-preview": {
-          "input_tokens": 971965,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 672368,
-          "output_tokens": 80270,
-          "total_tokens": 1052235
-        }
+    "model": "rag_solver (gemini-3.1-pro-preview)",
+    "started_at": "2026-08-11T14:54:32+01:00",
+    "completed_at": "2026-08-11T14:54:32+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-02-04T17-17-06+00-00_String-Search_ef84136f54957d26e86075.json": {
+  "2026-08-11T15-07-22+01-00_RAG-gemini-3.1-pro-preview-35338cee026c2f9676f041.json": {
+    "eval_id": {},
+    "run_id": "y5YPXUuWCLrGnMUQBnZOtG",
+    "task": "Main / Full / Wrist fracture",
+    "task_id": "Main / Full / Wrist fracture / gemini-3.1-pro-preview",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "qeG8lxFn04z5CBFg3wRDCU",
-      "created": "2026-02-04T17:17:06+00:00",
-      "task": "String-Search",
-      "task_id": "ef84136f54957d26e86075",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "stringsearch_solver (gpt-5.2)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "stringsearch_solver (gpt-5.2)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 54.7619,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-02-04T17:08:37+00:00",
-      "completed_at": "2026-02-04T17:17:06+00:00",
-      "model_usage": {
-        "gpt-5.2": {
-          "input_tokens": 67988,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 20736,
-          "output_tokens": 17618,
-          "total_tokens": 85606
-        }
+    "model": "rag_solver (gemini-3.1-pro-preview)",
+    "started_at": "2026-08-11T15:07:22+01:00",
+    "completed_at": "2026-08-11T15:07:22+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-02-05T14-32-47+00-00_String-Search_ef84136f54957d26e86075.json": {
+  "2026-08-13T09-49-20+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "nt8fcuq8dYJQuPv5a08VEB",
+    "task": "Main / Read / Atopic eczema",
+    "task_id": "Main / Read / Atopic eczema / gemini-3.5-flash-lite",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "yYVC6rmMCk9CwD5xctcuEN",
-      "created": "2026-02-05T14:32:47+00:00",
-      "task": "String-Search",
-      "task_id": "ef84136f54957d26e86075",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "stringsearch_solver (gemini-3-flash-preview)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "stringsearch_solver (gemini-3-flash-preview)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 38.0952,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-02-05T14:15:26+00:00",
-      "completed_at": "2026-02-05T14:32:47+00:00",
-      "model_usage": {
-        "gemini-3-flash-preview": {
-          "input_tokens": 868283,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 411182,
-          "output_tokens": 87323,
-          "total_tokens": 955606
-        }
+    "model": "rag_solver(store) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T09:49:20+01:00",
+    "completed_at": "2026-08-13T09:49:20+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-02-05T15-20-01+00-00_String-Search_ef84136f54957d26e86075.json": {
+  "2026-08-13T09-49-44+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "iM2gYhbxPeUxOujTFRWpSt",
+    "task": "Main / Read / Vascular dementia",
+    "task_id": "Main / Read / Vascular dementia / gemini-3.5-flash-lite",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "7KS0yGLK1PWoOgqXp6bi2N",
-      "created": "2026-02-05T15:20:01+00:00",
-      "task": "String-Search",
-      "task_id": "ef84136f54957d26e86075",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "stringsearch_solver (gpt-5.2)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "stringsearch_solver (gpt-5.2)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 14.2857,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-02-05T15:03:35+00:00",
-      "completed_at": "2026-02-05T15:20:01+00:00",
-      "model_usage": {
-        "gpt-5.2": {
-          "input_tokens": 151251,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 31360,
-          "output_tokens": 33203,
-          "total_tokens": 184454
-        }
+    "model": "rag_solver(store) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T09:49:44+01:00",
+    "completed_at": "2026-08-13T09:49:44+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-02-18T11-22-37+00-00_String-Search_ef84136f54957d26e86075.json": {
+  "2026-08-13T09-50-03+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "kUMGLsRETf8rJsKv2W2du2",
+    "task": "Main / Read / Eosinophilic oesophagitis",
+    "task_id": "Main / Read / Eosinophilic oesophagitis / gemini-3.5-flash-lite",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "15DGu8oW1v1XjLn7VhbR1W",
-      "created": "2026-02-18T11:22:37+00:00",
-      "task": "String-Search",
-      "task_id": "ef84136f54957d26e86075",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "stringsearch_solver (claude-sonnet-4-6)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "stringsearch_solver (claude-sonnet-4-6)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 26.1905,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-02-18T11:09:47+00:00",
-      "completed_at": "2026-02-18T11:22:37+00:00",
-      "model_usage": {
-        "claude-sonnet-4-6": {
-          "input_tokens": 235596.25,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 421841,
-          "output_tokens": 51388,
-          "total_tokens": 286984.25
-        }
+    "model": "rag_solver(store) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T09:50:03+01:00",
+    "completed_at": "2026-08-13T09:50:03+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-02-18T11-31-31+00-00_String-Search_ef84136f54957d26e86075.json": {
+  "2026-08-13T09-50-25+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "46VLdsuD3L26FQfperMNyB",
+    "task": "Main / Read / Psoriasis",
+    "task_id": "Main / Read / Psoriasis / gemini-3.5-flash-lite",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "ujCgDBipNOelS9rdeCVy09",
-      "created": "2026-02-18T11:31:31+00:00",
-      "task": "String-Search",
-      "task_id": "ef84136f54957d26e86075",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "stringsearch_solver (claude-sonnet-4-6)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use the CPRD term search tool and code search tool. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "stringsearch_solver (claude-sonnet-4-6)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 64.2857,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-02-18T11:24:26+00:00",
-      "completed_at": "2026-02-18T11:31:31+00:00",
-      "model_usage": {
-        "claude-sonnet-4-6": {
-          "input_tokens": 163534.25,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 228992,
-          "output_tokens": 33787,
-          "total_tokens": 197321.25
-        }
+    "model": "rag_solver(store) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T09:50:25+01:00",
+    "completed_at": "2026-08-13T09:50:25+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-02-19T12-55-50+00-00_RAG_5ab6567c11a9be5c54356c.json": {
+  "2026-08-13T09-50-46+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "hrz2e6sG9zwEEIEoaoSsXl",
+    "task": "Main / Read / Hidradenitis suppurativa",
+    "task_id": "Main / Read / Hidradenitis suppurativa / gemini-3.5-flash-lite",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "mWGIqh72tR6XQtKk0TyhYC",
-      "created": "2026-02-19T12:55:50+00:00",
-      "task": "RAG",
-      "task_id": "5ab6567c11a9be5c54356c",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "rag_solver (claude-sonnet-4-6)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "rag_solver (claude-sonnet-4-6)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 35.7143,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-02-19T12:00:44+00:00",
-      "completed_at": "2026-02-19T12:55:50+00:00",
-      "model_usage": {
-        "claude-sonnet-4-6": {
-          "input_tokens": 1763097.25,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 1840038,
-          "output_tokens": 58956,
-          "total_tokens": 1822053.25
-        }
+    "model": "rag_solver(store) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T09:50:46+01:00",
+    "completed_at": "2026-08-13T09:50:46+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-02-19T14-19-44+00-00_RAG_5ab6567c11a9be5c54356c.json": {
+  "2026-08-13T09-51-28+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "zIHWf1NMN5pYtzZS4dWhV7",
+    "task": "Main / Read / Myocardial infarction",
+    "task_id": "Main / Read / Myocardial infarction / gemini-3.5-flash-lite",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "e9xu6BrYJYdJXJIMwWXbAr",
-      "created": "2026-02-19T14:19:44+00:00",
-      "task": "RAG",
-      "task_id": "5ab6567c11a9be5c54356c",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "rag_solver (claude-sonnet-4-6)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "rag_solver (claude-sonnet-4-6)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 59.5238,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-02-19T13:56:08+00:00",
-      "completed_at": "2026-02-19T14:19:44+00:00",
-      "model_usage": {
-        "claude-sonnet-4-6": {
-          "input_tokens": 1434630.25,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 1764394,
-          "output_tokens": 36383,
-          "total_tokens": 1471013.25
-        }
+    "model": "rag_solver(store) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T09:51:28+01:00",
+    "completed_at": "2026-08-13T09:51:28+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 16.6667,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-03-04T11-47-58+00-00_RAG_5ab6567c11a9be5c54356c.json": {
+  "2026-08-13T09-52-04+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "sJmNBQRInGWMaKLUS7wxJa",
+    "task": "Main / Read / Wrist fracture",
+    "task_id": "Main / Read / Wrist fracture / gemini-3.5-flash-lite",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "8IMWyBucemLecoqmInjcKT",
-      "created": "2026-03-04T11:47:58+00:00",
-      "task": "RAG",
-      "task_id": "5ab6567c11a9be5c54356c",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "rag_solver (gemini-3-pro-preview)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "rag_solver (gemini-3-pro-preview)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 42.8571,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-03-04T11:19:31+00:00",
-      "completed_at": "2026-03-04T11:47:58+00:00",
-      "model_usage": {
-        "gemini-3-pro-preview": {
-          "input_tokens": 635094,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 187936,
-          "output_tokens": 131031,
-          "total_tokens": 766125
-        }
+    "model": "rag_solver(store) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T09:52:04+01:00",
+    "completed_at": "2026-08-13T09:52:04+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-03-04T14-46-00+00-00_RAG_5ab6567c11a9be5c54356c.json": {
+  "2026-08-13T10-18-54+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "aF9dWofmzoR33i5uopImcE",
+    "task": "Main / Full / Atopic eczema",
+    "task_id": "Main / Full / Atopic eczema / gemini-3.5-flash-lite",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "OJlvJ2kUlcYvyz5GZwONdE",
-      "created": "2026-03-04T14:46:00+00:00",
-      "task": "RAG",
-      "task_id": "5ab6567c11a9be5c54356c",
-      "task_version": 0,
-      "task_file": "",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "rag_solver (gemini-3-flash-preview)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "rag_solver (gemini-3-flash-preview)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "<Chat>"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 69.0476,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-03-04T14:27:33+00:00",
-      "completed_at": "2026-03-04T14:46:00+00:00",
-      "model_usage": {
-        "gemini-3-flash-preview": {
-          "input_tokens": 889669,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 612604,
-          "output_tokens": 69342,
-          "total_tokens": 959011
-        }
+    "model": "rag_solver(store) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T10:18:54+01:00",
+    "completed_at": "2026-08-13T10:18:54+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   },
-  "2026-03-05T16-10-13+00-00_RAG_5ab6567c11a9be5c54356c.json": {
+  "2026-08-13T10-21-17+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "RUUmO6O2iVlp3u3a1YNjOz",
+    "task": "Main / Full / Vascular dementia",
+    "task_id": "Main / Full / Vascular dementia / gemini-3.5-flash-lite",
+    "task_version": 0,
     "version": 2,
     "status": "success",
-    "eval": {
-      "run_id": "PqeoFMgr4sVzrvvkNUTDqf",
-      "created": "2026-03-05T16:10:13+00:00",
-      "task": "RAG",
-      "task_id": "5ab6567c11a9be5c54356c",
-      "task_version": 0,
-      "task_file": "vitals.R",
-      "task_attribs": {},
-      "task_args": {},
-      "dataset": {
-        "samples": 7,
-        "sample_ids": [1, 2, 3, 4, 5, 6, 7],
-        "shuffled": false
-      },
-      "model": "rag_solver (gemini-3-pro-preview)",
-      "model_args": {},
-      "config": {},
-      "revision": {
-        "type": "git",
-        "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
-        "commit": "9140d8a2"
-      },
-      "packages": {
-        "inspect_ai": "0.3.63"
-      },
-      "scorers": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions)",
-          "options": {},
-          "metrics": [
-            {
-              "name": "mean",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Create a codelist for the given clinical condition in the input. Include all codes that when recorded in a person's medical record would indicate that the person currently has the condition. Use only codes from the knowledge store. Do not miss any relevant codes. Codelist can be of any length. Supply codelists as a tables."
-          }
-        },
-        {
-          "solver": "rag_solver (gemini-3-pro-preview)",
-          "params": {
-            "1": "self$get_samples()$input",
-            "solver_chat": "gemini$clone()"
-          }
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 21,
-      "completed_samples": 21,
-      "scores": [
-        {
-          "name": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "scorer": "model_graded_qa(partial_credit = TRUE, scorer_chat = chat_google_gemini(model = \"gemini-3-pro-preview\"),     instructions = scoring_instructions) (gemini-3-pro-preview)",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 30.9524,
-              "params": {
-                "1": "numeric_scores"
-              }
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2026-03-05T15:47:30+00:00",
-      "completed_at": "2026-03-05T16:10:13+00:00",
-      "model_usage": {
-        "gemini-3-pro-preview": {
-          "input_tokens": 0,
-          "cache_creation_input_tokens": 0,
-          "cache_read_input_tokens": 0,
-          "output_tokens": 0,
-          "total_tokens": 0
-        }
+    "model": "rag_solver(store) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T10:21:17+01:00",
+    "completed_at": "2026-08-13T10:21:17+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T10-22-18+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "NtLXArYO6YW2qWXvgHgt0e",
+    "task": "Main / Full / Eosinophilic oesophagitis",
+    "task_id": "Main / Full / Eosinophilic oesophagitis / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T10:22:18+01:00",
+    "completed_at": "2026-08-13T10:22:18+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T10-23-02+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "TI5DmuZE81oq7yHD28l9xE",
+    "task": "Main / Full / Psoriasis",
+    "task_id": "Main / Full / Psoriasis / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T10:23:02+01:00",
+    "completed_at": "2026-08-13T10:23:02+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T10-23-34+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "VO2H4C4S534BvPcq1s4yua",
+    "task": "Main / Full / Hidradenitis suppurativa",
+    "task_id": "Main / Full / Hidradenitis suppurativa / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T10:23:34+01:00",
+    "completed_at": "2026-08-13T10:23:34+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T10-24-48+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "DdrrQya9kYKJKZLW3AxweI",
+    "task": "Main / Full / Myocardial infarction",
+    "task_id": "Main / Full / Myocardial infarction / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T10:24:48+01:00",
+    "completed_at": "2026-08-13T10:24:48+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T10-26-00+01-00_RAG-gemini-3.5-flash-lite-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "Cw1F2ukP9uDxVvHvDUFksH",
+    "task": "Main / Full / Wrist fracture",
+    "task_id": "Main / Full / Wrist fracture / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T10:26:00+01:00",
+    "completed_at": "2026-08-13T10:26:00+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T10-41-45+01-00_String-Search-gemini-3.5-flash-lite-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "Kb8heaQWpiEB7bLgOhmei4",
+    "task": "String search / Full / Atopic eczema",
+    "task_id": "String search / Full / Atopic eczema / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "stringsearch_solver(data_name) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T10:41:45+01:00",
+    "completed_at": "2026-08-13T10:41:45+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T10-42-29+01-00_String-Search-gemini-3.5-flash-lite-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "55ynbbCzzLJRDPnf84Rybi",
+    "task": "String search / Full / Vascular dementia",
+    "task_id": "String search / Full / Vascular dementia / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "stringsearch_solver(data_name) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T10:42:29+01:00",
+    "completed_at": "2026-08-13T10:42:29+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T10-43-03+01-00_String-Search-gemini-3.5-flash-lite-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "0LuEaxu8MygiPzf0cjXGV0",
+    "task": "String search / Full / Eosinophilic oesophagitis",
+    "task_id": "String search / Full / Eosinophilic oesophagitis / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "stringsearch_solver(data_name) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T10:43:03+01:00",
+    "completed_at": "2026-08-13T10:43:03+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T10-43-28+01-00_String-Search-gemini-3.5-flash-lite-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "H7Kf5VxRlrRqmO3a7c0gTr",
+    "task": "String search / Full / Psoriasis",
+    "task_id": "String search / Full / Psoriasis / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "stringsearch_solver(data_name) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T10:43:28+01:00",
+    "completed_at": "2026-08-13T10:43:28+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T10-43-51+01-00_String-Search-gemini-3.5-flash-lite-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "EhMV4l3Lk7CcCUiKYn7zfr",
+    "task": "String search / Full / Hidradenitis suppurativa",
+    "task_id": "String search / Full / Hidradenitis suppurativa / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "stringsearch_solver(data_name) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T10:43:51+01:00",
+    "completed_at": "2026-08-13T10:43:51+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T10-44-25+01-00_String-Search-gemini-3.5-flash-lite-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "m4bP9KOBLQrF5cEadfVQK9",
+    "task": "String search / Full / Myocardial infarction",
+    "task_id": "String search / Full / Myocardial infarction / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "stringsearch_solver(data_name) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T10:44:25+01:00",
+    "completed_at": "2026-08-13T10:44:25+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T10-45-24+01-00_String-Search-gemini-3.5-flash-lite-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "l0fw5uN7F6X2chY3ygrGe4",
+    "task": "String search / Full / Wrist fracture",
+    "task_id": "String search / Full / Wrist fracture / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "stringsearch_solver(data_name) (gemini-3.5-flash-lite)",
+    "started_at": "2026-08-13T10:45:24+01:00",
+    "completed_at": "2026-08-13T10:45:24+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T13-41-05+01-00_RAG-gemini-3.6-flash-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "g2BqwC7GXRJtA9SnC8tOwz",
+    "task": "Main / Full / Atopic eczema",
+    "task_id": "Main / Full / Atopic eczema / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.6-flash)",
+    "started_at": "2026-08-13T13:41:05+01:00",
+    "completed_at": "2026-08-13T13:41:05+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T13-47-09+01-00_RAG-gemini-3.6-flash-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "Dq4ULXECUIPGEerhUxzHEp",
+    "task": "Main / Full / Vascular dementia",
+    "task_id": "Main / Full / Vascular dementia / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.6-flash)",
+    "started_at": "2026-08-13T13:47:09+01:00",
+    "completed_at": "2026-08-13T13:47:09+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T13-53-03+01-00_RAG-gemini-3.6-flash-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "olt3QAoloO5aYUFQlVLaqB",
+    "task": "Main / Full / Eosinophilic oesophagitis",
+    "task_id": "Main / Full / Eosinophilic oesophagitis / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.6-flash)",
+    "started_at": "2026-08-13T13:53:03+01:00",
+    "completed_at": "2026-08-13T13:53:03+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T14-01-46+01-00_RAG-gemini-3.6-flash-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "TTMfVVvFtJsMK5P0spdPId",
+    "task": "Main / Full / Psoriasis",
+    "task_id": "Main / Full / Psoriasis / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.6-flash)",
+    "started_at": "2026-08-13T14:01:46+01:00",
+    "completed_at": "2026-08-13T14:01:46+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T14-09-28+01-00_RAG-gemini-3.6-flash-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "gNHS7WjzspTmv3aB82VuQA",
+    "task": "Main / Full / Hidradenitis suppurativa",
+    "task_id": "Main / Full / Hidradenitis suppurativa / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.6-flash)",
+    "started_at": "2026-08-13T14:09:28+01:00",
+    "completed_at": "2026-08-13T14:09:28+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T14-15-58+01-00_RAG-gemini-3.6-flash-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "rvHCSgT3FEqkW9tzm077bN",
+    "task": "Main / Full / Myocardial infarction",
+    "task_id": "Main / Full / Myocardial infarction / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.6-flash)",
+    "started_at": "2026-08-13T14:15:58+01:00",
+    "completed_at": "2026-08-13T14:15:58+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T14-28-42+01-00_RAG-gemini-3.6-flash-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "bVv9OIUq0UKSSsJEWccsEh",
+    "task": "Main / Full / Wrist fracture",
+    "task_id": "Main / Full / Wrist fracture / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.6-flash)",
+    "started_at": "2026-08-13T14:28:42+01:00",
+    "completed_at": "2026-08-13T14:28:42+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T14-52-45+01-00_RAG-gemini-3.6-flash-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "NUe5fUbNJhWXmjELggKByt",
+    "task": "Main / Read / Atopic eczema",
+    "task_id": "Main / Read / Atopic eczema / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.6-flash)",
+    "started_at": "2026-08-13T14:52:45+01:00",
+    "completed_at": "2026-08-13T14:52:45+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T14-57-09+01-00_RAG-gemini-3.6-flash-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "1K8cf8zGA9ccCZXiJFos98",
+    "task": "Main / Read / Vascular dementia",
+    "task_id": "Main / Read / Vascular dementia / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.6-flash)",
+    "started_at": "2026-08-13T14:57:09+01:00",
+    "completed_at": "2026-08-13T14:57:09+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T15-01-24+01-00_RAG-gemini-3.6-flash-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "hSjqL5Fr9KzLR96LpIkFJ6",
+    "task": "Main / Read / Eosinophilic oesophagitis",
+    "task_id": "Main / Read / Eosinophilic oesophagitis / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.6-flash)",
+    "started_at": "2026-08-13T15:01:24+01:00",
+    "completed_at": "2026-08-13T15:01:24+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T15-06-21+01-00_RAG-gemini-3.6-flash-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "g2aTYz4HzIWzCah5upiRCc",
+    "task": "Main / Read / Psoriasis",
+    "task_id": "Main / Read / Psoriasis / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.6-flash)",
+    "started_at": "2026-08-13T15:06:21+01:00",
+    "completed_at": "2026-08-13T15:06:21+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T15-10-26+01-00_RAG-gemini-3.6-flash-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "xJgIl2RKcHKja2OzXOe69v",
+    "task": "Main / Read / Hidradenitis suppurativa",
+    "task_id": "Main / Read / Hidradenitis suppurativa / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.6-flash)",
+    "started_at": "2026-08-13T15:10:26+01:00",
+    "completed_at": "2026-08-13T15:10:26+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T15-16-33+01-00_RAG-gemini-3.6-flash-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "RuQvEEKc3OBgRPvNbupsXP",
+    "task": "Main / Read / Myocardial infarction",
+    "task_id": "Main / Read / Myocardial infarction / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.6-flash)",
+    "started_at": "2026-08-13T15:16:33+01:00",
+    "completed_at": "2026-08-13T15:16:33+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 83.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T15-22-44+01-00_RAG-gemini-3.6-flash-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "GaKTAvHr6F0QRnkWtYJmXK",
+    "task": "Main / Read / Wrist fracture",
+    "task_id": "Main / Read / Wrist fracture / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.6-flash)",
+    "started_at": "2026-08-13T15:22:44+01:00",
+    "completed_at": "2026-08-13T15:22:44+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T15-26-58+01-00_RAG-gemini-3.1-pro-preview-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "qugwGAiw3AT8hXPFWnKWbM",
+    "task": "Main / Read / Atopic eczema",
+    "task_id": "Main / Read / Atopic eczema / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.1-pro-preview)",
+    "started_at": "2026-08-13T15:26:58+01:00",
+    "completed_at": "2026-08-13T15:26:58+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T15-29-52+01-00_RAG-gemini-3.1-pro-preview-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "L21UkNmPLlIKT4uq44w4g8",
+    "task": "Main / Read / Vascular dementia",
+    "task_id": "Main / Read / Vascular dementia / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.1-pro-preview)",
+    "started_at": "2026-08-13T15:29:52+01:00",
+    "completed_at": "2026-08-13T15:29:52+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T15-32-26+01-00_RAG-gemini-3.1-pro-preview-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "NpcECKQEr2K4e3A7Wwmqjh",
+    "task": "Main / Read / Eosinophilic oesophagitis",
+    "task_id": "Main / Read / Eosinophilic oesophagitis / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.1-pro-preview)",
+    "started_at": "2026-08-13T15:32:26+01:00",
+    "completed_at": "2026-08-13T15:32:26+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T15-36-23+01-00_RAG-gemini-3.1-pro-preview-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "FrpE5ffYCc9PBSp1flUYpA",
+    "task": "Main / Read / Psoriasis",
+    "task_id": "Main / Read / Psoriasis / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.1-pro-preview)",
+    "started_at": "2026-08-13T15:36:23+01:00",
+    "completed_at": "2026-08-13T15:36:23+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 83.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T15-41-24+01-00_RAG-gemini-3.1-pro-preview-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "JYg8LEitjjAtvPF78so4xr",
+    "task": "Main / Read / Hidradenitis suppurativa",
+    "task_id": "Main / Read / Hidradenitis suppurativa / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.1-pro-preview)",
+    "started_at": "2026-08-13T15:41:24+01:00",
+    "completed_at": "2026-08-13T15:41:24+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T15-46-09+01-00_RAG-gemini-3.1-pro-preview-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "2WzMKoS6BaN5i8hWl7RcY6",
+    "task": "Main / Read / Myocardial infarction",
+    "task_id": "Main / Read / Myocardial infarction / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.1-pro-preview)",
+    "started_at": "2026-08-13T15:46:09+01:00",
+    "completed_at": "2026-08-13T15:46:09+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-08-13T15-53-42+01-00_RAG-gemini-3.1-pro-preview-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "b9pp08xFgc8i4bZaXvbYAV",
+    "task": "Main / Read / Wrist fracture",
+    "task_id": "Main / Read / Wrist fracture / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "rag_solver(store) (gemini-3.1-pro-preview)",
+    "started_at": "2026-08-13T15:53:42+01:00",
+    "completed_at": "2026-08-13T15:53:42+01:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T13-37-12+02-00_RAG-gpt-6-luna-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "oaQa41N6QMKtKMgVA2B03l",
+    "task": "Main / Full / Atopic eczema",
+    "task_id": "Main / Full / Atopic eczema / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-06T13:37:12+02:00",
+    "completed_at": "2026-10-06T13:37:12+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T13-43-31+02-00_RAG-gpt-6-luna-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "SKMGKmrVnAMSrFiq2Kzdld",
+    "task": "Main / Full / Vascular dementia",
+    "task_id": "Main / Full / Vascular dementia / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-06T13:43:31+02:00",
+    "completed_at": "2026-10-06T13:43:31+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T13-45-01+02-00_RAG-gpt-6-luna-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "fcVRcaiYBZLfYrsw52MNcQ",
+    "task": "Main / Full / Eosinophilic oesophagitis",
+    "task_id": "Main / Full / Eosinophilic oesophagitis / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-06T13:45:01+02:00",
+    "completed_at": "2026-10-06T13:45:01+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T13-47-06+02-00_RAG-gpt-6-luna-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "p8q4ypZKwIgG3qowBWGTBl",
+    "task": "Main / Full / Psoriasis",
+    "task_id": "Main / Full / Psoriasis / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-06T13:47:06+02:00",
+    "completed_at": "2026-10-06T13:47:06+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T13-48-18+02-00_RAG-gpt-6-luna-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "Wa8MupGyLte8UpszJGBy9u",
+    "task": "Main / Full / Hidradenitis suppurativa",
+    "task_id": "Main / Full / Hidradenitis suppurativa / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-06T13:48:18+02:00",
+    "completed_at": "2026-10-06T13:48:18+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T13-51-22+02-00_RAG-gpt-6-luna-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "4FUbLTEfbotxVuuFk5ZsDA",
+    "task": "Main / Full / Myocardial infarction",
+    "task_id": "Main / Full / Myocardial infarction / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-06T13:51:22+02:00",
+    "completed_at": "2026-10-06T13:51:22+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T13-55-23+02-00_RAG-gpt-6-luna-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "5QoijVTzYZWUF0lYciCmdU",
+    "task": "Main / Full / Wrist fracture",
+    "task_id": "Main / Full / Wrist fracture / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-06T13:55:23+02:00",
+    "completed_at": "2026-10-06T13:55:23+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T13-59-33+02-00_RAG-gpt-6.1-sol-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "tYeD3zN86KvajSXDWqwEs9",
+    "task": "Main / Full / Atopic eczema",
+    "task_id": "Main / Full / Atopic eczema / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-06T13:59:33+02:00",
+    "completed_at": "2026-10-06T13:59:33+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T14-05-58+02-00_RAG-gpt-6.1-sol-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "um1CivjzTqavaM6b2luJ95",
+    "task": "Main / Full / Vascular dementia",
+    "task_id": "Main / Full / Vascular dementia / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-06T14:05:58+02:00",
+    "completed_at": "2026-10-06T14:05:58+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T14-08-22+02-00_RAG-gpt-6.1-sol-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "jlAXjhPESQqXskhuaouGST",
+    "task": "Main / Full / Eosinophilic oesophagitis",
+    "task_id": "Main / Full / Eosinophilic oesophagitis / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-06T14:08:22+02:00",
+    "completed_at": "2026-10-06T14:08:22+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T14-13-05+02-00_RAG-gpt-6.1-sol-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "MVuqmZJX0WHCokx6GtDmip",
+    "task": "Main / Full / Psoriasis",
+    "task_id": "Main / Full / Psoriasis / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-06T14:13:05+02:00",
+    "completed_at": "2026-10-06T14:13:05+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 83.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T14-15-34+02-00_RAG-gpt-6.1-sol-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "9WgdaKD62hKTVBxpoinCLt",
+    "task": "Main / Full / Hidradenitis suppurativa",
+    "task_id": "Main / Full / Hidradenitis suppurativa / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-06T14:15:34+02:00",
+    "completed_at": "2026-10-06T14:15:34+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T14-27-02+02-00_RAG-gpt-6.1-sol-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "ryJzKs9LGLmBP1FzX1Vb4s",
+    "task": "Main / Full / Myocardial infarction",
+    "task_id": "Main / Full / Myocardial infarction / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-06T14:27:02+02:00",
+    "completed_at": "2026-10-06T14:27:02+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T15-07-28+02-00_RAG-claude-sonnet-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "ziG6LMsl4joEsMsqSIUxsb",
+    "task": "Main / Full / Atopic eczema",
+    "task_id": "Main / Full / Atopic eczema / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-06T15:07:28+02:00",
+    "completed_at": "2026-10-06T15:07:28+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T15-11-04+02-00_RAG-claude-sonnet-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "Mv6EvUSY4uPHD2fcxLq28s",
+    "task": "Main / Full / Vascular dementia",
+    "task_id": "Main / Full / Vascular dementia / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-06T15:11:04+02:00",
+    "completed_at": "2026-10-06T15:11:04+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T15-12-02+02-00_RAG-claude-sonnet-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "bR1QBH1ft3GHJzFw5iqoUl",
+    "task": "Main / Full / Eosinophilic oesophagitis",
+    "task_id": "Main / Full / Eosinophilic oesophagitis / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-06T15:12:02+02:00",
+    "completed_at": "2026-10-06T15:12:02+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T15-14-23+02-00_RAG-claude-sonnet-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "JsJyyFEwtQZW5KO1GH2hv8",
+    "task": "Main / Full / Psoriasis",
+    "task_id": "Main / Full / Psoriasis / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-06T15:14:23+02:00",
+    "completed_at": "2026-10-06T15:14:23+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T15-15-34+02-00_RAG-claude-sonnet-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "mtLlcoBf2o6F2S1M65w9id",
+    "task": "Main / Full / Hidradenitis suppurativa",
+    "task_id": "Main / Full / Hidradenitis suppurativa / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-06T15:15:34+02:00",
+    "completed_at": "2026-10-06T15:15:34+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T15-19-16+02-00_RAG-claude-sonnet-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "aJxNGz9TtsqBC0MB29wpTb",
+    "task": "Main / Full / Myocardial infarction",
+    "task_id": "Main / Full / Myocardial infarction / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-06T15:19:16+02:00",
+    "completed_at": "2026-10-06T15:19:16+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-06T15-22-36+02-00_RAG-claude-sonnet-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "U5aBlvtcvB4S1pjNSTmhQx",
+    "task": "Main / Full / Wrist fracture",
+    "task_id": "Main / Full / Wrist fracture / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-06T15:22:36+02:00",
+    "completed_at": "2026-10-06T15:22:36+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T10-39-37+02-00_RAG-gpt-6.1-sol-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "YJOeAPBpixmoQuaJ9RmrTj",
+    "task": "Main / Full / Wrist fracture",
+    "task_id": "Main / Full / Wrist fracture / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-07T10:39:37+02:00",
+    "completed_at": "2026-10-07T10:39:37+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T11-12-39+02-00_RAG-claude-opus-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "IAI16hrjSFqXquNTiu0W4u",
+    "task": "Main / Full / Atopic eczema",
+    "task_id": "Main / Full / Atopic eczema / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-07T11:12:39+02:00",
+    "completed_at": "2026-10-07T11:12:39+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T11-18-57+02-00_RAG-claude-opus-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "PWEj5laoj66vc3WdtONmTX",
+    "task": "Main / Full / Vascular dementia",
+    "task_id": "Main / Full / Vascular dementia / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-07T11:18:57+02:00",
+    "completed_at": "2026-10-07T11:18:57+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T11-22-02+02-00_RAG-claude-opus-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "tRNuNwideTBedgirQ6CRt6",
+    "task": "Main / Full / Eosinophilic oesophagitis",
+    "task_id": "Main / Full / Eosinophilic oesophagitis / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-07T11:22:02+02:00",
+    "completed_at": "2026-10-07T11:22:02+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T11-25-08+02-00_RAG-claude-opus-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "fERbJFpWIwjKripVq2QVfu",
+    "task": "Main / Full / Psoriasis",
+    "task_id": "Main / Full / Psoriasis / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-07T11:25:08+02:00",
+    "completed_at": "2026-10-07T11:25:08+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T11-26-41+02-00_RAG-claude-opus-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "OtlNSelXo1CsJj0XEhFnkj",
+    "task": "Main / Full / Hidradenitis suppurativa",
+    "task_id": "Main / Full / Hidradenitis suppurativa / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-07T11:26:41+02:00",
+    "completed_at": "2026-10-07T11:26:41+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T11-37-01+02-00_RAG-claude-opus-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "0diRlyB17WRPxfwjbgxAoa",
+    "task": "Main / Full / Myocardial infarction",
+    "task_id": "Main / Full / Myocardial infarction / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-07T11:37:01+02:00",
+    "completed_at": "2026-10-07T11:37:01+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T11-54-22+02-00_RAG-claude-opus-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "CqlYk0OB3s03QxixcKnKZZ",
+    "task": "Main / Full / Wrist fracture",
+    "task_id": "Main / Full / Wrist fracture / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-07T11:54:22+02:00",
+    "completed_at": "2026-10-07T11:54:22+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T12-32-08+02-00_RAG-gpt-6-luna-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "SQmRi20v8tm7vmA2bAkOAk",
+    "task": "Main / Read / Atopic eczema",
+    "task_id": "Main / Read / Atopic eczema / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-07T12:32:08+02:00",
+    "completed_at": "2026-10-07T12:32:08+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T12-33-52+02-00_RAG-gpt-6-luna-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "12ZTeclyT1oGJV5rLfd1Ei",
+    "task": "Main / Read / Vascular dementia",
+    "task_id": "Main / Read / Vascular dementia / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-07T12:33:52+02:00",
+    "completed_at": "2026-10-07T12:33:52+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T12-35-07+02-00_RAG-gpt-6-luna-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "H2Mfr4AcPCJkkRIRiSozfw",
+    "task": "Main / Read / Eosinophilic oesophagitis",
+    "task_id": "Main / Read / Eosinophilic oesophagitis / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-07T12:35:07+02:00",
+    "completed_at": "2026-10-07T12:35:07+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T12-36-20+02-00_RAG-gpt-6-luna-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "JeUNAoNkqZFMdp8VHXluol",
+    "task": "Main / Read / Psoriasis",
+    "task_id": "Main / Read / Psoriasis / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-07T12:36:20+02:00",
+    "completed_at": "2026-10-07T12:36:20+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T12-37-32+02-00_RAG-gpt-6-luna-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "9qv3aya5GYM0qheJOx23us",
+    "task": "Main / Read / Hidradenitis suppurativa",
+    "task_id": "Main / Read / Hidradenitis suppurativa / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-07T12:37:32+02:00",
+    "completed_at": "2026-10-07T12:37:32+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T12-39-09+02-00_RAG-gpt-6-luna-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "AC864drcNZZuyPdApOdsBv",
+    "task": "Main / Read / Myocardial infarction",
+    "task_id": "Main / Read / Myocardial infarction / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-07T12:39:09+02:00",
+    "completed_at": "2026-10-07T12:39:09+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T12-43-30+02-00_RAG-gpt-6-luna-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "24YAU2Dve8fsXZAVEKLEpr",
+    "task": "Main / Read / Wrist fracture",
+    "task_id": "Main / Read / Wrist fracture / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-07T12:43:30+02:00",
+    "completed_at": "2026-10-07T12:43:30+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T12-45-25+02-00_RAG-gpt-6.1-sol-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "jMzLQpj8TPS0QHbLsKcwHy",
+    "task": "Main / Read / Atopic eczema",
+    "task_id": "Main / Read / Atopic eczema / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-07T12:45:25+02:00",
+    "completed_at": "2026-10-07T12:45:25+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T12-47-11+02-00_RAG-gpt-6.1-sol-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "xPcR0dnmUezgPqqzLhGS44",
+    "task": "Main / Read / Vascular dementia",
+    "task_id": "Main / Read / Vascular dementia / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-07T12:47:11+02:00",
+    "completed_at": "2026-10-07T12:47:11+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T12-48-00+02-00_RAG-gpt-6.1-sol-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "0VS3bBZ2aGEFQ8yzIjvWPD",
+    "task": "Main / Read / Eosinophilic oesophagitis",
+    "task_id": "Main / Read / Eosinophilic oesophagitis / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-07T12:48:00+02:00",
+    "completed_at": "2026-10-07T12:48:00+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T12-50-09+02-00_RAG-gpt-6.1-sol-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "1X0giTQCM2IqjqZFVneyGr",
+    "task": "Main / Read / Psoriasis",
+    "task_id": "Main / Read / Psoriasis / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-07T12:50:09+02:00",
+    "completed_at": "2026-10-07T12:50:09+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T12-51-39+02-00_RAG-gpt-6.1-sol-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "vWm3IcuB6c6TckB9yHEcq9",
+    "task": "Main / Read / Hidradenitis suppurativa",
+    "task_id": "Main / Read / Hidradenitis suppurativa / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-07T12:51:39+02:00",
+    "completed_at": "2026-10-07T12:51:39+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T12-54-22+02-00_RAG-gpt-6.1-sol-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "VXNoQ293HmpYazdnIQdoAG",
+    "task": "Main / Read / Myocardial infarction",
+    "task_id": "Main / Read / Myocardial infarction / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-07T12:54:22+02:00",
+    "completed_at": "2026-10-07T12:54:22+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T12-59-45+02-00_RAG-gpt-6.1-sol-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "UZuvBSBcxHFwaUYhJpom2x",
+    "task": "Main / Read / Wrist fracture",
+    "task_id": "Main / Read / Wrist fracture / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-07T12:59:45+02:00",
+    "completed_at": "2026-10-07T12:59:45+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T13-01-21+02-00_RAG-claude-sonnet-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "Zoxq7irdAZd4fy8uskIsCZ",
+    "task": "Main / Read / Atopic eczema",
+    "task_id": "Main / Read / Atopic eczema / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-07T13:01:21+02:00",
+    "completed_at": "2026-10-07T13:01:21+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T13-02-54+02-00_RAG-claude-sonnet-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "kbYGyb53qI9ZiARJT2vRuK",
+    "task": "Main / Read / Vascular dementia",
+    "task_id": "Main / Read / Vascular dementia / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-07T13:02:54+02:00",
+    "completed_at": "2026-10-07T13:02:54+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T13-03-40+02-00_RAG-claude-sonnet-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "6sKEK8RpRlMO4G998Ha218",
+    "task": "Main / Read / Eosinophilic oesophagitis",
+    "task_id": "Main / Read / Eosinophilic oesophagitis / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-07T13:03:40+02:00",
+    "completed_at": "2026-10-07T13:03:40+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T13-05-09+02-00_RAG-claude-sonnet-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "615re34oXQvrwERifSeLs6",
+    "task": "Main / Read / Psoriasis",
+    "task_id": "Main / Read / Psoriasis / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-07T13:05:09+02:00",
+    "completed_at": "2026-10-07T13:05:09+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T13-06-06+02-00_RAG-claude-sonnet-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "Kru7JqqPDdej0i9Ko02mRS",
+    "task": "Main / Read / Hidradenitis suppurativa",
+    "task_id": "Main / Read / Hidradenitis suppurativa / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-07T13:06:06+02:00",
+    "completed_at": "2026-10-07T13:06:06+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T13-08-15+02-00_RAG-claude-sonnet-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "2bCf63PbXnWKWzTXYwpiZ4",
+    "task": "Main / Read / Myocardial infarction",
+    "task_id": "Main / Read / Myocardial infarction / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-07T13:08:15+02:00",
+    "completed_at": "2026-10-07T13:08:15+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T13-11-30+02-00_RAG-claude-sonnet-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "2cI3vpi088jdm8wMYadnX5",
+    "task": "Main / Read / Wrist fracture",
+    "task_id": "Main / Read / Wrist fracture / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-07T13:11:30+02:00",
+    "completed_at": "2026-10-07T13:11:30+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T13-14-47+02-00_RAG-claude-opus-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "o07jD7JBT5MNYAYvqJhwk2",
+    "task": "Main / Read / Atopic eczema",
+    "task_id": "Main / Read / Atopic eczema / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-07T13:14:47+02:00",
+    "completed_at": "2026-10-07T13:14:47+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T13-17-06+02-00_RAG-claude-opus-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "JqzW7IUncCvJtUzJKsilZR",
+    "task": "Main / Read / Vascular dementia",
+    "task_id": "Main / Read / Vascular dementia / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-07T13:17:06+02:00",
+    "completed_at": "2026-10-07T13:17:06+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T13-18-28+02-00_RAG-claude-opus-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "bfX4V4DTlJTBWeEWDnRh3Q",
+    "task": "Main / Read / Eosinophilic oesophagitis",
+    "task_id": "Main / Read / Eosinophilic oesophagitis / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-07T13:18:28+02:00",
+    "completed_at": "2026-10-07T13:18:28+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T13-22-54+02-00_RAG-claude-opus-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "SsA7cs4Q7TYsleYbLhljGb",
+    "task": "Main / Read / Psoriasis",
+    "task_id": "Main / Read / Psoriasis / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-07T13:22:54+02:00",
+    "completed_at": "2026-10-07T13:22:54+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T13-25-22+02-00_RAG-claude-opus-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "bXwvIt4ubSCkqNjdkpP0vi",
+    "task": "Main / Read / Hidradenitis suppurativa",
+    "task_id": "Main / Read / Hidradenitis suppurativa / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-07T13:25:22+02:00",
+    "completed_at": "2026-10-07T13:25:22+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T13-29-02+02-00_RAG-claude-opus-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "b9mLRGNBGg7WMwBcxpDoTS",
+    "task": "Main / Read / Myocardial infarction",
+    "task_id": "Main / Read / Myocardial infarction / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-07T13:29:02+02:00",
+    "completed_at": "2026-10-07T13:29:02+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T13-34-24+02-00_RAG-claude-opus-5-5-d5b5ac58525e7252ea3dcb.json": {
+    "eval_id": {},
+    "run_id": "N8cEwuBliHVO5DSPwrIeQG",
+    "task": "Main / Read / Wrist fracture",
+    "task_id": "Main / Read / Wrist fracture / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-07T13:34:24+02:00",
+    "completed_at": "2026-10-07T13:34:24+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T16-16-12+02-00_String-Search-gemini-3.6-flash-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "rBh1xIb9Oxy1dtxCP4UGzj",
+    "task": "String search / Full / Atopic eczema",
+    "task_id": "String search / Full / Atopic eczema / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.6-flash",
+    "started_at": "2026-10-07T16:16:12+02:00",
+    "completed_at": "2026-10-07T16:16:12+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T16-20-34+02-00_String-Search-gemini-3.6-flash-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "bn3WR2P54eSxKegcMn8CAC",
+    "task": "String search / Full / Vascular dementia",
+    "task_id": "String search / Full / Vascular dementia / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.6-flash",
+    "started_at": "2026-10-07T16:20:34+02:00",
+    "completed_at": "2026-10-07T16:20:34+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T16-23-33+02-00_String-Search-gemini-3.6-flash-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "yaiX0qKpz4FGT0OCERBM8l",
+    "task": "String search / Full / Eosinophilic oesophagitis",
+    "task_id": "String search / Full / Eosinophilic oesophagitis / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.6-flash",
+    "started_at": "2026-10-07T16:23:33+02:00",
+    "completed_at": "2026-10-07T16:23:33+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T16-27-21+02-00_String-Search-gemini-3.6-flash-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "2d9hlug5hYz15m7jDroNrW",
+    "task": "String search / Full / Psoriasis",
+    "task_id": "String search / Full / Psoriasis / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.6-flash",
+    "started_at": "2026-10-07T16:27:21+02:00",
+    "completed_at": "2026-10-07T16:27:21+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T16-29-41+02-00_String-Search-gemini-3.6-flash-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "31fLpyvZKHfLsYHZSlUU0O",
+    "task": "String search / Full / Hidradenitis suppurativa",
+    "task_id": "String search / Full / Hidradenitis suppurativa / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.6-flash",
+    "started_at": "2026-10-07T16:29:41+02:00",
+    "completed_at": "2026-10-07T16:29:41+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T16-35-15+02-00_String-Search-gemini-3.6-flash-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "L7cIrg8EBvSKEpaOKtUSxE",
+    "task": "String search / Full / Myocardial infarction",
+    "task_id": "String search / Full / Myocardial infarction / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.6-flash",
+    "started_at": "2026-10-07T16:35:15+02:00",
+    "completed_at": "2026-10-07T16:35:15+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-07T16-44-26+02-00_String-Search-gemini-3.6-flash-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "3p5pjLnwYGtK109YeoWGHc",
+    "task": "String search / Full / Wrist fracture",
+    "task_id": "String search / Full / Wrist fracture / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.6-flash",
+    "started_at": "2026-10-07T16:44:26+02:00",
+    "completed_at": "2026-10-07T16:44:26+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T10-11-20+02-00_String-Search-gemini-3.1-pro-preview-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "t8DbjYJI2EeXUn7pEj65Im",
+    "task": "String search / Full / Atopic eczema",
+    "task_id": "String search / Full / Atopic eczema / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-10-08T10:11:20+02:00",
+    "completed_at": "2026-10-08T10:11:20+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T10-19-05+02-00_String-Search-gemini-3.1-pro-preview-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "V7hlwULdBkbWE1Xxsekyny",
+    "task": "String search / Full / Vascular dementia",
+    "task_id": "String search / Full / Vascular dementia / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-10-08T10:19:05+02:00",
+    "completed_at": "2026-10-08T10:19:05+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T10-23-17+02-00_String-Search-gemini-3.1-pro-preview-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "qplVDylGFsHoCykVxVUECP",
+    "task": "String search / Full / Eosinophilic oesophagitis",
+    "task_id": "String search / Full / Eosinophilic oesophagitis / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-10-08T10:23:17+02:00",
+    "completed_at": "2026-10-08T10:23:17+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T10-27-54+02-00_String-Search-gemini-3.1-pro-preview-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "IkoreNyR7luD7AqFRgZMtL",
+    "task": "String search / Full / Psoriasis",
+    "task_id": "String search / Full / Psoriasis / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-10-08T10:27:54+02:00",
+    "completed_at": "2026-10-08T10:27:54+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T10-31-20+02-00_String-Search-gemini-3.1-pro-preview-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "ev9w5VBjCHwA9P6Dnx7r8L",
+    "task": "String search / Full / Hidradenitis suppurativa",
+    "task_id": "String search / Full / Hidradenitis suppurativa / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-10-08T10:31:20+02:00",
+    "completed_at": "2026-10-08T10:31:20+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T10-38-55+02-00_String-Search-gemini-3.1-pro-preview-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "7eeqchpztr2xKbUgyxRPGM",
+    "task": "String search / Full / Myocardial infarction",
+    "task_id": "String search / Full / Myocardial infarction / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-10-08T10:38:55+02:00",
+    "completed_at": "2026-10-08T10:38:55+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T10-54-26+02-00_String-Search-gemini-3.1-pro-preview-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "pNUDy7lVybG3iKZ3smOC2J",
+    "task": "String search / Full / Wrist fracture",
+    "task_id": "String search / Full / Wrist fracture / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-10-08T10:54:26+02:00",
+    "completed_at": "2026-10-08T10:54:26+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T10-56-37+02-00_String-Search-gpt-6-luna-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "Kz6p8KBPM8QVAl0Hr6oBTa",
+    "task": "String search / Full / Atopic eczema",
+    "task_id": "String search / Full / Atopic eczema / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-08T10:56:37+02:00",
+    "completed_at": "2026-10-08T10:56:37+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-00-11+02-00_String-Search-gpt-6-luna-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "VpfSHcpyr7E4VJtvRFFR25",
+    "task": "String search / Full / Vascular dementia",
+    "task_id": "String search / Full / Vascular dementia / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-08T11:00:11+02:00",
+    "completed_at": "2026-10-08T11:00:11+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-02-04+02-00_String-Search-gpt-6-luna-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "W08bTlQR7kN083SFz8fr0v",
+    "task": "String search / Full / Eosinophilic oesophagitis",
+    "task_id": "String search / Full / Eosinophilic oesophagitis / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-08T11:02:04+02:00",
+    "completed_at": "2026-10-08T11:02:04+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-03-35+02-00_String-Search-gpt-6-luna-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "gNEQQq6v4vQDriLCB3VcSC",
+    "task": "String search / Full / Psoriasis",
+    "task_id": "String search / Full / Psoriasis / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-08T11:03:35+02:00",
+    "completed_at": "2026-10-08T11:03:35+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-05-49+02-00_String-Search-gpt-6-luna-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "6SdDH0UAbqmoDJWwqYPEq4",
+    "task": "String search / Full / Hidradenitis suppurativa",
+    "task_id": "String search / Full / Hidradenitis suppurativa / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-08T11:05:49+02:00",
+    "completed_at": "2026-10-08T11:05:49+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-08-26+02-00_String-Search-gpt-6-luna-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "nbkf7C9XTiMkEZQvWhumLR",
+    "task": "String search / Full / Myocardial infarction",
+    "task_id": "String search / Full / Myocardial infarction / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-08T11:08:26+02:00",
+    "completed_at": "2026-10-08T11:08:26+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-13-35+02-00_String-Search-gpt-6-luna-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "5bYI1ayH1K5B1RvcuuKitp",
+    "task": "String search / Full / Wrist fracture",
+    "task_id": "String search / Full / Wrist fracture / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-08T11:13:35+02:00",
+    "completed_at": "2026-10-08T11:13:34+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-16-14+02-00_String-Search-gpt-6.1-sol-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "XCLr5FvP7awpukALUykbrh",
+    "task": "String search / Full / Atopic eczema",
+    "task_id": "String search / Full / Atopic eczema / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-08T11:16:14+02:00",
+    "completed_at": "2026-10-08T11:16:14+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-18-58+02-00_String-Search-gpt-6.1-sol-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "FLVaK7vDxO3L5IBoaqYDTU",
+    "task": "String search / Full / Vascular dementia",
+    "task_id": "String search / Full / Vascular dementia / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-08T11:18:58+02:00",
+    "completed_at": "2026-10-08T11:18:58+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-20-28+02-00_String-Search-gpt-6.1-sol-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "pKT2eSAM15lQoHSlEYAbZP",
+    "task": "String search / Full / Eosinophilic oesophagitis",
+    "task_id": "String search / Full / Eosinophilic oesophagitis / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-08T11:20:28+02:00",
+    "completed_at": "2026-10-08T11:20:28+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-23-39+02-00_String-Search-gpt-6.1-sol-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "j6gotxpQiw8TvnPYjMbsEO",
+    "task": "String search / Full / Psoriasis",
+    "task_id": "String search / Full / Psoriasis / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-08T11:23:39+02:00",
+    "completed_at": "2026-10-08T11:23:39+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-26-05+02-00_String-Search-gpt-6.1-sol-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "pSmkt0c273Z5xMqekjkbzO",
+    "task": "String search / Full / Hidradenitis suppurativa",
+    "task_id": "String search / Full / Hidradenitis suppurativa / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-08T11:26:05+02:00",
+    "completed_at": "2026-10-08T11:26:05+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-30-59+02-00_String-Search-gpt-6.1-sol-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "3d9FtrTEpvZ3OKDRaeoXcl",
+    "task": "String search / Full / Myocardial infarction",
+    "task_id": "String search / Full / Myocardial infarction / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-08T11:30:59+02:00",
+    "completed_at": "2026-10-08T11:30:59+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-37-43+02-00_String-Search-gpt-6.1-sol-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "k4AZYdv2nwwmeGZww41mV1",
+    "task": "String search / Full / Wrist fracture",
+    "task_id": "String search / Full / Wrist fracture / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-08T11:37:43+02:00",
+    "completed_at": "2026-10-08T11:37:43+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-39-33+02-00_String-Search-claude-sonnet-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "18Ao75DjhRhZ7FKQvd5min",
+    "task": "String search / Full / Atopic eczema",
+    "task_id": "String search / Full / Atopic eczema / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-08T11:39:33+02:00",
+    "completed_at": "2026-10-08T11:39:33+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-41-37+02-00_String-Search-claude-sonnet-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "lrT4WKPsRICG0EDWHUVArs",
+    "task": "String search / Full / Vascular dementia",
+    "task_id": "String search / Full / Vascular dementia / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-08T11:41:37+02:00",
+    "completed_at": "2026-10-08T11:41:37+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-42-43+02-00_String-Search-claude-sonnet-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "hc8486uoOZM4Y1yPCLYwEa",
+    "task": "String search / Full / Eosinophilic oesophagitis",
+    "task_id": "String search / Full / Eosinophilic oesophagitis / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-08T11:42:43+02:00",
+    "completed_at": "2026-10-08T11:42:43+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-43-56+02-00_String-Search-claude-sonnet-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "TIC488ttE6yQ5P4hFDbrK0",
+    "task": "String search / Full / Psoriasis",
+    "task_id": "String search / Full / Psoriasis / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-08T11:43:56+02:00",
+    "completed_at": "2026-10-08T11:43:56+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 16.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-44-58+02-00_String-Search-claude-sonnet-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "pkYOywS1bPC2v6RvLc2Dwc",
+    "task": "String search / Full / Hidradenitis suppurativa",
+    "task_id": "String search / Full / Hidradenitis suppurativa / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-08T11:44:58+02:00",
+    "completed_at": "2026-10-08T11:44:58+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-46-51+02-00_String-Search-claude-sonnet-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "ot1NPdk1guGBiAVmytsok5",
+    "task": "String search / Full / Myocardial infarction",
+    "task_id": "String search / Full / Myocardial infarction / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-08T11:46:51+02:00",
+    "completed_at": "2026-10-08T11:46:51+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-50-37+02-00_String-Search-claude-sonnet-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "7DzkpE21FqpakLy9Z5geMO",
+    "task": "String search / Full / Wrist fracture",
+    "task_id": "String search / Full / Wrist fracture / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-08T11:50:37+02:00",
+    "completed_at": "2026-10-08T11:50:37+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-54-26+02-00_String-Search-claude-opus-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "EwqBXEhRaP0EFRcRZiYKcM",
+    "task": "String search / Full / Atopic eczema",
+    "task_id": "String search / Full / Atopic eczema / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-08T11:54:26+02:00",
+    "completed_at": "2026-10-08T11:54:26+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T11-59-26+02-00_String-Search-claude-opus-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "mREiddL1JKckwoLMW6mo8x",
+    "task": "String search / Full / Vascular dementia",
+    "task_id": "String search / Full / Vascular dementia / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-08T11:59:26+02:00",
+    "completed_at": "2026-10-08T11:59:26+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-01-23+02-00_String-Search-claude-opus-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "2GDbYtpRBMN9nYiLB7MCrv",
+    "task": "String search / Full / Eosinophilic oesophagitis",
+    "task_id": "String search / Full / Eosinophilic oesophagitis / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-08T12:01:23+02:00",
+    "completed_at": "2026-10-08T12:01:23+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-04-28+02-00_String-Search-claude-opus-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "mR7wDFcjMqQoIOQSJc5mxi",
+    "task": "String search / Full / Psoriasis",
+    "task_id": "String search / Full / Psoriasis / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-08T12:04:28+02:00",
+    "completed_at": "2026-10-08T12:04:28+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-06-45+02-00_String-Search-claude-opus-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "8RQNr1LTuMtrWdjSn09MKG",
+    "task": "String search / Full / Hidradenitis suppurativa",
+    "task_id": "String search / Full / Hidradenitis suppurativa / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-08T12:06:45+02:00",
+    "completed_at": "2026-10-08T12:06:45+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-11-31+02-00_String-Search-claude-opus-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "SxrW7TNzJKfMJ7wSLaYFG6",
+    "task": "String search / Full / Myocardial infarction",
+    "task_id": "String search / Full / Myocardial infarction / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-08T12:11:31+02:00",
+    "completed_at": "2026-10-08T12:11:31+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-18-28+02-00_String-Search-claude-opus-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "5B2zKr1AUwZ46c79OJ16Ft",
+    "task": "String search / Full / Wrist fracture",
+    "task_id": "String search / Full / Wrist fracture / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-08T12:18:28+02:00",
+    "completed_at": "2026-10-08T12:18:28+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-40-26+02-00_String-Search-gemini-3.5-flash-lite-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "vYwrRdwUB7nAhou00rdUrQ",
+    "task": "String search / Read / Atopic eczema",
+    "task_id": "String search / Read / Atopic eczema / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.5-flash-lite",
+    "started_at": "2026-10-08T12:40:26+02:00",
+    "completed_at": "2026-10-08T12:40:26+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-41-10+02-00_String-Search-gemini-3.5-flash-lite-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "aoQ4xZGz2z9SfSaxMRu1tM",
+    "task": "String search / Read / Vascular dementia",
+    "task_id": "String search / Read / Vascular dementia / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.5-flash-lite",
+    "started_at": "2026-10-08T12:41:10+02:00",
+    "completed_at": "2026-10-08T12:41:10+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-41-44+02-00_String-Search-gemini-3.5-flash-lite-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "2Q0Yd9mXNDq3HtsdN926zi",
+    "task": "String search / Read / Eosinophilic oesophagitis",
+    "task_id": "String search / Read / Eosinophilic oesophagitis / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.5-flash-lite",
+    "started_at": "2026-10-08T12:41:44+02:00",
+    "completed_at": "2026-10-08T12:41:44+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-42-04+02-00_String-Search-gemini-3.5-flash-lite-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "mMYlWoXime7LsMtBPaT5Wo",
+    "task": "String search / Read / Psoriasis",
+    "task_id": "String search / Read / Psoriasis / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.5-flash-lite",
+    "started_at": "2026-10-08T12:42:04+02:00",
+    "completed_at": "2026-10-08T12:42:04+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-42-30+02-00_String-Search-gemini-3.5-flash-lite-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "crChOTIxdZ7nngRN3MaYDx",
+    "task": "String search / Read / Hidradenitis suppurativa",
+    "task_id": "String search / Read / Hidradenitis suppurativa / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.5-flash-lite",
+    "started_at": "2026-10-08T12:42:30+02:00",
+    "completed_at": "2026-10-08T12:42:30+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-42-56+02-00_String-Search-gemini-3.5-flash-lite-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "8ftWme2n8XmhlMmCHYxoUk",
+    "task": "String search / Read / Myocardial infarction",
+    "task_id": "String search / Read / Myocardial infarction / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.5-flash-lite",
+    "started_at": "2026-10-08T12:42:56+02:00",
+    "completed_at": "2026-10-08T12:42:56+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-44-44+02-00_String-Search-gemini-3.5-flash-lite-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "3HPbT71NPblChgmNF7to7j",
+    "task": "String search / Read / Wrist fracture",
+    "task_id": "String search / Read / Wrist fracture / gemini-3.5-flash-lite",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.5-flash-lite",
+    "started_at": "2026-10-08T12:44:44+02:00",
+    "completed_at": "2026-10-08T12:44:44+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-46-59+02-00_String-Search-gemini-3.6-flash-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "tYlsYeReVIDwTNEbCfVIoo",
+    "task": "String search / Read / Atopic eczema",
+    "task_id": "String search / Read / Atopic eczema / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.6-flash",
+    "started_at": "2026-10-08T12:46:59+02:00",
+    "completed_at": "2026-10-08T12:46:59+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-48-52+02-00_String-Search-gemini-3.6-flash-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "YRB7VrPqQVwVIXcZKBny79",
+    "task": "String search / Read / Vascular dementia",
+    "task_id": "String search / Read / Vascular dementia / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.6-flash",
+    "started_at": "2026-10-08T12:48:52+02:00",
+    "completed_at": "2026-10-08T12:48:52+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-49-54+02-00_String-Search-gemini-3.6-flash-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "mx5iaXhTMNwMZAMCm6wRW4",
+    "task": "String search / Read / Eosinophilic oesophagitis",
+    "task_id": "String search / Read / Eosinophilic oesophagitis / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.6-flash",
+    "started_at": "2026-10-08T12:49:54+02:00",
+    "completed_at": "2026-10-08T12:49:54+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-51-57+02-00_String-Search-gemini-3.6-flash-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "YWcfFLbBsxJd4KyrnI0JID",
+    "task": "String search / Read / Psoriasis",
+    "task_id": "String search / Read / Psoriasis / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.6-flash",
+    "started_at": "2026-10-08T12:51:57+02:00",
+    "completed_at": "2026-10-08T12:51:57+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-52-52+02-00_String-Search-gemini-3.6-flash-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "hKtfUlatHhbCnFLH77uUT4",
+    "task": "String search / Read / Hidradenitis suppurativa",
+    "task_id": "String search / Read / Hidradenitis suppurativa / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.6-flash",
+    "started_at": "2026-10-08T12:52:52+02:00",
+    "completed_at": "2026-10-08T12:52:52+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-54-49+02-00_String-Search-gemini-3.6-flash-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "hOV78kTReplYHCHgxbPLNf",
+    "task": "String search / Read / Myocardial infarction",
+    "task_id": "String search / Read / Myocardial infarction / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.6-flash",
+    "started_at": "2026-10-08T12:54:49+02:00",
+    "completed_at": "2026-10-08T12:54:49+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T12-58-15+02-00_String-Search-gemini-3.6-flash-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "GaOnnQmciLwCtNxUoTPrht",
+    "task": "String search / Read / Wrist fracture",
+    "task_id": "String search / Read / Wrist fracture / gemini-3.6-flash",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.6-flash",
+    "started_at": "2026-10-08T12:58:15+02:00",
+    "completed_at": "2026-10-08T12:58:15+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-03-15+02-00_String-Search-gemini-3.1-pro-preview-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "Rc2yGsUcBlTTml0twoWTWW",
+    "task": "String search / Read / Atopic eczema",
+    "task_id": "String search / Read / Atopic eczema / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-10-08T13:03:15+02:00",
+    "completed_at": "2026-10-08T13:03:15+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-07-49+02-00_String-Search-gemini-3.1-pro-preview-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "daiSDe971ppDYkbMYqvi3n",
+    "task": "String search / Read / Vascular dementia",
+    "task_id": "String search / Read / Vascular dementia / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-10-08T13:07:49+02:00",
+    "completed_at": "2026-10-08T13:07:49+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-08-50+02-00_String-Search-gemini-3.1-pro-preview-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "zW4m9zdEgbCDeI6nCVYDy0",
+    "task": "String search / Read / Eosinophilic oesophagitis",
+    "task_id": "String search / Read / Eosinophilic oesophagitis / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-10-08T13:08:50+02:00",
+    "completed_at": "2026-10-08T13:08:50+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-12-33+02-00_String-Search-gemini-3.1-pro-preview-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "BU3ALyxIESJfrR1dJRZ8nm",
+    "task": "String search / Read / Psoriasis",
+    "task_id": "String search / Read / Psoriasis / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-10-08T13:12:33+02:00",
+    "completed_at": "2026-10-08T13:12:33+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-13-41+02-00_String-Search-gemini-3.1-pro-preview-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "QibEKrWYftXQiSkhH96zIs",
+    "task": "String search / Read / Hidradenitis suppurativa",
+    "task_id": "String search / Read / Hidradenitis suppurativa / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-10-08T13:13:41+02:00",
+    "completed_at": "2026-10-08T13:13:41+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-18-34+02-00_String-Search-gemini-3.1-pro-preview-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "WSonGbfKb4g701PCB8teBr",
+    "task": "String search / Read / Myocardial infarction",
+    "task_id": "String search / Read / Myocardial infarction / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-10-08T13:18:34+02:00",
+    "completed_at": "2026-10-08T13:18:34+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-25-56+02-00_String-Search-gemini-3.1-pro-preview-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "tXfwqK053gKvD2CdWZCp6a",
+    "task": "String search / Read / Wrist fracture",
+    "task_id": "String search / Read / Wrist fracture / gemini-3.1-pro-preview",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "google_gemini/gemini-3.1-pro-preview",
+    "started_at": "2026-10-08T13:25:56+02:00",
+    "completed_at": "2026-10-08T13:25:56+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 83.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-27-03+02-00_String-Search-gpt-6-luna-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "15gwbRxkJ2I3y7gkI8K1PO",
+    "task": "String search / Read / Atopic eczema",
+    "task_id": "String search / Read / Atopic eczema / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-08T13:27:03+02:00",
+    "completed_at": "2026-10-08T13:27:03+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-28-19+02-00_String-Search-gpt-6-luna-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "FdqElvw2tJwfkxZCuVWoNG",
+    "task": "String search / Read / Vascular dementia",
+    "task_id": "String search / Read / Vascular dementia / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-08T13:28:19+02:00",
+    "completed_at": "2026-10-08T13:28:19+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-29-05+02-00_String-Search-gpt-6-luna-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "eBuQc6M49Lo7MpAUAQF1d5",
+    "task": "String search / Read / Eosinophilic oesophagitis",
+    "task_id": "String search / Read / Eosinophilic oesophagitis / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-08T13:29:05+02:00",
+    "completed_at": "2026-10-08T13:29:05+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-30-00+02-00_String-Search-gpt-6-luna-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "2SFeK0aSBsAqZAtqlNZ6Rt",
+    "task": "String search / Read / Psoriasis",
+    "task_id": "String search / Read / Psoriasis / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-08T13:30:00+02:00",
+    "completed_at": "2026-10-08T13:30:00+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-30-50+02-00_String-Search-gpt-6-luna-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "dfmWQYJpM2WaBZ5W4pbsLH",
+    "task": "String search / Read / Hidradenitis suppurativa",
+    "task_id": "String search / Read / Hidradenitis suppurativa / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-08T13:30:50+02:00",
+    "completed_at": "2026-10-08T13:30:50+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-31-54+02-00_String-Search-gpt-6-luna-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "mVsRuKZ1YvhYit2EArl7mO",
+    "task": "String search / Read / Myocardial infarction",
+    "task_id": "String search / Read / Myocardial infarction / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-08T13:31:54+02:00",
+    "completed_at": "2026-10-08T13:31:53+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-34-09+02-00_String-Search-gpt-6-luna-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "XuL5eglRcYcdHtVLdSLdIY",
+    "task": "String search / Read / Wrist fracture",
+    "task_id": "String search / Read / Wrist fracture / gpt-6-luna",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6-luna",
+    "started_at": "2026-10-08T13:34:09+02:00",
+    "completed_at": "2026-10-08T13:34:09+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-35-07+02-00_String-Search-gpt-6.1-sol-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "txFIE8siGS8H7kEEQee5oN",
+    "task": "String search / Read / Atopic eczema",
+    "task_id": "String search / Read / Atopic eczema / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-08T13:35:07+02:00",
+    "completed_at": "2026-10-08T13:35:07+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-36-19+02-00_String-Search-gpt-6.1-sol-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "TUakKguDIwVKTupYJZ14i1",
+    "task": "String search / Read / Vascular dementia",
+    "task_id": "String search / Read / Vascular dementia / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-08T13:36:19+02:00",
+    "completed_at": "2026-10-08T13:36:19+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-37-02+02-00_String-Search-gpt-6.1-sol-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "W0kyNVGBZ5HxFQOczx5Me5",
+    "task": "String search / Read / Eosinophilic oesophagitis",
+    "task_id": "String search / Read / Eosinophilic oesophagitis / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-08T13:37:02+02:00",
+    "completed_at": "2026-10-08T13:37:02+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-38-28+02-00_String-Search-gpt-6.1-sol-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "HuE8GHSEDvaahW4trGVajb",
+    "task": "String search / Read / Psoriasis",
+    "task_id": "String search / Read / Psoriasis / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-08T13:38:28+02:00",
+    "completed_at": "2026-10-08T13:38:28+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-39-29+02-00_String-Search-gpt-6.1-sol-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "MIzNWd21YtGFaFzE4vx4FE",
+    "task": "String search / Read / Hidradenitis suppurativa",
+    "task_id": "String search / Read / Hidradenitis suppurativa / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-08T13:39:29+02:00",
+    "completed_at": "2026-10-08T13:39:29+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-40-53+02-00_String-Search-gpt-6.1-sol-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "LglYwV4RQb7cWzLCRcjGVY",
+    "task": "String search / Read / Myocardial infarction",
+    "task_id": "String search / Read / Myocardial infarction / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-08T13:40:53+02:00",
+    "completed_at": "2026-10-08T13:40:53+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-43-53+02-00_String-Search-gpt-6.1-sol-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "BpXbE3AZc72YUuXMH1Wj6M",
+    "task": "String search / Read / Wrist fracture",
+    "task_id": "String search / Read / Wrist fracture / gpt-6.1-sol",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-6.1-sol",
+    "started_at": "2026-10-08T13:43:53+02:00",
+    "completed_at": "2026-10-08T13:43:53+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-44-44+02-00_String-Search-claude-sonnet-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "ReUNP3RP63bTBJcatNHVSR",
+    "task": "String search / Read / Atopic eczema",
+    "task_id": "String search / Read / Atopic eczema / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-08T13:44:44+02:00",
+    "completed_at": "2026-10-08T13:44:44+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 33.3333,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-45-30+02-00_String-Search-claude-sonnet-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "ys5hxCQuDJQWY9V5p4Gzoo",
+    "task": "String search / Read / Vascular dementia",
+    "task_id": "String search / Read / Vascular dementia / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-08T13:45:30+02:00",
+    "completed_at": "2026-10-08T13:45:30+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-46-05+02-00_String-Search-claude-sonnet-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "Ne6RQr0yNESzuUAVqqlsUG",
+    "task": "String search / Read / Eosinophilic oesophagitis",
+    "task_id": "String search / Read / Eosinophilic oesophagitis / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-08T13:46:05+02:00",
+    "completed_at": "2026-10-08T13:46:05+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-46-44+02-00_String-Search-claude-sonnet-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "jA23lQnXIDyI4fOEcBBCRD",
+    "task": "String search / Read / Psoriasis",
+    "task_id": "String search / Read / Psoriasis / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-08T13:46:44+02:00",
+    "completed_at": "2026-10-08T13:46:44+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 16.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-47-17+02-00_String-Search-claude-sonnet-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "snvH65XdopQVnpWErMw7No",
+    "task": "String search / Read / Hidradenitis suppurativa",
+    "task_id": "String search / Read / Hidradenitis suppurativa / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-08T13:47:17+02:00",
+    "completed_at": "2026-10-08T13:47:17+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-48-12+02-00_String-Search-claude-sonnet-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "jaNp2VT6waAfwqBup1DvhX",
+    "task": "String search / Read / Myocardial infarction",
+    "task_id": "String search / Read / Myocardial infarction / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-08T13:48:12+02:00",
+    "completed_at": "2026-10-08T13:48:12+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-49-54+02-00_String-Search-claude-sonnet-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "VgZJWM9spaZX9KXEcpagKC",
+    "task": "String search / Read / Wrist fracture",
+    "task_id": "String search / Read / Wrist fracture / claude-sonnet-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-sonnet-5-5",
+    "started_at": "2026-10-08T13:49:54+02:00",
+    "completed_at": "2026-10-08T13:49:54+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-51-41+02-00_String-Search-claude-opus-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "PRW8XppEzB5wAGG11S63HO",
+    "task": "String search / Read / Atopic eczema",
+    "task_id": "String search / Read / Atopic eczema / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-08T13:51:41+02:00",
+    "completed_at": "2026-10-08T13:51:41+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-53-19+02-00_String-Search-claude-opus-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "qKcyobpk9DX5j2YrlY79Bs",
+    "task": "String search / Read / Vascular dementia",
+    "task_id": "String search / Read / Vascular dementia / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-08T13:53:19+02:00",
+    "completed_at": "2026-10-08T13:53:19+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-54-17+02-00_String-Search-claude-opus-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "nWjpCUHtsju9XGHpi7O5UL",
+    "task": "String search / Read / Eosinophilic oesophagitis",
+    "task_id": "String search / Read / Eosinophilic oesophagitis / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-08T13:54:17+02:00",
+    "completed_at": "2026-10-08T13:54:17+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-55-34+02-00_String-Search-claude-opus-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "UGvfceWMR9VmieRS7aTUGX",
+    "task": "String search / Read / Psoriasis",
+    "task_id": "String search / Read / Psoriasis / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-08T13:55:34+02:00",
+    "completed_at": "2026-10-08T13:55:34+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-56-34+02-00_String-Search-claude-opus-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "BNKylmuZsG4SilPB2R45TP",
+    "task": "String search / Read / Hidradenitis suppurativa",
+    "task_id": "String search / Read / Hidradenitis suppurativa / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-08T13:56:34+02:00",
+    "completed_at": "2026-10-08T13:56:34+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 100,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T13-59-27+02-00_String-Search-claude-opus-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "4Yy5QSNsFyTcHIxdVIzsDL",
+    "task": "String search / Read / Myocardial infarction",
+    "task_id": "String search / Read / Myocardial infarction / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-08T13:59:27+02:00",
+    "completed_at": "2026-10-08T13:59:27+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 50,
+      "params": {
+        "1": "numeric_scores"
+      }
+    }
+  },
+  "2026-10-08T14-02-17+02-00_String-Search-claude-opus-5-5-95db44c197971e844d22c8.json": {
+    "eval_id": {},
+    "run_id": "GZtq3ClQHGid1D2ZzjEHFK",
+    "task": "String search / Read / Wrist fracture",
+    "task_id": "String search / Read / Wrist fracture / claude-opus-5-5",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "anthropic/claude-opus-5-5",
+    "started_at": "2026-10-08T14:02:17+02:00",
+    "completed_at": "2026-10-08T14:02:17+02:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 66.6667,
+      "params": {
+        "1": "numeric_scores"
       }
     }
   }
