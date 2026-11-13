@@ -381,13 +381,16 @@ make_gradings <- function(task_data) {
 }
 
 # `focus` is the one instruction that differs between the two summaries
-summariser_prompt <- function(focus) {
+summariser_prompt <- function(focus, max_words) {
   paste(
-    "You are given submissions for an evaluation of LLM's performance in creating clinical codelists against a Gold standard.",
-    "Each submission contains the evaluation result for one codelists using different LLMs and were run several times; each run is a separate section.",
+    "You are given submissions for an evaluation of LLMs' performance in creating clinical codelists against a gold standard.",
+    "Each submission contains the evaluation results for one codelist from several LLMs, each run several times; each model and each run is a separate section.",
     focus,
+    paste0("Keep each summary to ", max_words, " words or fewer."),
     "Examples can be given for similar codes. Not every code needs to be listed.",
-    "Be terse but always report codes and terms together with the code first followed by the term seperated by just one space. Format only the terms and not the codes in bold. Don't include the date in the model version names."
+    # Earlier summaries mixed exact names, shortened names and family names
+    "Refer to each model only by its name exactly as written in its '# Model' heading (e.g., claude-opus-5-5 or gemini-3.1-pro-preview), every time, without shortening, capitalising or rewording it.",
+    "Be terse but always report codes and terms together with the code first followed by the term separated by just one space. Format only the terms and not the codes in bold."
   )
 }
 
@@ -404,13 +407,22 @@ focus_irrelevant <- paste(
 )
 
 # One LLM request per codelist, so each call costs nrow(gradings) requests
-summarise_mistakes <- function(gradings, focus, model = "gemini-3.1-pro-preview") {
-  chat <- chat_google_gemini(model = model, system_prompt = summariser_prompt(focus))
+summarise_mistakes <- function(gradings, focus, model = "claude-opus-5-5", max_words = 100) {
+  chat <- chat_claude(model = model, system_prompt = summariser_prompt(focus, max_words))
   summaries <- parallel_chat_structured(
     chat,
     as.list(gradings$grading),
     type_object(summary = type_string())
   )
+
+  # The word limit is only an instruction, so flag any summary that ignored it
+  n_words <- str_count(summaries$summary, "\\S+")
+  if (any(n_words > max_words)) {
+    warning(
+      "Summaries over ", max_words, " words: ",
+      paste0(gradings$codelist[n_words > max_words], " (", n_words[n_words > max_words], ")", collapse = ", ")
+    )
+  }
 
   gradings |>
     select(-grading) |>
